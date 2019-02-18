@@ -1,0 +1,72 @@
+/* --- all --- */
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #ECF0F1;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+}
+
+input{
+	outline: none;
+}
+
+/* --- main --- */
+
+.main {
+	padding-top: 40px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* --- form --- */
+
+.main_form {
+	margin: 0 auto;
+	position: relative;
+}
+
+.main_input {
+	width: 100%;
+	font-size: 90px;
+	font-weight: 700;
+	background-color: transparent;
+	border: none;
+	color: #FF6C5C;
+}
+
+input::-webkit-input-placeholder {
+	color: #c0c0c0;
+}
+
+.main_button {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	right: 0;
+	text-indent: 80px;
+	overflow: hidden;
+	background-image: url("../images/magnifier.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	background-size: 100%;
+	transform-origin: 100% 50%;
+	transform: translate3d(0,0,0) scale(1);
+	transition: transform 0.3s;
+	border: none;
+	
+}
+
+.main_button:hover {
+	transform: translate3d(0,0,0) scale(1.1);
+}
+
