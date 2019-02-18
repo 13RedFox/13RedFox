@@ -6,19 +6,59 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+
+	* {
+		box-sizing: border-box;
+	}
+	html, body {
+		height: 100%;
+		font-family: 'Indie Flower', cursive;
+		font-size: 24px;
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #000;
+		color: #FFF;
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+	}
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color: #AA0C48;
+	}
+	ul li a {
+		opacity: .4;
+		margin-right: 10px;
+	}
+	ul li a:hover {
+		opacity: 1;
+	}
+	.wi {
+		margin-right: 5px;
+		color: #fff;
+	}
+</style>
 </head>
 <body>
-	
 	<ul>
 		<li>
-			<a href="css-dinner-shopping-list/">Dinner</a>
+			<a href="css-dinner-shopping-list/"><i class="wi wi-direction-right"></i>Dinner</a>
 		</li>
 		<li>
-			<a href="css-weather-forecast/">WeatherApp</a>
+			<a href="css-weather-forecast/"><i class="wi wi-direction-right"></i>WeatherApp</a>
 		</li>
 	</ul>
-
 	<script src="js/script.js"></script>
 </body>
 </html>
