@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.5/css/weather-icons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.png"> <!-- IconTitle -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
 
@@ -20,28 +21,49 @@
 		font-size: 24px;
 	}
 	body {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		background-color: #000;
 		color: #FFF;
 	}
-	ul {
+	.portfolio_header {
+		min-height: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.portfolio_header h1 {
+		display: flex;
+		align-items: center;
+		font-size: 96px;
+		color: #AA0C48;
+		min-height: 100px;
+		margin: 0;
+	}
+	.portfolio_header p {
+		font-size: 40px;
+		color: #F9BF3B;
+		text-shadow: 0 0 15px #f00;
+	}
+	.main_portfolio {
+		display: flex;
+		justify-content: center;
+		margin-top: 150px;
+	}
+	.portfolio_list {
 		display: flex;
 		flex-direction: column;
 	}
-	li {
+	.portfolio_item {
 		list-style: none;
 	}
 	a {
 		text-decoration: none;
 		color: #AA0C48;
 	}
-	ul li a {
+	.portfolio_list li a {
 		opacity: .4;
 		margin-right: 10px;
 	}
-	ul li a:hover {
+	.portfolio_list li a:hover {
 		opacity: 1;
 	}
 	.wi {
@@ -51,17 +73,25 @@
 </style>
 </head>
 <body>
-	<ul>
-		<!-- <li>
-			<a href="css-dinner-shopping-list/"><i class="wi wi-direction-right"></i>Dinner</a>
-		</li> -->
-		<li>
-			<a href="css-weather-forecast/"><i class="wi wi-direction-right"></i>WeatherApp</a>
-		</li>
-		<li>
-			<a href="css-huge-search/"><i class="wi wi-direction-right"></i>HugeSearch</a>
-		</li>
-	</ul>
+	<header class="portfolio_header">
+		<h1>Portfolio</h1>
+		<p>13RedFox</p>
+	</header>	<!-- portfolio_header -->
+
+	<main class="main_portfolio">
+		<ul class="portfolio_list">
+			<li class="portfolio_item">
+				<a href="css-dinner-shopping-list/"><i class="wi wi-direction-right"></i>Dinner</a>
+			</li>
+			<li class="portfolio_item">
+				<a href="css-weather-forecast/"><i class="wi wi-direction-right"></i>WeatherApp</a>
+			</li>
+			<li class="portfolio_item">
+				<a href="css-huge-search/"><i class="wi wi-direction-right"></i>HugeSearch</a>
+			</li>
+		</ul>
+	</main>		<!-- main_portfolio -->	
+
 	<script src="js/script.js"></script>
 </body>
 </html>
