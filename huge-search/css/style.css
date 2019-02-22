@@ -35,13 +35,15 @@ input::-webkit-search-results-button { display: none; }
 /* --- form --- */
 
 .main_form {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
 	margin: 0 auto;
-	position: relative;
 }
 
 .main_input {
 	width: 100%;
-	padding: 0 90px 0 0;
 	font-size: 80px;
 	font-weight: 700;
 	background-color: transparent;
@@ -54,20 +56,11 @@ input::-webkit-input-placeholder {
 }
 
 .main_button {
-	position: absolute;
-	width: 70px;
-	height: 70px;
-	top: 13px;
-	right: 10px;
-	text-indent: 80px;
-	overflow: hidden;
-	background-image: url("../images/magnifier.svg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: transparent;
-	background-size: 100%;
+	width: 100px;
+	height: 100px;
+	background: url("../images/favicon.png") no-repeat 50% 50%;
+	background-size: 65%;
 	transform-origin: 100% 50%;
-	transform: translate3d(0,0,0) scale(1);
 	transition: transform 0.3s;
 	border: none;
 	cursor: pointer;
