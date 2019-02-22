@@ -32,11 +32,11 @@ body {
 /* --- contaiber --- */
 
 .cup_container {
-	width: 1200px;
+	width: 1138px;
 	height: 600px;
 	margin: 0 auto;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -47,33 +47,104 @@ body {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	justify-content: space-evenly;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 	text-align: center;
 }
 
 /* --- box --- */
 
-.cup_price {
+.cup_price__bronze {
+	margin-top: 34px;
 	color: #02995b;
 	font-family: 'Miso-Bold';
 	font-size: 70px;
 }
 
-.cup_title {
+.cup_img__bronze {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.cup_title__bronze {
+	margin-top: 28px;
 	font-family: 'Miso-Regular';
 	font-size: 56px;
 	color: #333;
 }
 
-.cup_text {
+.cup_text__bronze {
+	margin-top: 17px;
 	max-width: 155px;
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
+	line-height: 1.4;
+	letter-spacing: 0.7px;
 	color: #494949;
 }
 
+/* --- cup__center --- */
+
 .cup_box__center {
 	height: 500px;
+	margin: 0 30px 0;
+	text-align: center;
+}
+
+.cup_price__center {
+	padding-top: 44px;
+	color: #02995b;
+	font-family: 'Miso-Bold';
+	font-size: 70px;
+}
+
+.cup_img__center {
+	margin-top: 34px;
+	margin-left: 15px;
+}
+
+.cup_title__center {
+	margin-top: 38px;
+	font-family: 'Miso-Regular';
+	font-size: 56px;
+	color: #333;
+}
+
+.cup_text__center {
+	margin-top: 20px;
+	max-width: 155px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	line-height: 1.3;
+	letter-spacing: 0.7px;
+	color: #494949;
+}
+
+.cup_price__silver {
+	margin-top: 34px;
+	color: #02995b;
+	font-family: 'Miso-Bold';
+	font-size: 70px;
+}
+
+.cup_img__silver {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.cup_title__silver {
+	margin-top: 28px;
+	font-family: 'Miso-Regular';
+	font-size: 56px;
+	color: #333;
+}
+
+.cup_text__silver {
+	margin-top: 17px;
+	max-width: 155px;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	line-height: 1.3;
+	letter-spacing: 0.7px;
+	color: #494949;
 }
