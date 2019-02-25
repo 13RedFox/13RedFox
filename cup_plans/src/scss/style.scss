@@ -37,14 +37,14 @@ body {
 	align-items: center;
 }
 .bronze{
-	width: 33%;
+	width: 360px;
 	height: 440px;
 	border-radius: 5px;
 	background-color: #fff;
 	display: flex;
-	justify-content: space-around;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
 
 
 	&__price {
@@ -52,19 +52,23 @@ body {
 		font-size: 70px;
 		font-weight: bold;
 		color: #02995b;
-		flex-shrink: 2;
+		flex-grow: 2;
 	}
 
 	&__title {
+		width: 50%;
 		font-family: 'miso-Regular';
-	font-size: 56px;
-	text-transform: capitalize;
-	flex-shrink: 1;
+		font-size: 56px;
+		text-transform: capitalize;
+		flex-grow: 1;
 	}
-
+	
+	&__img {
+	}
 	&__text {
 		font-family: 'Lato', sans-serif;
 		font-size: 20px;
 		width: 155px;
+		flex-grow: 1;
 	}
 }
