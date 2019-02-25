@@ -1,0 +1,205 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,
+body
+{
+    height: 100%;
+}
+
+body
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    min-width: 960px;
+    margin: auto; 
+
+    background-color: #354546;
+}
+
+.container
+{
+    position: relative; 
+
+    width: 620px;
+    height: 620px;
+    margin: auto;
+
+    border: 10px solid #27ae60;
+    background-color: #fff;
+}
+.container .box
+{
+    position: absolute;
+
+    width: 75px;
+    height: 75px;
+
+    background-color: #000;
+}
+.container .item1
+{
+    top: 0;
+    left: 0;
+}
+.container .item2
+{
+    top: 0;
+    left: 150px;
+}
+.container .item3
+{
+    top: 0;
+    left: 300px;
+}
+.container .item4
+{
+    top: 0;
+    left: 450px;
+}
+.container .item5
+{
+    top: 75px;
+    left: 75px;
+}
+.container .item6
+{
+    top: 75px;
+    left: 225px;
+}
+.container .item7
+{
+    top: 75px;
+    left: 375px;
+}
+.container .item8
+{
+    top: 75px;
+    left: 525px;
+}
+.container .item9
+{
+    top: 150px;
+    left: 0;
+}
+.container .item10
+{
+    top: 150px;
+    left: 150px;
+}
+.container .item11
+{
+    top: 150px;
+    left: 300px;
+}
+.container .item12
+{
+    top: 150px;
+    left: 450px;
+}
+.container .item13
+{
+    top: 225px;
+    left: 75px;
+}
+.container .item14
+{
+    top: 225px;
+    left: 225px;
+}
+.container .item15
+{
+    top: 225px;
+    left: 375px;
+}
+.container .item16
+{
+    top: 225px;
+    left: 525px;
+}
+.container .item17
+{
+    top: 300px;
+    left: 0;
+}
+.container .item18
+{
+    top: 300px;
+    left: 150px;
+}
+.container .item19
+{
+    top: 300px;
+    left: 300px;
+}
+.container .item20
+{
+    top: 300px;
+    left: 450px;
+}
+.container .item21
+{
+    top: 375px;
+    left: 75px;
+}
+.container .item22
+{
+    top: 375px;
+    left: 225px;
+}
+.container .item23
+{
+    top: 375px;
+    left: 375px;
+}
+.container .item24
+{
+    top: 375px;
+    left: 525px;
+}
+.container .item25
+{
+    top: 450px;
+    left: 0;
+}
+.container .item26
+{
+    top: 450px;
+    left: 150px;
+}
+.container .item27
+{
+    top: 450px;
+    left: 300px;
+}
+.container .item28
+{
+    top: 450px;
+    left: 450px;
+}
+.container .item29
+{
+    top: 525px;
+    left: 75px;
+}
+.container .item30
+{
+    top: 525px;
+    left: 225px;
+}
+.container .item31
+{
+    top: 525px;
+    left: 375px;
+}
+.container .item32
+{
+    top: 525px;
+    left: 525px;
+}
