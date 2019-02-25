@@ -16,8 +16,6 @@ body
     display: -ms-flexbox;
     display: flex;
 
-    width: 100%;
-    min-width: 960px;
     margin: auto; 
 
     background-color: #354546;
@@ -27,7 +25,8 @@ body
 {
     position: relative; 
 
-    width: 620px;
+    width: 100%;
+    max-width: 620px;
     height: 620px;
     margin: auto;
 
@@ -51,155 +50,155 @@ body
 .container .item2
 {
     top: 0;
-    left: 150px;
+    left: 25%;
 }
 .container .item3
 {
     top: 0;
-    left: 300px;
+    left: 50%;
 }
 .container .item4
 {
     top: 0;
-    left: 450px;
+    left: 75%;
 }
 .container .item5
 {
-    top: 75px;
-    left: 75px;
+    top: 12.5%;
+    left: 12.5%;
 }
 .container .item6
 {
-    top: 75px;
-    left: 225px;
+    top: 12.5%;
+    left: 37.5%;
 }
 .container .item7
 {
-    top: 75px;
-    left: 375px;
+    top: 12.5%;
+    left: 62.5%;
 }
 .container .item8
 {
-    top: 75px;
-    left: 525px;
+    top: 12.5%;
+    left: 87.5%;
 }
 .container .item9
 {
-    top: 150px;
+    top: 25%;
     left: 0;
 }
 .container .item10
 {
-    top: 150px;
-    left: 150px;
+    top: 25%;
+    left: 25%;
 }
 .container .item11
 {
-    top: 150px;
-    left: 300px;
+    top: 25%;
+    left: 50%;
 }
 .container .item12
 {
-    top: 150px;
-    left: 450px;
+    top: 25%;
+    left: 75%;
 }
 .container .item13
 {
-    top: 225px;
-    left: 75px;
+    top: 37.5%;
+    left: 12.5%;
 }
 .container .item14
 {
-    top: 225px;
-    left: 225px;
+    top: 37.5%;
+    left: 37.5%;
 }
 .container .item15
 {
-    top: 225px;
-    left: 375px;
+    top: 37.5%;
+    left: 62.5%;
 }
 .container .item16
 {
-    top: 225px;
-    left: 525px;
+    top: 37.5%;
+    left: 87.5%;
 }
 .container .item17
 {
-    top: 300px;
+    top: 50%;
     left: 0;
 }
 .container .item18
 {
-    top: 300px;
-    left: 150px;
+    top: 50%;
+    left: 25%;
 }
 .container .item19
 {
-    top: 300px;
-    left: 300px;
+    top: 50%;
+    left: 50%;
 }
 .container .item20
 {
-    top: 300px;
-    left: 450px;
+    top: 50%;
+    left: 75%;
 }
 .container .item21
 {
-    top: 375px;
-    left: 75px;
+    top: 62.5%;
+    left: 12.5%;
 }
 .container .item22
 {
-    top: 375px;
-    left: 225px;
+    top: 62.5%;
+    left: 37.5%;
 }
 .container .item23
 {
-    top: 375px;
-    left: 375px;
+    top: 62.5%;
+    left: 62.5%;
 }
 .container .item24
 {
-    top: 375px;
-    left: 525px;
+    top: 62.5%;
+    left: 87.5%;
 }
 .container .item25
 {
-    top: 450px;
+    top: 75%;
     left: 0;
 }
 .container .item26
 {
-    top: 450px;
-    left: 150px;
+    top: 75%;
+    left: 25%;
 }
 .container .item27
 {
-    top: 450px;
-    left: 300px;
+    top: 75%;
+    left: 50%;
 }
 .container .item28
 {
-    top: 450px;
-    left: 450px;
+    top: 75%;
+    left: 75%;
 }
 .container .item29
 {
-    top: 525px;
-    left: 75px;
+    top: 87.5%;
+    left: 12.5%;
 }
 .container .item30
 {
-    top: 525px;
-    left: 225px;
+    top: 87.5%;
+    left: 37.5%;
 }
 .container .item31
 {
-    top: 525px;
-    left: 375px;
+    top: 87.5%;
+    left: 62.5%;
 }
 .container .item32
 {
-    top: 525px;
-    left: 525px;
+    top: 87.5%;
+    left: 87.5%;
 }
