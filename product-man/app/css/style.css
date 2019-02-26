@@ -17,7 +17,13 @@ body
     font-family: 'Roboto', 'Raleway', sans-serif;
     font-size: 18px;
 
+    color: #303030; 
     background-color: #eee;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 .container
@@ -49,6 +55,17 @@ body
 
     text-transform: capitalize;
 }
+.container .header__link
+{
+    -webkit-transition: color .3s ease-out;
+            transition: color .3s ease-out; 
+
+    color: #303030;
+}
+.container .header__link:hover
+{
+    color: #e10011;
+}
 .container .header__navigation
 {
     display: -webkit-box;
@@ -75,6 +92,9 @@ body
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 .container .header .menu__item
 {
@@ -97,30 +117,10 @@ body
 {
     color: #e10011;
 }
-.container .header__btn
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
-    width: 25px;
-    height: 25px;
-
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
 .container .header .fas
 {
-    display: block;
-
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 
     -webkit-transition: color .3s ease-out;
             transition: color .3s ease-out; 
@@ -131,18 +131,20 @@ body
 {
     color: #e10011;
 }
+.container .slider
+{
+    margin-bottom: 100px;
+}
 .container .slider__box
 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
 }
 .container .slider__content
 {
     width: 605px;
+    margin-right: 100px; 
 
     text-align: right;
 }
@@ -171,4 +173,134 @@ body
     text-transform: capitalize;
 
     color: #e10011;
+}
+.container .slider__img
+{
+    display: block;
+}
+.container .main
+{
+    font-family: 'Raleway', sans-serif;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column;
+
+    margin-bottom: 100px;
+    padding-top: 100px; 
+
+    background-color: #fff;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.container .main__headline
+{
+    width: 575px;
+    margin-bottom: 75px; 
+
+    text-align: center;
+}
+.container .main__title
+{
+    font-size: 48px;
+    font-weight: 900;
+
+    margin-bottom: 10px; 
+
+    text-transform: capitalize;
+}
+.container .main__text
+{
+    font-weight: 400;
+}
+.container .main__gallery
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column; 
+
+    width: 1060px;
+    margin-bottom: 75px;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.container .main__row-top,
+.container .main__row-bottom
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.container .main__row-top
+{
+    margin-bottom: 35px;
+}
+.container .main .row-card
+{
+    width: 30%;
+    height: 380px;
+}
+.container .main .card1
+{
+    position: relative;
+    z-index: 0; 
+
+    -webkit-transition: background .3s ease-out;
+            transition: background .3s ease-out;
+
+    background: url('../img/smart_clock.png') no-repeat;
+}
+.container .main .card1:hover
+{
+    cursor: pointer; 
+
+    background: url('../img/m_design.png') no-repeat;
+}
+.container .main .card2
+{
+    background: url('../img/shoes.png') no-repeat;
+}
+.container .main .card3
+{
+    background: url('../img/tumblr.png') no-repeat;
+}
+.container .main .row-text
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+
+    text-transform: capitalize; 
+
+    color: #fff;
+}
+.container .news
+{
+    font-family: 'Raleway', sans-serif;
+
+    text-align: center;
+}
+.container .news__title
+{
+    font-size: 48px;
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+.container .news__text
+{
+    font-weight: 400;
 }
