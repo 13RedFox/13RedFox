@@ -306,6 +306,9 @@ li
 .container .main .product__link
 {
     display: block;
+
+    -webkit-transition: background-color .3s ease-out;
+            transition: background-color .3s ease-out;
 }
 .container .main .product__link:hover::before
 {
@@ -317,15 +320,19 @@ li
 
     content: '';
 
+    border-radius: 5px; 
     background-color: #e10011;
 }
 .container .main .product-info
 {
     position: absolute;
     top: 65%;
-    left: 5.5%; 
+    left: 5.5%;
 
     display: block;
+
+    width: 40%;
+    height: 20%;
 }
 .container .main .product__text
 {
@@ -333,14 +340,14 @@ li
     font-size: 30px;
     font-weight: 900;
 
-    width: 75%; 
-
-    text-transform: capitalize;
+    text-transform: capitalize; 
 
     color: #fff;
 }
 .container .main .product__strip
 {
+    display: block;
+
     padding-bottom: 5%; 
 
     background: url('../img/strip.png') no-repeat 0 100%;

@@ -218,11 +218,14 @@ li {
 
 		.product-item {
 			position: relative;
+
 			
 		}
 
 		.product__link {
 			display: block;
+			transition: background-color .3s ease-out;
+
 
 
 
@@ -234,6 +237,7 @@ li {
 				bottom: 0;
 				left: 0;
 				background-color: #e10011;
+				border-radius: 5px;
 			}
 		}
 
@@ -242,6 +246,8 @@ li {
 			display: block;
 			top: 65%;
 			left: 5.5%;
+			width: 40%;
+			height: 20%;
 		}
 
 		.product__text {
@@ -250,12 +256,13 @@ li {
 			font-weight: 900;
 			font-size: 30px;
 			text-transform: capitalize;
-			width: 75%;
 		}
 
 		.product__strip {
+			display: block;
 			background: url('../img/strip.png') no-repeat 0% 100%;
 			padding-bottom: 5%;
+			
 
 		}
 
