@@ -293,7 +293,10 @@ li
     display: -ms-flexbox;
     display: flex;
 
-    margin-bottom: 35px; 
+    margin-bottom: 35px;
+
+    -webkit-transition: background-color .3s ease-out;
+            transition: background-color .3s ease-out; 
 
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -306,9 +309,6 @@ li
 .container .main .product__link
 {
     display: block;
-
-    -webkit-transition: background-color .3s ease-out;
-            transition: background-color .3s ease-out;
 }
 .container .main .product__link:hover::before
 {
