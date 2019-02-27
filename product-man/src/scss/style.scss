@@ -205,7 +205,6 @@ a {
 
 		.product-item {
 			position: relative;
-			z-index: 1;
 		}
 
 		/* .product-item:hover {
@@ -217,7 +216,6 @@ a {
 			position: absolute;
 			top: 65%;
 			left: 5.5%;
-			z-index: 2;
 		}
 
 		.product__text {
@@ -227,6 +225,13 @@ a {
 			font-size: 30px;
 			text-transform: capitalize;
 			width: 225px;
+		}
+
+		.product__strip {
+			position: absolute;
+			background: url('../img/strip.png') no-repeat 0% 40%;
+			width: 100px;
+			height: 20px;
 		}
 
 		&__row-bottom {
