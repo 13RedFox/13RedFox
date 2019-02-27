@@ -14,6 +14,7 @@ body {
 	background-color: #eee;
 	color: #303030;
 }
+
 a {
 	text-decoration: none;
 }
@@ -27,7 +28,7 @@ a {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin-bottom: 105px;
+		margin-bottom: 80px;
 
 		&__logo {
 			font-family: 'Roboto', sans-serif;
@@ -77,6 +78,7 @@ a {
 		}
 		
 		&__btn {
+
 		}
 
 		.fas {
@@ -96,6 +98,7 @@ a {
 
 		&__box {
 			display: flex;
+			margin-bottom: 70px;
 		}
 
 		&__content{
@@ -116,6 +119,7 @@ a {
 			font-family: 'Roboto', sans-serif;
 			font-size: 24px;
 			font-weight: 300;
+			margin-bottom: 30px;
 		}
 
 		&__view-project {
@@ -123,35 +127,233 @@ a {
 			font-weight: 800;
 			font-size: 24px;
 			text-transform: capitalize;
-			color: #e10011;
+			transition: color .3s ease-out;
+
+			&:hover {
+				color: #e10011;
+			}
 		}
 
 		&__img {
-			display: block;
+
 		}
 
+		&__ellipse {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		&__pointer {
+			margin-right: 5px;
+			color: #000;
+			transition: color .3s ease-out;
+
+			&:hover {
+				color: #e10011;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	.main {
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		margin-bottom: 90px;
+
+		&__headline {
+			width: 570px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			font-family: 'Relaway', sans-serif;
+			margin-bottom: 75px;
+		}
+
+		&__title {
+			font-weight: 900;
+			font-size: 48px;
+			text-transform: capitalize;
+			margin-bottom: 10px;
+		}
+
+		&__img {
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			font-weight: 400;
+		}
+
+		&__gallery {
+			width: 1060px;
+		}
+
+		&__row-top {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 35px;
+		}
+
+		.product-item {
+			position: relative;
+			z-index: 1;
+		}
+
+		/* .product-item:hover {
+			background-color: #f00;
+			z-index: 3;			
+		} */
+
+		.product-info {
+			position: absolute;
+			top: 65%;
+			left: 5.5%;
+			z-index: 2;
+		}
+
+		.product__text {
+			color: #fff;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			font-size: 30px;
+			text-transform: capitalize;
+			width: 225px;
+		}
+
+		&__row-bottom {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 70px;
+		}
 	}
 
-	
 
 	.news {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		font-family: 'Raleway', sans-serif;
 		text-align: center;
+		margin-bottom: 110px;
+
+		&__info {
+			width: 580px;
+			margin-bottom: 35px;
+		}
 
 		&__title {
 			font-size: 48px;
 			font-weight: 900;
 			text-transform: uppercase;
+			margin-bottom: 15px;
 		}
 
 		&__text {
-			font-weight: 400;
 
 		}
 
 		&__form {
-
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 770px;
 		}
 
+		&__form-input {
+			display: flex;
+			height: 70px;
+			width: 450px;
+			align-items: center;
+			align-content: center;
+			background: url('../img/email.png') no-repeat 7% 50% #fff;
+			padding-left: 8%;
+			border: none;
+			border-radius: 50px 0 0 50px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 600;
+			font-style: italic;
+			color: #979797;
+		}
+
+		&__form-button {
+			display: flex;
+			border-radius: 0 50px 50px 0;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 900;
+			text-transform: uppercase;
+			color: #fff;
+			justify-content: center;
+		}
+
+		input[type="submit"] {
+			display: flex;
+			background-color: #F00;
+			outline: none;
+			border: none;
+			border-right: 50px 0px 0px 0;
+			height: 70px;
+			width: 210px;
+			cursor: pointer;
+		}
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&__social {
+			display: flex;
+			margin-bottom: 60px;
+		}
+
+		.scl {
+			margin-right: 20px;
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			transition: background-color .3s ease-out;
+
+			&:hover {
+				background-color: #e10011;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__social-fb {
+			background: url('../img/social_fb.png') no-repeat #fff 50%;
+		}
+
+		&__social-tw {
+			background: url('../img/social_tw.png') no-repeat #fff 50%;	
+		}
+
+		&__social-yb {
+			background: url('../img/social_yb.png') no-repeat #fff 50%;
+		}
+
+		&__social-me {
+			background: url('../img/social_me.png') no-repeat #fff 50%;
+		}
+
+		&__copy {
+			font-family: 'Raleway', sans-serif;
+			color: #aeaeae;
+		}
+
+		&__copy span {
+			color: #303030;
+		}
 	}
 }
