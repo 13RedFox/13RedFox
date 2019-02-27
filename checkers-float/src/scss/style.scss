@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	background-color: #95A5A6;
+}
+
+.board {
+	width: 600px;
+	height: 600px;
+	border: 10px solid #34495E;
+
+	&__square {
+		float: left;
+		width: 20%;
+		height: 20%;
+	}
+
+	.white {
+		background-color: #fff;
+	}
+
+	.black {
+		background-color: #000;
+	}
+
+}

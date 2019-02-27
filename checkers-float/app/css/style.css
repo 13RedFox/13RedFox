@@ -1,0 +1,45 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-top: 50px;
+
+    background-color: #95a5a6; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.board
+{
+    width: 600px;
+    height: 600px;
+
+    border: 10px solid #34495e;
+}
+.board__square
+{
+    float: left;
+
+    width: 20%;
+    height: 20%;
+}
+.board .white
+{
+    background-color: #fff;
+}
+.board .black
+{
+    background-color: #000;
+}
