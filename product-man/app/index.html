@@ -16,9 +16,9 @@
 	<div class="container">
 
 		<header class="header">
-			<h2 class="header__logo">
+			<h1 class="header__logo">
 				<a class="header__link" href="#">productMan</a>
-			</h2>
+			</h1>
 			<nav class="header__navigation">
 				<ul class="menu">
 					<li class="menu__item">
@@ -39,20 +39,30 @@
 					<p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 					<span class="slider__view-project">view project</span>
 				</div>
-				<img src="img/headphone.png" alt="headphone" class="slider__img">
+				<div class="slider__img">
+					<img src="img/headphone.png" alt="headphone">
+				</div>
+				
 			</div>
 			<div class="slider__ellipse">
-				<a href="#" class="slider__pointer">&#9679;</a>
-				<a href="#" class="slider__pointer">&#9679;</a>
-				<a href="#" class="slider__pointer">&#9679;</a>
+				<ul class="slider__list">
+					<li class="slider__item">
+						<a href="#" class="slider__link">&#9679;</a>
+					</li>
+					<li class="slider__item">
+						<a href="#" class="slider__link">&#9679;</a>
+					</li>
+					<li class="slider__item">
+						<a href="#" class="slider__link">&#9679;</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
 		<main class="main">
 
 			<div class="main__headline">
-				<h2 class="main__title" id="fp">featured product</h2>
-				<img src="img/underline.png" alt="" class="main__img">
+				<span id="fp" class="main__title">featured product</span>
 				<p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			</div>
 
@@ -60,22 +70,19 @@
 				<div class="main__row-top">
 
 					<div class="product-item">
-						<a href="#">
+						<a href="#" class="product__link">
 							<img src="img/speaker.png" alt="speaker">
 							<div class="product-info">
-								<p class="product__text">minimal product disign</p>
-								<span class="product__strip"></span>
+								<p class="product__text">minimal product <span class="product__strip">disign</span></p>
 							</div>
 						</a>
 					</div>
-					
 
 					<div class="product-item">
-						<a href="#">
+						<a href="#" class="product__link">
 							<img src="img/headphone_red.png" alt="headphone_red">
 							<div class="product-info">
-								<p class="product__text">minimal product disign</p>
-								<span class="product__strip"></span>
+								<p class="product__text">minimal product <span class="product__strip">disign</span></p>
 							</div>
 						</a>
 					</div>
@@ -85,31 +92,26 @@
 				<div class="main__row-bottom">
 					
 					<div class="product-item">
-						<a href="#">
+						<a href="#" class="product__link">
 							<img src="img/smart_clock.png" alt="smart_clock">
 							<div class="product-info">
-								<p class="product__text">minimal product disign</p>
-								<span class="product__strip"></span>
+								<p class="product__text">minimal product <span class="product__strip">disign</span></p>
 							</div>
 						</a>
 					</div>
-
 					<div class="product-item">
-						<a href="#">
+						<a href="#" class="product__link">
 							<img src="img/shoes.png" alt="shoes">
 							<div class="product-info">
-								<p class="product__text">minimal product disign</p>
-								<span class="product__strip"></span>
+								<p class="product__text">minimal product <span class="product__strip">disign</span></p>
 							</div>
 						</a>
 					</div>
-
 					<div class="product-item">
-						<a href="#">
+						<a href="#" class="product__link">
 							<img src="img/tumblr.png" alt="tumblr">
 							<div class="product-info">
-								<p class="product__text">minimal product disign</p>
-								<span class="product__strip"></span>
+								<p class="product__text">minimal product <span class="product__strip">disign</span></p>
 							</div>
 						</a>
 					</div>
@@ -132,10 +134,28 @@
 
 		<footer class="footer">
 			<div class="footer__social">
-				<a href="#" class="footer__social-fb scl"></a>
-				<a href="#" class="footer__social-tw scl"></a>
-				<a href="#" class="footer__social-yb scl"></a>
-				<a href="#" class="footer__social-me scl"></a>
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a href="#" class="footer__social-img">
+							<img src="img/social_fb.png" alt="fb">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__social-img">
+							<img src="img/social_tw.png" alt="tw">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__social-img">
+							<img src="img/social_yb.png" alt="yb">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__social-img">
+							<img src="img/social_me.png" alt="me">
+						</a>
+					</li>
+				</ul>
 			</div>
 			<p class="footer__copy">© Copyright <span>13RedFox</span> ltd 2019. All Rights Reserved.</p>
 		</footer>
