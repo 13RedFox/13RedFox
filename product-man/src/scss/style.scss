@@ -161,11 +161,14 @@ li {
 
 		&__link {
 			display: block;
-			color: #000;
-			transition: color .3s ease-out;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #000;
+			transition: background-color .3s ease-out;
 
 			&:hover {
-				color: #e10011;
+				background-color: #e10011;
 			}
 		}
 	}
@@ -230,7 +233,7 @@ li {
 			}
 		}
 
-		.product-info {
+		.product-info__large {
 			position: absolute;
 			display: block;
 			top: 65%;
@@ -239,7 +242,17 @@ li {
 			height: 20%;
 		}
 
+		.product-info {
+			position: absolute;
+			display: block;
+			top: 65%;
+			left: 5.5%;
+			width: 70%;
+			height: 20%;
+		}
+
 		.product__text {
+			
 			color: #fff;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 900;
@@ -248,12 +261,17 @@ li {
 		}
 
 		.product__strip {
-			display: block;
-			background: url('../img/strip.png') no-repeat 0% 100%;
-			padding-bottom: 5%;
-			
-
+			position: relative;
+			padding-bottom: 10px;
 		}
+
+		.product__strip::before {
+				content: "_______";
+				position: absolute;
+				top: 25%;
+				
+
+			}
 
 		&__row-bottom {
 			display: flex;
@@ -290,25 +308,24 @@ li {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			width: 70%;
+			width: 55%;
 			background-color: #fff;
 			border-radius: 50px 50px;
 		}
 
 		&__form-input {
 			display: flex;
-			width: 60%;
+			width: 70%;
 			align-items: center;
 			align-content: center;
 			background: url('../img/email.png') no-repeat 7% 50% #fff;
-			padding-left: 8%;
+			padding-left: 10%;
 			color: #979797;
 			border: none;
 			border-radius: 50px 0 0 50px;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 600;
 			font-style: italic;
-			
 			padding: 3% 0;
 		}
 
@@ -319,24 +336,18 @@ li {
 			font-weight: 900;
 			text-transform: uppercase;
 			background-color: transparent;
-			color: #979797;
+			color: #fff;
+			background-color: #e10011;
 			justify-content: center;
 			padding: 3% 0;
 		}
 
 		input[type="submit"] {
 			display: flex;
-			
 			outline: none;
 			border: none;
-			width: 40%;
+			width: 30%;
 			cursor: pointer;
-			transition: color, background-color  .3s ease-out;
-
-			&:hover {
-				color: #fff;
-				background-color: #e10011;
-			}
 		}
 	}
 

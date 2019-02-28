@@ -219,14 +219,18 @@ li
 {
     display: block;
 
-    -webkit-transition: color .3s ease-out;
-            transition: color .3s ease-out; 
+    width: 10px;
+    height: 10px;
 
-    color: #000;
+    -webkit-transition: background-color .3s ease-out;
+            transition: background-color .3s ease-out; 
+
+    border-radius: 50%;
+    background-color: #000;
 }
 .container .slider__link:hover
 {
-    color: #e10011;
+    background-color: #e10011;
 }
 .container .main
 {
@@ -323,7 +327,7 @@ li
     border-radius: 5px; 
     background-color: #e10011;
 }
-.container .main .product-info
+.container .main .product-info__large
 {
     position: absolute;
     top: 65%;
@@ -332,6 +336,17 @@ li
     display: block;
 
     width: 40%;
+    height: 20%;
+}
+.container .main .product-info
+{
+    position: absolute;
+    top: 65%;
+    left: 5.5%;
+
+    display: block;
+
+    width: 70%;
     height: 20%;
 }
 .container .main .product__text
@@ -346,11 +361,16 @@ li
 }
 .container .main .product__strip
 {
-    display: block;
+    position: relative;
 
-    padding-bottom: 5%; 
+    padding-bottom: 10px;
+}
+.container .main .product__strip::before
+{
+    position: absolute;
+    top: 25%; 
 
-    background: url('../img/strip.png') no-repeat 0 100%;
+    content: '_______';
 }
 .container .main__row-bottom
 {
@@ -402,7 +422,7 @@ li
     display: -ms-flexbox;
     display: flex;
 
-    width: 70%;
+    width: 55%;
 
     border-radius: 50px 50px; 
     background-color: #fff;
@@ -424,9 +444,9 @@ li
     display: -ms-flexbox;
     display: flex;
 
-    width: 60%;
+    width: 70%;
     padding: 3% 0; 
-    padding-left: 8%;
+    padding-left: 10%;
 
     color: #979797;
     border: none;
@@ -452,9 +472,10 @@ li
 
     text-transform: uppercase;
 
-    color: #979797;
+    color: #fff;
     border-radius: 0 50px 50px 0;
     background-color: transparent;
+    background-color: #e10011;
 
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -466,19 +487,12 @@ li
     display: -ms-flexbox;
     display: flex;
 
-    width: 40%;
+    width: 30%;
 
-    cursor: pointer;
-    -webkit-transition: color, background-color  .3s ease-out;
-            transition: color, background-color  .3s ease-out; 
+    cursor: pointer; 
 
     border: none;
     outline: none;
-}
-.container .news input[type='submit']:hover
-{
-    color: #fff;
-    background-color: #e10011;
 }
 .container .footer
 {
