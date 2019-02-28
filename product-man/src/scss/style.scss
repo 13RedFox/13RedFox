@@ -231,6 +231,10 @@ li {
 				background-color: #e10011;
 				border-radius: 5px;
 			}
+
+			&:hover .product__text {
+				display: block;
+			}
 		}
 
 		.product-info__large {
@@ -248,11 +252,11 @@ li {
 			top: 65%;
 			left: 5.5%;
 			width: 70%;
-			height: 20%;
+			height: 20%;			
 		}
 
 		.product__text {
-			
+			display: none;
 			color: #fff;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 900;
@@ -263,15 +267,8 @@ li {
 		.product__strip {
 			position: relative;
 			padding-bottom: 10px;
+			border-bottom: 4px solid;
 		}
-
-		.product__strip::before {
-				content: "_______";
-				position: absolute;
-				top: 25%;
-				
-
-			}
 
 		&__row-bottom {
 			display: flex;

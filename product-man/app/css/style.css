@@ -327,6 +327,10 @@ li
     border-radius: 5px; 
     background-color: #e10011;
 }
+.container .main .product__link:hover .product__text
+{
+    display: block;
+}
 .container .main .product-info__large
 {
     position: absolute;
@@ -355,6 +359,8 @@ li
     font-size: 30px;
     font-weight: 900;
 
+    display: none;
+
     text-transform: capitalize; 
 
     color: #fff;
@@ -364,13 +370,8 @@ li
     position: relative;
 
     padding-bottom: 10px;
-}
-.container .main .product__strip::before
-{
-    position: absolute;
-    top: 25%; 
 
-    content: '_______';
+    border-bottom: 4px solid;
 }
 .container .main__row-bottom
 {
