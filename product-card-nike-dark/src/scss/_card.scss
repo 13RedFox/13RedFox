@@ -1,0 +1,198 @@
+.container {
+	max-width: $container-width;
+	background: $bg;
+	border-radius: 7px;
+	box-shadow: 0px 0px 65px 0px rgba(0, 0, 0, 0.82);
+	width: 100%;
+	margin: auto;
+	padding: 25px;
+
+	.header__logo {
+		display: flex;
+		max-width: 65px;
+		/* padding: 25px 0 0 20px; */
+		margin-bottom: 20px;
+
+		&__link {
+			display: block;
+		}
+
+
+	}
+
+	.section {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 40px;
+
+		&__card {
+			width: 55%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		&__img {
+			display: flex;
+			width: 100%;
+		}
+
+		&__content {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__title {
+			font-family: 'museo_sans_rounded100';
+			font-weight: normal;
+			font-size: 1.5rem;
+			margin-bottom: 5px;
+		}
+
+		&__text {
+			font-family: 'museo_sans_rounded100';
+			font-size: 0.875rem;
+			opacity: .5;
+			margin-bottom: 20px;
+		}
+
+		&__list {
+			display: flex;
+			margin-bottom: 25px;
+		}
+
+		&__item {
+			list-style: none;
+			
+		}
+
+		&__link {
+			display: block;
+		}
+
+		.fas {
+			font-size: 12px;
+			color: #9da1a6;
+		}
+
+		.gold {
+			color: #f7bf16;
+		}
+		
+		&__form {
+			opacity: .5;
+		}
+		.row {
+			display: flex;
+			margin-bottom: 30px;
+			justify-content: space-between;
+			max-width: 150px;
+
+		}
+
+		.select_style {
+			position: relative;
+			display: flex;
+			width: 100%;
+			max-width: 70px;
+			border: 1px solid #4f5560;
+			z-index: 1;
+
+			&::after {
+				content: ">";
+				position: absolute;
+				top: 17%;
+				right: 17%;
+				z-index: 2;
+				transform: rotate(90deg);
+				cursor: pointer;
+
+			}
+		}
+
+		&__form-item {
+			background-color: transparent;
+			display: flex;
+			width: 100%;
+			max-width: 70px;
+			height: 30px;
+			-webkit-appearance: none;
+			padding-left: 10px;
+			color: $font-color;
+			background-color: $bg;
+			font-family: 'museo_sans_rounded100';
+			font-size: 0.875rem;
+			font-weight: normal;
+			border:none;
+			cursor: pointer;
+		}
+
+
+		&__btn {
+			display: flex;
+			max-width: 185px;
+			width: 100%;
+			height: 40px;
+			background-color: transparent;
+			color: $font-color;
+			justify-content: center;
+			border: 1px solid #4f5560;
+			cursor: pointer;
+		}
+
+		.section__btn:hover {
+			background-color: #202835;
+		}
+	}
+
+	.bullet {
+		display: flex;
+		width: 60%;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+
+		input[type="radio"] {
+			display: none;
+		}
+		
+		label {
+			display:inline-block;
+			background-color:#ddd;
+			border-radius: 50%;
+			height: 9px;
+			width: 9px;
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+		
+		input[type="radio"]:checked + label { 
+			background-color: #1f273f;
+			border: 1px solid #7e838b;
+			height: 12px;
+			width: 12px;
+		}
+		
+		.radio1 {
+			background-color: #000;
+		}
+		
+		.radio2 {
+			background-color: #fff;
+		}
+		
+		.radio3 {
+			background-color: #ed3333;
+		}
+		
+		.radio4 {
+			background-color: #29e3ea;
+		}
+	}
+}
+
+

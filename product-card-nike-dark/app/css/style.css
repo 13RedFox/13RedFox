@@ -2,13 +2,15 @@
 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face
 {
-    font-family: '$fonts';
+    font-family: 'museo_sans_rounded100';
 
-    src: url('../fonts/museosansrounded-100-webfont.woff') format('woff');
+    src: url('../fonts/museosansrounded.woff') format('woff');
 }
 
 html,
@@ -19,10 +21,19 @@ body
 
 body
 {
-    font-family: 'MuseoSansRoded', sans-serif; 
+    font-family: 'museo_sans_rounded100';
 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: #e1e1e1; 
     background: url('../img/bg.png') no-repeat;
     background-size: cover;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .container
@@ -30,4 +41,264 @@ body
     width: 100%;
     max-width: 685px;
     margin: auto;
+    padding: 25px; 
+
+    border-radius: 7px;
+    background: #111a28;
+    -webkit-box-shadow: 0 0 65px 0 rgba(0, 0, 0, .82);
+            box-shadow: 0 0 65px 0 rgba(0, 0, 0, .82);
+}
+.container .header__logo
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 65px;
+    /* padding: 25px 0 0 20px; */
+    margin-bottom: 20px;
+}
+.container .header__logo__link
+{
+    display: block;
+}
+.container .section
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 40px; 
+
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+.container .section__card
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 55%;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.container .section__img
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+}
+.container .section__content
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        flex-direction: column; 
+
+    width: 30%;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+}
+.container .section__title
+{
+    font-family: 'museo_sans_rounded100';
+    font-size: 1.5rem;
+    font-weight: normal;
+
+    margin-bottom: 5px;
+}
+.container .section__text
+{
+    font-family: 'museo_sans_rounded100';
+    font-size: .875rem;
+
+    margin-bottom: 20px; 
+
+    opacity: .5;
+}
+.container .section__list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-bottom: 25px;
+}
+.container .section__item
+{
+    list-style: none;
+}
+.container .section__link
+{
+    display: block;
+}
+.container .section .fas
+{
+    font-size: 12px;
+
+    color: #9da1a6;
+}
+.container .section .gold
+{
+    color: #f7bf16;
+}
+.container .section__form
+{
+    opacity: .5;
+}
+.container .section .row
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    max-width: 150px; 
+    margin-bottom: 30px;
+
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.container .section .select_style
+{
+    position: relative;
+    z-index: 1; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    max-width: 70px;
+
+    border: 1px solid #4f5560;
+}
+.container .section .select_style::after
+{
+    position: absolute;
+    z-index: 2;
+    top: 17%;
+    right: 17%;
+
+    content: '>';
+    cursor: pointer; 
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.container .section__form-item
+{
+    font-family: 'museo_sans_rounded100';
+    font-size: .875rem;
+    font-weight: normal;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    max-width: 70px;
+    height: 30px;
+    padding-left: 10px;
+
+    cursor: pointer; 
+
+    color: #e1e1e1;
+    border: none;
+    background-color: transparent;
+    background-color: #111a28;
+
+    -webkit-appearance: none;
+}
+.container .section__btn
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    max-width: 185px;
+    height: 40px;
+
+    cursor: pointer; 
+
+    color: #e1e1e1;
+    border: 1px solid #4f5560;
+    background-color: transparent;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.container .section .section__btn:hover
+{
+    background-color: #202835;
+}
+.container .bullet
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 60%;
+    margin-bottom: 20px; 
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.container .bullet input[type='radio']
+{
+    display: none;
+}
+.container .bullet label
+{
+    display: inline-block;
+
+    width: 9px;
+    height: 9px;
+    margin-right: 5px; 
+
+    border-radius: 50%;
+    background-color: #ddd;
+}
+.container .bullet label:last-child
+{
+    margin-right: 0;
+}
+.container .bullet input[type='radio']:checked + label
+{
+    width: 12px; 
+    height: 12px;
+
+    border: 1px solid #7e838b;
+    background-color: #1f273f;
+}
+.container .bullet .radio1
+{
+    background-color: #000;
+}
+.container .bullet .radio2
+{
+    background-color: #fff;
+}
+.container .bullet .radio3
+{
+    background-color: #ed3333;
+}
+.container .bullet .radio4
+{
+    background-color: #29e3ea;
 }

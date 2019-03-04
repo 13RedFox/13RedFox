@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>NikeSB</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,9 +14,88 @@
 	<div class="container">
 		<header class="header__logo">
 			<a href="#" class="header__link">
-				<img src="img/nike_sb.png" alt="nike_sb" class="header__img">
+				<img src="img/logo.png" alt="logo" class="header__img">
 			</a>
 		</header>
+
+		<section class="section">
+
+			<div class="section__card">
+				<img class="section__img" src="img/nike_sb.png" alt="nike_sb">
+			</div>
+
+			<div class="section__content">
+				<h2 class="section__title">Nike SB Stefan Janoski Max</h2>
+				<p class="section__text">Unisex Skateboarding Shoe</p>
+				<ul class="section__list">
+					<li class="section__item">
+						<a href="#" class="section__link">
+							<i class="fas fa-star gold"></i>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="#" class="section__link">
+							<i class="fas fa-star gold"></i>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="#" class="section__link">
+							<i class="fas fa-star gold"></i>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="#" class="section__link">
+							<i class="fas fa-star"></i>
+						</a>
+					</li>
+					<li class="section__item">
+						<a href="#" class="section__link">
+							<i class="fas fa-star"></i>
+						</a>
+					</li>
+				</ul>
+
+				<form action="#" class="section__form">
+
+					<div class="row">
+						<div class="select_style">
+							<select name="select" class="section__form-item">
+								<option value="Size">Size</option>
+								<option value="39">39</option>
+								<option value="40">40</option>
+								<option value="41">41</option>
+								<option value="42">42</option>
+								<option value="43">43</option>
+							</select>
+						</div>
+						<div class="select_style">
+							<select name="select" class="section__form-item">
+								<option value="Qty">Qty</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+							</select>
+						</div>
+					</div>
+					<input type="submit" value="Add to cart" class="section__btn">
+				</form>
+			</div>
+
+		</section>
+
+		<div class="bullet">
+			<input type="radio"  id="radio1" name="radios-one" value="all" checked>
+			<label for="radio1" class="radio1"></label>
+
+			<input type="radio"  id="radio2" name="radios-one" value="true">
+			<label for="radio2" class="radio2"></label>
+
+			<input type="radio"  id="radio3" name="radios-one" value="true">
+			<label for="radio3" class="radio3"></label>
+
+			<input type="radio"  id="radio4" name="radios-one" value="true">
+			<label for="radio4" class="radio4"></label> 
+		</div>
+
 	</div>
 	<script src="js/script.js"></script>
 </body>
