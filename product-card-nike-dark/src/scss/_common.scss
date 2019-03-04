@@ -1,0 +1,24 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+    font-family: '$fonts';
+    src: url('../fonts/museosansrounded-100-webfont.woff') format('woff');
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	background: url("../img/bg.png") no-repeat;
+	background-size: cover;
+	font-family: $fonts, sans-serif;
+}
+
+.container {
+	max-width: $container-width;
+	width: 100%;
+	margin: auto;
+}
