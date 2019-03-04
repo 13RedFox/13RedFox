@@ -6,46 +6,152 @@
 	<title>Foliac</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato| 700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<!-- top-line -->
+
+	<div class="row top-line">
+		<div class="container">
+			<div class="logo">
+				<a class="logo__link" href="/">
+					<img class="logo__img" src="img/logo.png" alt="logo">
+				</a>
+			</div>
+			<nav class="navigation">
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link">accueli</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">portfolio</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">about</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+	</div> <!-- end top-line -->
+
+
+	<!-- first-screen -->
 	<header class="first-screen">
 		<div class="container">
-
-			<div class="row">
-				<div class="logo">
-					<a class="logo__link" href="/">
-						<img class="logo__img" src="img/logo.png" alt="logo">
-					</a>
-				</div>	<!-- logo -->
-				<nav class="navigation">
-					<ul class="menu">
-						<li class="menu__item">
-							<a href="#" class="menu__link">accueli</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">portfolio</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">about</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">contact</a>
-						</li>
-					</ul>	<!-- menu -->
-				</nav>	<!-- navigation -->
-			</div>	<!-- row -->
 
 			<div class="row">
 				<h1 class="title">voici votre prochain portfolio</h1>
 				<h2 class="subtitle">un template psd simple et gratuit</h2>
 				<button class="btn">mes travaux</button>
-			</div>	<!-- row -->
+			</div>
 
-		</div>	<!-- container -->
-	</header>	<!-- first-screen -->
+		</div>
+	</header>
+
+	<!-- end first-screen -->
 	
-	<script src="js/script.js"></script>
+	<section class="portfolio">
+		<div class="container">
+			<div class="row">
+				<ul class="portfolio__tabs">
+					<li class="portfolio__tabs-item">
+						<a href="#" class="portfolio__tabs-link active">Tous les projets</a>
+					</li>
+					<li class="portfolio__tabs-item">
+						<a href="#" class="portfolio__tabs-link">Webdesign</a>
+					</li>
+					<li class="portfolio__tabs-item">
+						<a href="#" class="portfolio__tabs-link">UI/UX design</a>
+					</li>
+					<li class="portfolio__tabs-item">
+						<a href="#" class="portfolio__tabs-link">Illustration</a>
+					</li>
+					<li class="portfolio__tabs-item">
+						<a href="#" class="portfolio__tabs-link">Motion design</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<ul class="portfolio__list ">
+					<li class="portfolio__item small">
+						<a href="#" class="portfolio__link">
+							<img class="portfolio__img" src="img/item-1.jpg" alt="portfolio item">
+							<p class="portfolio__text">Lorem ipsum
+								<span>Lorem ipsum dolor</span>
+							</p>
+						</a>
+					</li>
+					<li class="portfolio__item">
+						<a href="#" class="portfolio__link">
+							<img class="portfolio__img" src="img/item-2.jpg" alt="portfolio item">
+							<p class="portfolio__text">Lorem ipsum
+								<span>Lorem ipsum dolor</span>
+							</p>
+						</a>
+					</li>
+					<li class="portfolio__item small">
+						<a href="#" class="portfolio__link">
+							<img class="portfolio__img" src="img/item-3.jpg" alt="portfolio item">
+							<p class="portfolio__text">Lorem ipsum
+								<span>Lorem ipsum dolor</span>
+							</p>
+						</a>
+					</li>
+					<li class="portfolio__item ">
+						<a href="#" class="portfolio__link">
+							<img class="portfolio__img" src="img/item-4.jpg" alt="portfolio item">
+							<p class="portfolio__text">Lorem ipsum
+								<span>Lorem ipsum dolor</span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+	</section> <!-- portfolio -->
+	
+	<section class="about">
+		<div class="container">
+			<div class="row">
+				<div class="about__block">
+					<h2 class="about__title">
+						Michel Dupont
+					</h2>
+					<p class="about__prof">Webdesigner, illustrateur, auteur</p>
+					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum ut nulla, vero quo illum aliquid eum iure debitis a non voluptate, ex impedit totam temporibus officiis voluptas. Hic beatae impedit temporibus, consequuntur minima iste error blanditiis nulla, vel fugit.</p>
+					<a class="about__btn" href="#contacts">me contacter</a>
+				</div>
+			</div>
+		</div>
+	</section>	<!-- about -->
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
+
+
+
+<!-- 
+
+	<i class="fas fa-pencil-alt"></i>
+	<i class="fas fa-user"></i>
+	<i class="far fa-envelope"></i>
+	<i class="fab fa-twitter"></i>
+
+-->

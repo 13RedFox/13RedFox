@@ -1,0 +1,136 @@
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    min-height: 100vh;
+}
+
+body
+{
+    font-family: sans-serif; 
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: #fff;
+    background-color: #000;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+form
+{
+    min-width: 30%; 
+    padding: 15px;
+
+    color: #000;
+    border-radius: 10px;
+    background: #fff;
+}
+form fieldset
+{
+    padding: 30px;
+}
+form fieldset *
+{
+    display: block;
+}
+form fieldset > *:not(label)
+{
+    border: 1px solid #000;
+}
+form fieldset legend
+{
+    min-width: 100%;
+
+    text-align: center; 
+
+    border: none;
+}
+form label
+{
+    margin-bottom: .5rem;
+}
+form [id]
+{
+    margin-bottom: 1rem;
+
+    border-radius: 5px;
+}
+form [type='submit']
+{
+    min-width: 50%;
+    padding: 15px 0; 
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border-color: #648880;
+    border-radius: 5px;
+    background-color: #648880;
+}
+form input,
+form select
+{
+    padding: 5px;
+}
+form input:not([type='submit']),
+form textarea
+{
+    width: 100%;
+}
+form input[type='radio']
+{
+    display: inline; 
+
+    width: initial;
+}
+form input[type='checkbox']
+{
+    opacity: 0;
+}
+form input[type='checkbox']:checked + .psevdo::before
+{
+    opacity: 1;
+}
+form .psevdo
+{
+    position: relative; 
+
+    display: block;
+
+    width: 40px;
+    height: 40px;
+
+    border: 5px solid green;
+    border-radius: 5px;
+    background-color: #f00;
+}
+form .psevdo::before
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    position: absolute;
+    left: 50%;
+
+    content: '1';
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+    opacity: 0; 
+    color: blue;
+}
