@@ -16,8 +16,6 @@
 		&__link {
 			display: block;
 		}
-
-
 	}
 
 	.section {
@@ -45,8 +43,9 @@
 
 		&__title {
 			font-family: 'museo_sans_rounded100';
-			font-weight: normal;
 			font-size: 1.5rem;
+			line-height: 1.083;
+			font-weight: 400;
 			margin-bottom: 5px;
 		}
 
@@ -87,7 +86,7 @@
 			display: flex;
 			margin-bottom: 30px;
 			justify-content: space-between;
-			max-width: 150px;
+			max-width: 142px;
 
 		}
 
@@ -96,7 +95,7 @@
 			display: flex;
 			width: 100%;
 			max-width: 70px;
-			border: 1px solid #4f5560;
+			border: 2px solid #4f5560;
 			z-index: 1;
 
 			&::after {
@@ -123,7 +122,6 @@
 			background-color: $bg;
 			font-family: 'museo_sans_rounded100';
 			font-size: 0.875rem;
-			font-weight: normal;
 			border:none;
 			cursor: pointer;
 		}
@@ -137,7 +135,7 @@
 			background-color: transparent;
 			color: $font-color;
 			justify-content: center;
-			border: 1px solid #4f5560;
+			border: 2px solid #4f5560;
 			cursor: pointer;
 		}
 
@@ -164,6 +162,7 @@
 			height: 9px;
 			width: 9px;
 			margin-right: 5px;
+			cursor: pointer;
 
 			&:last-child {
 				margin-right: 0;

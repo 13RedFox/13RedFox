@@ -113,7 +113,8 @@ body
 {
     font-family: 'museo_sans_rounded100';
     font-size: 1.5rem;
-    font-weight: normal;
+    font-weight: 400;
+    line-height: 1.083;
 
     margin-bottom: 5px;
 }
@@ -162,7 +163,7 @@ body
     display: -ms-flexbox;
     display: flex;
 
-    max-width: 150px; 
+    max-width: 142px; 
     margin-bottom: 30px;
 
     -webkit-box-pack: justify;
@@ -181,7 +182,7 @@ body
     width: 100%;
     max-width: 70px;
 
-    border: 1px solid #4f5560;
+    border: 2px solid #4f5560;
 }
 .container .section .select_style::after
 {
@@ -199,7 +200,6 @@ body
 {
     font-family: 'museo_sans_rounded100';
     font-size: .875rem;
-    font-weight: normal;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,7 +232,7 @@ body
     cursor: pointer; 
 
     color: #e1e1e1;
-    border: 1px solid #4f5560;
+    border: 2px solid #4f5560;
     background-color: transparent;
 
     -webkit-box-pack: center;
@@ -269,7 +269,9 @@ body
 
     width: 9px;
     height: 9px;
-    margin-right: 5px; 
+    margin-right: 5px;
+
+    cursor: pointer; 
 
     border-radius: 50%;
     background-color: #ddd;
