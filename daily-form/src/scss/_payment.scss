@@ -1,0 +1,171 @@
+.payment {
+	width: 100%;
+	max-width: 600px;
+	background: url('../img/payment_bg.png') no-repeat;
+	background-size: cover;
+	font-family: Montserrat;
+	margin: auto;
+	padding: 60px 0;
+
+	
+	&__header {
+		background: $pmnt_head;
+		width: 100%;
+		max-width: $payment_con;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+		padding: 20px;
+	}
+
+	.header__title {
+		margin: 0;
+		color:  $pmnt_title;
+		font-size: 0.875rem;
+		font-weight: 700;
+		text-transform: capitalize;
+	}
+
+	.header__text {
+		color:  $pmnt_txt;
+		font-size: 0.625rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	.text__price {
+		color:  $pmnt_price;
+		font-size: 2.25rem;
+		font-weight: 700;
+	}
+
+	&__form {
+		width: 100%;
+		max-width: $payment_con;
+		display: flex;
+		flex-direction: column;
+		background-color: $pmnt_bg;
+		margin: auto;
+		padding: 40px 20px 20px;
+	}
+
+	&__form hr {
+		width: 100%;
+		margin-bottom: 25px;
+		color: $grey;
+		opacity: .2;
+	}
+
+	&__text {
+		color: $grey;
+		font-size: 0.813rem;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+
+	&__text-in {
+		color: $form-txt;
+		margin-bottom: 20px;
+		
+	}
+
+	&__text-in,
+	&__cvv {
+		height: 40px;
+		padding-left: 10px;
+		font-size: 0.813rem;
+		font-weight: 700;
+		background-color: transparent;
+		border: 2px solid $border-form;
+	}
+
+	&__row {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+	
+	&__label {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			font-size: 16px;
+			top: 13px;
+			right: 10px;
+			background-color: transparent;
+			border: 8px solid transparent;
+			border-top: 8px solid $grey;
+			pointer-events: none;
+		}
+	}
+
+	.label-month {
+		width: 65%;
+	}
+	
+	.label-year {
+		width: 30%;
+	}
+
+	&__section-month,
+	&__section-year {
+		width: 100%;
+		padding: 8px;
+		background-color: transparent;
+		border: 2px solid $border-form;
+		color: $form-txt;
+		font-size: 0.813rem;
+		font-weight: 700;
+		-webkit-appearance: none;
+
+	}
+
+
+	&__row-cvv {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+
+	&__cvv {
+		width: 30%;
+		margin-right: 10px;
+	}
+
+	.cvv__text {
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: $grey;
+	}
+
+	.cvv__link {
+		text-decoration: none;
+		color: $grey;
+		border-bottom: 1px solid $grey;
+		
+	}
+
+	&__add {
+		background-color: $pmnt_add;
+		color: $white;
+		padding: 8px 0;
+		font-size: 1.25rem;
+		font-weight: 700;
+		border: none;
+		cursor: pointer;
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		text-align: center;
+		color: $grey;
+		font-size: 0.75rem;
+		font-weight: 700;
+	}
+}

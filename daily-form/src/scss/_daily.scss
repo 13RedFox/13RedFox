@@ -1,14 +1,13 @@
 .daily {
 	width: 100%;
-	max-width: 580px;
+	max-width: $daily_con;
 	padding: 60px;
-	margin: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: url("../img/daily_bg.png") no-repeat;
+	background: linear-gradient(to bottom left, #ff5db1, #ff512f);
 	background-size: cover;
-
+	margin: auto;
 
 	&__container {
 		width: 100%;
@@ -21,13 +20,13 @@
 
 	&__header {
 		margin-bottom: 35px;
-
 	}
 	
 	&__key {
 		display: flex;
 		margin-right: 10px;
 	}
+
 	&__title {
 		display: flex;
 		align-items: center;
@@ -43,6 +42,11 @@
 		color:  #797b7f;
 		line-height: 1.5;
 	}
+
+	&__link {
+		text-decoration: none;
+		color: $daily_span;
+	}
 	
 	&__form {
 		width: 100%;
@@ -50,7 +54,7 @@
 	}
 
 	&__log {
-		color:  #ea355a;
+		color: $daily_span;
 		text-transform: capitalize;
 	}
 
@@ -80,8 +84,8 @@
 
 		&-submit {
 			height: 50px;
-			background-color:  #ea355a;
-			box-shadow: 0px 3px 0px 0px #bd1962;
+			background-color: $daily_span;
+			box-shadow: 0px 3px 0px 0px $daily_shadow;
 			color: $white;
 			font-size: 1.125rem;
 			font-weight: 700;
@@ -89,8 +93,8 @@
 			transition: all .2s ease;
 
 			&:hover {
-				background-color: #bd1962;
-				box-shadow: 0px 3px 0px 0px #ea355a;
+				background-color: $daily_shadow;
+				box-shadow: 0px 3px 0px 0px $daily_span;
 			}
 		}
 	}
@@ -103,8 +107,6 @@
 		height: 40px;
 		font-size: 0.875rem;
 	}
-
-
 
 	&__footer {
 		

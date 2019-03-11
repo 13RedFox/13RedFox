@@ -21,22 +21,22 @@
 					<img class="daily__key" src="img/key.png" alt="key">
 				Create your free account</h1>
 				<p class="daily__text">Come and join our cool and amazing community, fill in your details
-					to get started. Already have an account? <span class="daily__log">log in.</span>
+					to get started. Already have an account? <span class="daily__log"><a class="daily__link" href="#">log in.</a></span>
 				</p>
 			</header>
 
-			<form action="#" method="get" class="daily__form" >
+			<form action="#" class="daily__form" >
 
 				<div class="row__top">
 
-					<input class="row__name" type="text" name="first-name" placeholder="First name">
-					<input class="row__name" type="text" name="last-name" placeholder="Last name">
+					<input class="row__name" type="text" name="first-name" placeholder="First name" required>
+					<input class="row__name" type="text" name="last-name" placeholder="Last name" required>
 
 				</div>
 				<div class="row__bottom">
-					<input class="row__bottom-email" type="email" name="email-adress" placeholder="Email address">
+					<input class="row__bottom-email" type="email" name="email-adress" placeholder="Email address" required>
 
-					<input class="row__bottom-pasword" type="password" name="password" placeholder="Password">
+					<input class="row__bottom-pasword" type="password" name="password" placeholder="Password" required>
 
 					<input class="row__bottom-submit" type="submit" value="Sing up for free">
 				</div>
@@ -58,6 +58,61 @@
 
 	<div class="payment">
 
+		<div class="payment__container">
+
+			<div class="payment__header">
+				<div class="header__info">
+					<h1 class="header__title">harold finch</h1>
+					<p class="header__text">your total</p>
+				</div>
+				<div class="header__price">
+					<p class="text__price">$88</p>
+				</div>
+			</div>
+
+			<form action="#" class="payment__form">
+				
+				<label class="payment__text" for="number">Credit card number</label>
+				<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="10" pattern="[0-9]{10}" required>
+
+				<label class="payment__text" for="date">Expiration date</label>
+
+				<div class="payment__row">
+					<label for="month" class="payment__label label-month">
+						<select class="payment__section-month" id="month" name="size">
+							<option value="Month">Month</option>
+							<option value="1">January</option>
+							<option value="2">February</option>
+							<option value="3">March</option>
+						</select>
+					</label>
+
+					<label for="year" class="payment__label label-year">
+						<select class="payment__section-year" id="year" name="size">
+							<option value="Year">Year</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+							<option value="2020">2020</option>
+						</select>
+					</label>
+				</div>
+
+				<label class="payment__text" for="cvv">CVV</label>
+
+				<div class="payment__row-cvv">
+					<input class="payment__cvv" id="cvv" type="tel" maxlength="4" pattern="[0-9]{4}" value required placeholder>
+					<p class="cvv__text">3 or 4 digits - <a href="#" class="cvv__link">view example</a></p>
+				</div>
+
+				<hr>
+
+				<input class="payment__add" type="submit" name="submit" value="Play">
+
+				<a class="payment__link" href="#">Cancel order</a>
+				
+			</form>
+
+		</div>
 	</div>
 
 	<script src="js/script.js"></script>
