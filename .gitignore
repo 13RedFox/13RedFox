@@ -1,0 +1,8 @@
+template
+node_modules
+package-lock.json
+*.psd
+*.zip
+scr/img/**/*.*
+scr/libs/**/*.*
+scr/fonts/**/*.*

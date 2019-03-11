@@ -5,12 +5,12 @@
 }
 
 @font-face {
-	font-family: $fat-font;
+	font-family: 'Big John';
 	src: url("../fonts/BigJohn.otf") format("opentype");
 }
 
 @font-face {
-	font-family: $slim-font;
+	font-family: 'Slim Joe';
 	src: url("../fonts/Slim+Joe.otf") format("opentype");
 }
 
@@ -24,11 +24,24 @@ body {
 }
 
 .container {
-	max-width: 1140px;
+	max-width: $container-width;
 	width: 100%;
 	margin: auto;
 }
 
 .row {
 	display: flex;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $placeholder-grey;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $placeholder-grey;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $placeholder-grey;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholder-grey;
 }

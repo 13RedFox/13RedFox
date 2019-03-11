@@ -58,8 +58,6 @@
 		&.small {
 			flex-basis: 40%;
 
-
-
 			& > * {
 				padding-top: 76.2%;
 			}
@@ -78,7 +76,7 @@
 		&::before {
 			content: "";
 			@include overlay;
-			background-color: rgba($green-color, .8);
+			background: rgba($green-color, .8);
 			z-index: 3;
 			opacity: 0;
 			transition: opacity .2s ease;
@@ -88,7 +86,9 @@
 			&::before,
 			[class*="__text"] {
 				opacity: 1;
-			}	
+			}
+
+
 		}
 	}
 
@@ -113,7 +113,7 @@
 		& > * {
 			font-size: 16px;
 			display: block;
-			margin-top: .5rem;
-		}
+			margin-top: .5rem
+		} 
 	}
 }

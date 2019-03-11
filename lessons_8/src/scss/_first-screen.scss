@@ -9,13 +9,12 @@
 	align-items: center;
 
 	.row {
-
-		@include row {
-			justify-content: space-between;
+		@include row {	
 			flex-direction: column;
 			align-items: center;
+			justify-content: space-between;
 			text-transform: uppercase;
-			
+
 			& > * {
 				text-align: center;
 			}
@@ -24,7 +23,6 @@
 
 	&::before {
 		content: "";
-		z-index: 1;
 		background-color: rgba($first-screen-bg, .7);
 		@include overlay;
 	}
@@ -34,8 +32,8 @@
 		z-index: 2;
 	}
 
-
-
+	
+	
 	.title {
 		font-family: $fat-font;
 		font-size: 46px;

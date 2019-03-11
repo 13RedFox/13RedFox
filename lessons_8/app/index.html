@@ -6,13 +6,13 @@
 	<title>Foliac</title>
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato| 700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- top-line -->
 
+	<!-- TOP LINE -->
 	<div class="row top-line">
 		<div class="container">
 			<div class="logo">
@@ -35,13 +35,14 @@
 						<a href="#" class="menu__link">contact</a>
 					</li>
 				</ul>
-			</nav>
+			</nav>	
 		</div>
+		
+	</div>
+	<!-- END TOP LINE -->
 
-	</div> <!-- end top-line -->
+	<!-- first screen -->
 
-
-	<!-- first-screen -->
 	<header class="first-screen">
 		<div class="container">
 
@@ -54,73 +55,68 @@
 		</div>
 	</header>
 
-	<!-- end first-screen -->
+	<!-- end first screen -->
 	
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
+
 			<div class="row">
 				<ul class="portfolio__tabs">
 					<li class="portfolio__tabs-item">
-						<a href="#" class="portfolio__tabs-link active">Tous les projets</a>
+						<a href="#" class="portfolio__tabs-link active">Item1</a>
 					</li>
 					<li class="portfolio__tabs-item">
-						<a href="#" class="portfolio__tabs-link">Webdesign</a>
+						<a href="#" class="portfolio__tabs-link">Item2</a>
 					</li>
 					<li class="portfolio__tabs-item">
-						<a href="#" class="portfolio__tabs-link">UI/UX design</a>
+						<a href="#" class="portfolio__tabs-link">Item3</a>
 					</li>
 					<li class="portfolio__tabs-item">
-						<a href="#" class="portfolio__tabs-link">Illustration</a>
+						<a href="#" class="portfolio__tabs-link">Item4</a>
 					</li>
 					<li class="portfolio__tabs-item">
-						<a href="#" class="portfolio__tabs-link">Motion design</a>
+						<a href="#" class="portfolio__tabs-link">Item5</a>
 					</li>
 				</ul>
 			</div>
 
 			<div class="row">
-				<ul class="portfolio__list ">
+				<ul class="portfolio__list">
 					<li class="portfolio__item small">
 						<a href="#" class="portfolio__link">
-							<img class="portfolio__img" src="img/item-1.jpg" alt="portfolio item">
-							<p class="portfolio__text">Lorem ipsum
-								<span>Lorem ipsum dolor</span>
+							<img class="portfolio__img" src="img/item-1.jpg" alt="portfolio item" >
+							<p class="portfolio__text">Lorem ipsum<span>Lorem ipsum dolor</span>
 							</p>
 						</a>
 					</li>
 					<li class="portfolio__item">
 						<a href="#" class="portfolio__link">
-							<img class="portfolio__img" src="img/item-2.jpg" alt="portfolio item">
-							<p class="portfolio__text">Lorem ipsum
-								<span>Lorem ipsum dolor</span>
+							<img class="portfolio__img" src="img/item-2.jpg" alt="portfolio item" >
+							<p class="portfolio__text">Lorem ipsum<span>Lorem ipsum dolor.</span>
 							</p>
 						</a>
 					</li>
 					<li class="portfolio__item small">
 						<a href="#" class="portfolio__link">
-							<img class="portfolio__img" src="img/item-3.jpg" alt="portfolio item">
-							<p class="portfolio__text">Lorem ipsum
-								<span>Lorem ipsum dolor</span>
+							<img class="portfolio__img" src="img/item-3.jpg" alt="portfolio item" >
+							<p class="portfolio__text">Lorem ipsum<span>Lorem ipsum dolor.</span>
 							</p>
 						</a>
 					</li>
-					<li class="portfolio__item ">
+					<li class="portfolio__item">
 						<a href="#" class="portfolio__link">
-							<img class="portfolio__img" src="img/item-4.jpg" alt="portfolio item">
-							<p class="portfolio__text">Lorem ipsum
-								<span>Lorem ipsum dolor</span>
+							<img class="portfolio__img" src="img/item-4.jpg" alt="portfolio item" >
+							<p class="portfolio__text">Lorem ipsum<span>Lorem ipsum dolor.</span>
 							</p>
 						</a>
 					</li>
 				</ul>
 			</div>
 
+		</div>	
+	</section>
 
-
-		</div>
-	</section> <!-- portfolio -->
-	
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="about__block">
@@ -128,30 +124,75 @@
 						Michel Dupont
 					</h2>
 					<p class="about__prof">Webdesigner, illustrateur, auteur</p>
-					<p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis dolorum ut nulla, vero quo illum aliquid eum iure debitis a non voluptate, ex impedit totam temporibus officiis voluptas. Hic beatae impedit temporibus, consequuntur minima iste error blanditiis nulla, vel fugit.</p>
+					<p class="about__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ab, perferendis earum accusamus, sunt error! Asperiores tenetur nobis commodi aliquam consequatur inventore eveniet. Labore, odit similique voluptas non. Sequi rem distinctio, voluptatibus consectetur assumenda cumque. Officia possimus, voluptatum dolorem quo.
+					</p>
 					<a class="about__btn" href="#contacts">me contacter</a>
 				</div>
 			</div>
 		</div>
-	</section>	<!-- about -->
-	
+	</section>
+
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="contacts__title">Me contacter</h2>
+
+			<form action="" class="contacts__form">
+				<div class="input-row">
+					<label for="1" class="contacts__label">
+						<input type="text" id="1" class="contacts__input" placeholder="Votre nom">
+					</label>
+					<label for="2" class="contacts__label">
+						<input type="text" id="2" class="contacts__input" placeholder="Votre email">
+					</label>
+				</div>
+
+				<label for="3" class="contacts__textarea-label">
+					<textarea class="contacts__textarea" name="" id="3"placeholder="Votre message"></textarea>
+				</label>
+
+				<input type="submit" value="Envoyer">
+			</form>
+		</div>
+	</section>
+
+
+
+
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				
+				<p class="footer__copyrights">
+					Copyright © 2015 by beneggen -&nbsp;
+					<a href="#">www.beneggen.fr</a>
+				</p>
+
+				<nav class="social">
+					<ul class="social__menu">
+						<li class="social__item">
+							<a href="#" class="social__link twitter" target="_blank"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link linkedin" target="_blank"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link dribbble" target="_blank"></a>
+						</li>
+						<li class="social__item">
+							<a href="#" class="social__link behance" target="_blank"></a>
+						</li>
+					</ul>
+				</nav>
+
 			</div>
 		</div>
 	</footer>
+
 </body>
 </html>
 
 
-
-<!-- 
-
-	<i class="fas fa-pencil-alt"></i>
-	<i class="fas fa-user"></i>
-	<i class="far fa-envelope"></i>
-	<i class="fab fa-twitter"></i>
-
+<!--
+<i class="fas fa-user"></i>
+<i class="fas fa-envelope"></i>
 -->
