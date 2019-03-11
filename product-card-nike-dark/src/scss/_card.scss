@@ -100,12 +100,13 @@
 		&__form {
 			opacity: .5;
 		}
+
 		.row {
 			display: flex;
 			margin-bottom: 30px;
 			justify-content: space-between;
+			width: 100%;
 			max-width: 142px;
-
 		}
 
 		.select_style {
@@ -114,17 +115,23 @@
 			width: 100%;
 			max-width: 70px;
 			border: 2px solid #4f5560;
-			z-index: 1;
+			
 
 			&::after {
-				content: ">";
+				content: "";
 				position: absolute;
-				top: 17%;
-				right: 17%;
-				z-index: 2;
-				transform: rotate(90deg);
-				cursor: pointer;
-
+				display: block;
+				font-size: 16px;
+				width: 8px;
+				height: 8px;
+				top: 6px;
+				right: 8px;
+				color: $font-color;
+				border: 1px solid $font-color;
+				border-top-color: transparent;
+				border-left-color: transparent;
+				transform: rotate(45deg);
+				pointer-events: none;
 			}
 		}
 
