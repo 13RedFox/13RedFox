@@ -19,7 +19,7 @@
 		padding: 20px;
 	}
 
-	.header__title {
+	.header__text {
 		margin: 0;
 		color:  $pmnt_title;
 		font-size: 0.875rem;
@@ -27,7 +27,7 @@
 		text-transform: capitalize;
 	}
 
-	.header__text {
+	.header__subtext {
 		color:  $pmnt_txt;
 		font-size: 0.625rem;
 		font-weight: 400;
@@ -163,7 +163,9 @@
 	}
 
 	&__link {
-		text-align: center;
+		display: block;
+		width: 26%;
+		margin: auto;
 		color: $grey;
 		font-size: 0.75rem;
 		font-weight: 700;

@@ -85,10 +85,6 @@ body {
 	width: 100%;
 	margin-bottom: 20px;
 }
-.daily__log {
-	color: #ea355a;
-	text-transform: capitalize;
-}
 .daily .row__top {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -176,14 +172,14 @@ body {
 	margin: auto;
 	padding: 20px;
 }
-.payment .header__title {
+.payment .header__text {
 	margin: 0;
 	color: #6e7f7b;
 	font-size: .875rem;
 	font-weight: 700;
 	text-transform: capitalize;
 }
-.payment .header__text {
+.payment .header__subtext {
 	color: #a6a28d;
 	font-size: .625rem;
 	font-weight: 400;
@@ -312,7 +308,9 @@ body {
 	margin-bottom: 20px;
 }
 .payment__link {
-	text-align: center;
+	display: block;
+	width: 26%;
+	margin: auto;
 	color: #9eabad;
 	font-size: .75rem;
 	font-weight: 700;

@@ -21,8 +21,7 @@
 					<img class="daily__key" src="img/key.png" alt="key">
 				Create your free account</h1>
 				<p class="daily__text">Come and join our cool and amazing community, fill in your details
-					to get started. Already have an account? <span class="daily__log"><a class="daily__link" href="#">log in.</a></span>
-				</p>
+					to get started. Already have an account? <a class="daily__link" href="#">Log in.</a></p>
 			</header>
 
 			<form action="#" class="daily__form" >
@@ -45,7 +44,7 @@
 
 			<footer class="daily__footer">
 
-				<p class="daily__footer-text">By clicking on "Sing up for free", you agree to the <span class="daily__log">Terms of Service</span> and the <span class="daily__log">Privacy Policy</span></p>
+				<p class="daily__footer-text">By clicking on "Sing up for free", you agree to the <a href="#" class="daily__link"> Terms of Service </a> and the <a href="#" class="daily__link">Privacy Policy</a></p>
 
 			</footer>
 
@@ -58,29 +57,27 @@
 
 	<div class="payment">
 
-		<div class="payment__container">
-
 			<div class="payment__header">
 				<div class="header__info">
-					<h1 class="header__title">harold finch</h1>
-					<p class="header__text">your total</p>
+					<p class="header__text">harold finch</p>
+					<span class="header__subtext">your total</span>
 				</div>
 				<div class="header__price">
-					<p class="text__price">$88</p>
+					<span class="text__price">$88</span>
 				</div>
 			</div>
 
 			<form action="#" class="payment__form">
 				
 				<label class="payment__text" for="number">Credit card number</label>
-				<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="10" pattern="[0-9]{10}" required>
+				<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="16" pattern="[0-9]{16}" required>
 
-				<label class="payment__text" for="date">Expiration date</label>
+				<label class="payment__text" for="month">Expiration date</label>
 
 				<div class="payment__row">
 					<label for="month" class="payment__label label-month">
-						<select class="payment__section-month" id="month" name="size">
-							<option value="Month">Month</option>
+						<select class="payment__section-month" id="month" name="size" required>
+							<option value hidden>Month</option>
 							<option value="1">January</option>
 							<option value="2">February</option>
 							<option value="3">March</option>
@@ -88,8 +85,8 @@
 					</label>
 
 					<label for="year" class="payment__label label-year">
-						<select class="payment__section-year" id="year" name="size">
-							<option value="Year">Year</option>
+						<select class="payment__section-year" id="year" name="size" required>
+							<option value hidden>Year</option>
 							<option value="2018">2018</option>
 							<option value="2019">2019</option>
 							<option value="2020">2020</option>
@@ -112,7 +109,6 @@
 				
 			</form>
 
-		</div>
 	</div>
 
 	<script src="js/script.js"></script>
