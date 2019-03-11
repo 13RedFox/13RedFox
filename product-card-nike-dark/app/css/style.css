@@ -28,7 +28,7 @@ body {
 	color: #e1e1e1;
 }
 
-.container {
+.product__card {
 	max-width: 685px;
 	background: #111a28;
 	border-radius: 7px;
@@ -38,23 +38,23 @@ body {
 	margin: auto;
 	padding: 25px;
 }
-.container .header__logo {
+.product__card .header__logo {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 20px;
 }
-.container .header__logo__link {
+.product__card .header__logo__link {
 	display: block;
 }
-.container .section {
+.product__card .section {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
-.container .section__card {
+.product__card .section__card {
 	width: 55%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -68,17 +68,16 @@ body {
 	align-items: center;
 	padding-top: 7%;
 }
-.container .section .section__card-img {
+.product__card .section .section__card-img {
 	min-width: 330px;
 	margin-bottom: 40px;
 }
-.container .section .section__card-link {
+.product__card .section .section__card-link {
 	position: relative;
 	display: block;
 	padding-top: 55%;
 }
-.container .section .section__img {
-	content: "";
+.product__card .section .section__img {
 	position: absolute;
 	display: block;
 	top: 0;
@@ -90,7 +89,7 @@ body {
 	width: 100%;
 	height: 100%;
 }
-.container .section__content {
+.product__card .section__content {
 	width: 30%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -100,53 +99,49 @@ body {
 	-ms-flex-direction: column;
 	    flex-direction: column;
 }
-.container .section__title {
+.product__card .section__title {
 	font-family: "museo_sans_rounded100";
 	font-size: 1.5rem;
 	line-height: 1.083;
 	font-weight: 400;
 	margin-bottom: 5px;
 }
-.container .section__text {
+.product__card .section__text {
 	font-family: "museo_sans_rounded100";
 	font-size: .875rem;
 	opacity: .5;
 	margin-bottom: 20px;
 }
-.container .section__list {
+.product__card .section__list {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 25px;
 }
-.container .section__item {
+.product__card .section__item {
 	list-style: none;
 }
-.container .section__link {
+.product__card .section__link {
 	display: block;
 }
-.container .section .fas {
+.product__card .section .fas {
 	font-size: 12px;
 	color: #9da1a6;
 }
-.container .section .gold {
+.product__card .section .gold {
 	color: #f7bf16;
 }
-.container .section__form {
+.product__card .section__form {
 	opacity: .5;
 }
-.container .section .row {
+.product__card .section .row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 30px;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	width: 100%;
-	max-width: 142px;
 }
-.container .section .select_style {
+.product__card .section .select_style {
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -155,7 +150,7 @@ body {
 	max-width: 70px;
 	border: 2px solid #4f5560;
 }
-.container .section .select_style::after {
+.product__card .section .select_style::after {
 	content: "";
 	position: absolute;
 	display: block;
@@ -172,7 +167,10 @@ body {
 	        transform: rotate(45deg);
 	pointer-events: none;
 }
-.container .section__form-item {
+.product__card .section .size-form {
+	margin-right: 3px;
+}
+.product__card .section__form-item {
 	background-color: transparent;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -189,7 +187,7 @@ body {
 	border: none;
 	cursor: pointer;
 }
-.container .section__btn {
+.product__card .section__btn {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -203,14 +201,13 @@ body {
 	border: 2px solid #4f5560;
 	cursor: pointer;
 }
-.container .section .section__btn:hover {
+.product__card .section .section__btn:hover {
 	background-color: #202835;
 }
-.container .bullet {
+.product__card .bullet {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 60%;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
@@ -218,10 +215,10 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 }
-.container .bullet input[type="radio"] {
+.product__card .bullet input[type="radio"] {
 	display: none;
 }
-.container .bullet label {
+.product__card .bullet label {
 	display: inline-block;
 	background-color: #ddd;
 	border-radius: 50%;
@@ -230,24 +227,24 @@ body {
 	margin-right: 5px;
 	cursor: pointer;
 }
-.container .bullet label:last-child {
+.product__card .bullet label:last-child {
 	margin-right: 0;
 }
-.container .bullet input[type="radio"]:checked + label {
+.product__card .bullet input[type="radio"]:checked + label {
 	background-color: #1f273f;
 	border: 1px solid #7e838b;
 	height: 12px;
 	width: 12px;
 }
-.container .bullet .radio1 {
+.product__card .bullet .radio1 {
 	background-color: #000;
 }
-.container .bullet .radio2 {
+.product__card .bullet .radio2 {
 	background-color: #fff;
 }
-.container .bullet .radio3 {
+.product__card .bullet .radio3 {
 	background-color: #ed3333;
 }
-.container .bullet .radio4 {
+.product__card .bullet .radio4 {
 	background-color: #29e3ea;
 }

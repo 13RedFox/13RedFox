@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="product__card">
 		<header class="header__logo">
 			<a href="#" class="header__link">
 				<img src="img/logo.png" alt="logo" class="header__img">
@@ -26,7 +26,7 @@
 					<img class="section__img" src="img/nike_sb.png" alt="nike_sb">
 					</a>
 				</div>
-				<div class="bullet">
+				<form class="bullet">
 					<input type="radio"  id="radio1" name="radios-one" value="all" checked>
 					<label for="radio1" class="radio1"></label>
 
@@ -38,7 +38,7 @@
 
 					<input type="radio"  id="radio4" name="radios-one" value="true">
 					<label for="radio4" class="radio4"></label> 
-				</div>
+				</form>
 			</div>
 
 			<div class="section__content">
@@ -75,23 +75,23 @@
 				<form action="#" class="section__form">
 
 					<div class="row">
-						<div class="select_style">
+						<label class="select_style size-form">
 							<select name="select" class="section__form-item">
-								<option value="Size">Size</option>
-								<option value="39">39</option>
-								<option value="40">40</option>
-								<option value="41">41</option>
-								<option value="42">42</option>
-								<option value="43">43</option>
+								<option value="0">Size</option>
+								<option value="1">39</option>
+								<option value="2">40</option>
+								<option value="3">41</option>
+								<option value="4">42</option>
+								<option value="5">43</option>
 							</select>
-						</div>
-						<div class="select_style">
+						</label>
+						<label class="select_style">
 							<select name="select" class="section__form-item">
-								<option value="Qty">Qty</option>
+								<option value="0">Qty</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
 							</select>
-						</div>
+						</label>
 					</div>
 					<input type="submit" value="Add to cart" class="section__btn">
 				</form>

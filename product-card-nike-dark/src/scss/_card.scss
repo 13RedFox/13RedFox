@@ -1,4 +1,4 @@
-.container {
+.product__card {
 	max-width: $container-width;
 	background: $bg;
 	border-radius: 7px;
@@ -41,7 +41,6 @@
 		}
 
 		.section__img {
-			content: "";
 			position: absolute;
 			display: block;
 			top: 0;
@@ -104,9 +103,7 @@
 		.row {
 			display: flex;
 			margin-bottom: 30px;
-			justify-content: space-between;
 			width: 100%;
-			max-width: 142px;
 		}
 
 		.select_style {
@@ -133,6 +130,10 @@
 				transform: rotate(45deg);
 				pointer-events: none;
 			}
+		}
+
+		.size-form {
+			margin-right: 3px;
 		}
 
 		&__form-item {
@@ -170,7 +171,6 @@
 
 	.bullet {
 		display: flex;
-		width: 60%;
 		justify-content: center;
 		align-items: center;
 
