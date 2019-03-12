@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="radio"]:checked + label {
+		background-color: $white;
+		border: 1px solid $yellow;
+	}
+
+	label {
+		display:inline-block;
+		background-color: $yellow;
+		border-radius: 50%;
+		height: 10px;
+		width: 10px;
+		margin-right: 5px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

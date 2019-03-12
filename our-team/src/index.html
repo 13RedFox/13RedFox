@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Raleway:400,500|Roboto:900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,36 +23,75 @@
 
 		<section class="section">
 
+			<a href="#" class="section__left-btn"></a>
+
 			<div class="section__left">
-				<img class="section__img" src="img/boy.png" alt="boy">
+				<div class="section__photo">
+					<div class="section__profile">
+						<img class="section__img" src="img/boy.png" alt="boy">
+					</div>
+				</div>
 			</div>	<!-- section__left -->
 
 			<div class="section__right">
 
 				<h2 class="section__title">sahariar kabir</h2>
-				<span class="section__line"></span>
-				<p class="section__text">frontend developer</p>
+				<span class="section__line-first"></span>
+				<p class="section__text-prof">frontend developer</p>
 
 				<nav class="social">
-					<ul class="social_menu">
+					<ul class="social__menu">
 						<li class="social__item">
-							<a href="#" class="social__link facebook" target="_blank"></a>
+							<a href="#" class="social__link facebook" target="_blank">
+								<i class="fab fa-facebook-f"></i>
+							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link twitter" target="_blank"></a>
+							<a href="#" class="social__link twitter" target="_blank">
+								<i class="fab fa-twitter"></i>
+							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link google" target="_blank"></a>
+							<a href="#" class="social__link google" target="_blank">
+								<i class="fab fa-google-plus-g"></i>
+							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link linkedin" target="_blank"></a>
+							<a href="#" class="social__link linkedin" target="_blank">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
 						</li>
 					</ul>
-				</nav>
+				</nav>	<!-- social -->
+
+				<p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.</p>
+
+				<span class="section__line-second"></span>
+
+				<a href="#" class="section__btn">view profile</a>
 
 			</div>	<!-- section__right -->
+			
+			<a href="#" class="section__right-btn"></a>
 
 		</section>	<!-- section -->
+
+		<footer class="footer">
+
+			<form action="#" class="footer__bullet" id="section__form">
+
+				<input type="radio" form="section__form"  id="radio1" name="radios-one" value="all" checked>
+				<label for="radio1" class="radio1"></label>
+
+				<input type="radio" form="section__form"  id="radio2" name="radios-one" value="true">
+				<label for="radio2" class="radio2"></label>
+
+				<input type="radio" form="section__form"  id="radio3" name="radios-one" value="true">
+				<label for="radio3" class="radio3"></label>
+
+			</form>	<!-- bullet -->
+
+		</footer>	<!-- footer -->
 
 	</div> <!-- wrapper -->
 

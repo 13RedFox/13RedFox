@@ -1,18 +1,132 @@
 .section {
 	width: 100%;
 	display: flex;
+	margin-bottom: 40px;
 
-	&__left {
-		width: 50%;
+	&__left-btn,
+	&__right-btn {
+		position: relative;
+		display: block;
+		min-width: 25px;
+		transition: all .3s ease;
+
+		&:hover {
+			background-color: $yellow;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			border: 1px solid $yellow;
+			transform: rotate(45deg);
+		}
+
+		&:hover::before {
+			border-color: $white;
+		}
+	}
+
+	&__left-btn::before {
+		border-right: none;
+		border-top: none;
+		left: 10px;
+	}
+
+	&__right-btn::before {
+		border-left: none;
+		border-bottom: none;
+	}
+
+	&__left,
+	&__right {
+		display: flex;
+		width: 48%;
+		padding: 90px 0 70px 0;
+	}
+
+	&__left {	
+		justify-content: center;
 		border-right: 1px solid $yellow;
 	}
 
-	&__right{
-		width: 50%;
+	&__photo {
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border: 1px solid $yellow;
+		}
+
+		&::before {
+			top: -20px;
+			left: -20px;
+			border-right: none;
+			border-bottom: none;
+		}
+
+		&::after {
+			top: -20px;
+			right: -20px;
+			border-left: none;
+			border-bottom: none;
+		}
+	}
+
+	&__profile {
 		display: flex;
+		min-width: 390px;
+		position: relative;
+		border: 1px solid $yellow;
+		padding-top: 99%;
+
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border: 1px solid $yellow;
+		}
+
+		&::before {
+			bottom: -20px;
+			left: -20px;
+			border-top: none;
+			border-right: none;
+		}
+
+		&::after {
+			bottom: -20px;
+			right: -20px;
+			border-top: none;
+			border-left: none;
+		}
+	}
+
+	&__img {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__right{
 		flex-direction: column;
 		align-items: center;
-		padding-top: 90px;
 	}
 
 	&__title {
@@ -24,14 +138,13 @@
 		margin-bottom: 30px;
 	}
 
-	&__line {
-		display: flex;
+	&__line-first {
 		min-width: 100px;
 		border-bottom: 1px solid $yellow;
 		margin-bottom: 30px;
 	}
 
-	&__text {
+	&__text-prof {
 		font-weight: 400;
 		font-size: 1.5rem;
 		color: $dark-grey;
@@ -40,22 +153,96 @@
 	}
 
 	.social	{
+		margin-bottom: 30px;
 
 		&__menu {
-
+			display: flex;
 		}
 
 		&__item {
 			list-style: none;
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 
 		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 30px;
+			height: 30px;
+			border: 2px solid $light-grey;
+			border-radius: 50%;
+			text-decoration: none;
+			color: $light-grey;
+			transition: all .2s ease;
 
+			&:hover {
+				color: $yellow;
+				border-color: $yellow;
+			}
 		}
-
 	}
 
-	
+	&__text {
+		max-width: 420px;
+		font-weight: 500;
+		font-size: 0.875rem;
+		line-height: 1.714;
+		color: $grey;
+		text-align: center;
+		margin-bottom: 10px;
+	}
 
+	&__line-second {
+		display: flex;
+		position: relative;
+		min-width: 20px;
+		border: 2px solid $yellow;
+		margin-bottom: 25px;
 
+		&::before,
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			min-width: 10px;
+			border: 2px solid $yellow;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		&::before {
+			right: 25px;
+		}
+
+		&::after {
+			left: 25px;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: $add_font;
+		font-weight: 700;
+		font-size: 0.875rem;
+		color: $dark-grey;
+		border: 1px solid $yellow;
+		height: 25px;
+		min-width: 120px;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 5px 0;
+		transition: all .3s ease;
+
+		&:hover {
+			color: $white;
+			background-color: $yellow;
+		}
+	}
 }
