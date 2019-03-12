@@ -1,0 +1,136 @@
+/*
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	padding: 100px 0;
+}
+
+.header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.header__text {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: #898f8f;
+	margin-bottom: 10px;
+}
+.header__title {
+	font-family: "Roboto", sans-serif;
+	font-size: 3.75rem;
+	font-weight: 900;
+	color: #fc0;
+	margin: 0 0 40px;
+}
+.header__icon {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background: url("../img/bonfire_icon.png") no-repeat center;
+}
+.header__icon::before,
+.header__icon::after {
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #fc0;
+	display: block;
+	min-width: 210px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+.header__icon::before {
+	left: 30px;
+}
+.header__icon::after {
+	right: 30px;
+}
+
+.section {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.section__left {
+	width: 50%;
+	border-right: 1px solid #fc0;
+}
+.section__right {
+	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 90px;
+}
+.section__title {
+	font-family: "Roboto";
+	font-weight: 900;
+	font-size: 2.25rem;
+	color: #666;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.section__line {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-width: 100px;
+	border-bottom: 1px solid #fc0;
+	margin-bottom: 30px;
+}
+.section__text {
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #666;
+	text-transform: capitalize;
+	margin-bottom: 25px;
+}
+.section .social__item {
+	list-style: none;
+}

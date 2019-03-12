@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: 100%;
+	font-family: $main_font, sans-serif;
+}
+
+.wrapper {
+	max-width: $wrapper;
+	width: 100%;
+	margin: auto;
+	padding: 100px 0;
+}

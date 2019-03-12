@@ -1,0 +1,51 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+
+	&__text {
+		font-size: 1.125rem;
+		font-weight: 500;
+		color: $text-grey;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		font-family: $bold_font, sans-serif;
+		font-size: 3.75rem;
+		font-weight: 900;
+		color: $yellow;
+		margin: 0 0 40px;
+	}
+
+	&__icon {
+		display: flex;
+		position: relative;
+		width: 20px;
+		height: 20px;
+		background: url('../img/bonfire_icon.png')no-repeat center;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			border-bottom: 1px solid $yellow;
+			display: block;
+			min-width: 210px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		
+		&::before {
+			left: 30px;
+		}
+
+		&::after {
+			right: 30px;
+		}
+		
+	}
+}
