@@ -21,19 +21,26 @@
 	&__header {
 		margin-bottom: 35px;
 	}
-	
+
+	&__account {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
 	&__key {
 		display: flex;
+		background: url('../img/key.png') no-repeat;
+		min-width: 25px;
+		min-height: 25px;
 		margin-right: 10px;
 	}
 
 	&__title {
-		display: flex;
-		align-items: center;
+		margin: 0;
 		font-weight: bold;
 		font-size: 1.5rem;
 		color:  #1b1c1d;
-		margin: 0 0 10px;
 	}
 
 	&__text {
@@ -62,7 +69,7 @@
 	}
 
 	.row__name {
-		flex-basis: 193px;
+		flex-basis: 49%;
 		padding-left: 15px;
 	}
 

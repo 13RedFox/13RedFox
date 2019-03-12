@@ -16,46 +16,46 @@
 
 		<div class="daily__container">
 			<header class="daily__header">
-
-				<h1 class="daily__title">
-					<img class="daily__key" src="img/key.png" alt="key">
-				Create your free account</h1>
+				<div class="daily__account">
+					<div class="daily__key"></div>
+					<h1 class="daily__title">Create your free account</h1>
+				</div>
 				<p class="daily__text">Come and join our cool and amazing community, fill in your details
 					to get started. Already have an account? <a class="daily__link" href="#">Log in.</a></p>
-			</header>
+				</header>
 
-			<form action="#" class="daily__form" >
+				<form action="#" class="daily__form" >
 
-				<div class="row__top">
+					<div class="row__top">
 
-					<input class="row__name" type="text" name="first-name" placeholder="First name" required>
-					<input class="row__name" type="text" name="last-name" placeholder="Last name" required>
+						<input class="row__name" type="text" name="first-name" placeholder="First name" required>
+						<input class="row__name" type="text" name="last-name" placeholder="Last name" required>
 
-				</div>
-				<div class="row__bottom">
-					<input class="row__bottom-email" type="email" name="email-adress" placeholder="Email address" required>
+					</div>
+					<div class="row__bottom">
+						<input class="row__bottom-email" type="email" name="email-adress" placeholder="Email address" required>
 
-					<input class="row__bottom-pasword" type="password" name="password" placeholder="Password" required>
+						<input class="row__bottom-pasword" type="password" name="password" placeholder="Password" required>
 
-					<input class="row__bottom-submit" type="submit" value="Sing up for free">
-				</div>
+						<input class="row__bottom-submit" type="submit" value="Sing up for free">
+					</div>
 
-			</form>
+				</form>
 
-			<footer class="daily__footer">
+				<footer class="daily__footer">
 
-				<p class="daily__footer-text">By clicking on "Sing up for free", you agree to the <a href="#" class="daily__link"> Terms of Service </a> and the <a href="#" class="daily__link">Privacy Policy</a></p>
+					<p class="daily__footer-text">By clicking on "Sing up for free", you agree to the <a href="#" class="daily__link"> Terms of Service </a> and the <a href="#" class="daily__link">Privacy Policy</a></p>
 
-			</footer>
+				</footer>
+
+
+			</div>
+
 
 
 		</div>
 
-
-
-	</div>
-
-	<div class="payment">
+		<div class="payment">
 
 			<div class="payment__header">
 				<div class="header__info">
@@ -66,51 +66,52 @@
 					<span class="text__price">$88</span>
 				</div>
 			</div>
+			<div class="payment__form">
+				<form action="#" class="form">
 
-			<form action="#" class="payment__form">
-				
-				<label class="payment__text" for="number">Credit card number</label>
-				<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="16" pattern="[0-9]{16}" required>
+					<label class="payment__text" for="number">Credit card number</label>
+					<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="16" pattern="[0-9]{16}" required>
 
-				<label class="payment__text" for="month">Expiration date</label>
+					<label class="payment__text" for="month">Expiration date</label>
 
-				<div class="payment__row">
-					<label for="month" class="payment__label label-month">
-						<select class="payment__section-month" id="month" name="size" required>
-							<option value hidden>Month</option>
-							<option value="1">January</option>
-							<option value="2">February</option>
-							<option value="3">March</option>
-						</select>
-					</label>
+					<div class="payment__row">
+						<label for="month" class="payment__label label-month">
+							<select class="payment__section-month" id="month" name="size" required>
+								<option value hidden>Month</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+							</select>
+						</label>
 
-					<label for="year" class="payment__label label-year">
-						<select class="payment__section-year" id="year" name="size" required>
-							<option value hidden>Year</option>
-							<option value="2018">2018</option>
-							<option value="2019">2019</option>
-							<option value="2020">2020</option>
-						</select>
-					</label>
-				</div>
+						<label for="year" class="payment__label label-year">
+							<select class="payment__section-year" id="year" name="size" required>
+								<option value hidden>Year</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+							</select>
+						</label>
+					</div>
 
-				<label class="payment__text" for="cvv">CVV</label>
+					<label class="payment__text" for="cvv">CVV</label>
 
-				<div class="payment__row-cvv">
-					<input class="payment__cvv" id="cvv" type="tel" maxlength="4" pattern="[0-9]{4}" value required placeholder>
-					<p class="cvv__text">3 or 4 digits - <a href="#" class="cvv__link">view example</a></p>
-				</div>
+					<div class="payment__row-cvv">
+						<input class="payment__cvv" id="cvv" type="tel" maxlength="4" pattern="[0-9]{4}" value required placeholder>
+						<p class="cvv__text">3 or 4 digits - <a href="#" class="cvv__link">view example</a></p>
+					</div>
 
-				<hr>
+					<hr>
 
-				<input class="payment__add" type="submit" name="submit" value="Play">
+					<input class="payment__add" type="submit" name="submit" value="Play">
 
-				<a class="payment__link" href="#">Cancel order</a>
-				
-			</form>
+					<a class="payment__link" href="#">Cancel order</a>
 
-	</div>
+				</form>
+			</div>
 
-	<script src="js/script.js"></script>
-</body>
-</html>
+		</div>
+
+		<script src="js/script.js"></script>
+	</body>
+	</html>
