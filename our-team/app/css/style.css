@@ -343,26 +343,33 @@ body {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
 }
-.footer input[type="radio"] {
-	display: none;
+.footer__menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
-.footer input[type="radio"]:checked + label {
-	background-color: #fff;
-	border: 1px solid #fc0;
+.footer__item {
+	list-style: none;
+	margin-right: 10px;
 }
-.footer label {
-	display: inline-block;
-	background-color: #fc0;
-	border-radius: 50%;
+.footer__item:last-child {
+	margin-right: 0;
+}
+.footer__link {
+	display: block;
 	height: 10px;
 	width: 10px;
-	margin-right: 5px;
-	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fc0;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	        transition: all .3s ease;
 }
-.footer label:last-child {
-	margin-right: 0;
+.footer__link:hover {
+	background-color: #fff;
+	border: 2px solid #fc0;
 }
