@@ -373,3 +373,7 @@ body {
 	background-color: #fff;
 	border: 2px solid #fc0;
 }
+.footer__link:active {
+	background-color: #fc0;
+	border: 2px solid #666;
+}
