@@ -56,58 +56,57 @@
 		</div>
 
 		<div class="payment">
-
-			<div class="payment__header">
-				<div class="header__info">
-					<p class="header__text">harold finch</p>
-					<span class="header__subtext">your total</span>
-				</div>
-				<div class="header__price">
+			<div class="payment__container">
+				<div class="payment__header">
+					<div class="header__info">
+						<p class="header__text">harold finch</p>
+						<span class="header__subtext">your total</span>
+					</div>
 					<span class="text__price">$88</span>
 				</div>
-			</div>
-			<div class="payment__form">
-				<form action="#" class="form">
+				<div class="payment__form">
+					<form action="#" class="form">
 
-					<label class="payment__text" for="number">Credit card number</label>
-					<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="16" pattern="[0-9]{16}" required>
+						<label class="payment__text" for="number">Credit card number</label>
+						<input class="payment__text-in" type="text" placeholder="Card number" id="number" maxlength="16" pattern="[0-9]{16}" required>
 
-					<label class="payment__text" for="month">Expiration date</label>
+						<label class="payment__text" for="month">Expiration date</label>
 
-					<div class="payment__row">
-						<label for="month" class="payment__label label-month">
-							<select class="payment__section-month" id="month" name="size" required>
-								<option value hidden>Month</option>
-								<option value="1">January</option>
-								<option value="2">February</option>
-								<option value="3">March</option>
-							</select>
-						</label>
+						<div class="payment__row">
+							<label for="month" class="payment__label label-month">
+								<select class="payment__section-month" id="month" name="size" required>
+									<option value hidden>Month</option>
+									<option value="1">January</option>
+									<option value="2">February</option>
+									<option value="3">March</option>
+								</select>
+							</label>
 
-						<label for="year" class="payment__label label-year">
-							<select class="payment__section-year" id="year" name="size" required>
-								<option value hidden>Year</option>
-								<option value="2018">2018</option>
-								<option value="2019">2019</option>
-								<option value="2020">2020</option>
-							</select>
-						</label>
-					</div>
+							<label for="year" class="payment__label label-year">
+								<select class="payment__section-year" id="year" name="size" required>
+									<option value hidden>Year</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+								</select>
+							</label>
+						</div>
 
-					<label class="payment__text" for="cvv">CVV</label>
+						<label class="payment__text" for="cvv">CVV</label>
 
-					<div class="payment__row-cvv">
-						<input class="payment__cvv" id="cvv" type="tel" maxlength="4" pattern="[0-9]{4}" value required placeholder>
-						<p class="cvv__text">3 or 4 digits - <a href="#" class="cvv__link">view example</a></p>
-					</div>
+						<div class="payment__row-cvv">
+							<input class="payment__cvv" id="cvv" type="tel" maxlength="4" pattern="[0-9]{4}" value required placeholder>
+							<p class="cvv__text">3 or 4 digits - <a href="#" class="cvv__link">view example</a></p>
+						</div>
 
-					<hr>
+						<hr>
 
-					<input class="payment__add" type="submit" name="submit" value="Play">
+						<input class="payment__add" type="submit" name="submit" value="Play">
 
-					<a class="payment__link" href="#">Cancel order</a>
+						<a class="payment__link" href="#">Cancel order</a>
 
-				</form>
+					</form>
+				</div>
 			</div>
 
 		</div>

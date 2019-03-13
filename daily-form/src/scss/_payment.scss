@@ -7,15 +7,18 @@
 	margin: auto;
 	padding: 60px 0;
 
+	&__container {
+		max-width: $payment_con;
+		margin: auto;
+	}
+
 	
 	&__header {
 		background: $pmnt_head;
 		width: 100%;
-		max-width: $payment_con;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: auto;
 		padding: 20px;
 	}
 
@@ -42,9 +45,7 @@
 
 	&__form {
 		width: 100%;
-		max-width: $payment_con;		
 		background-color: $pmnt_bg;
-		margin: auto;
 		padding: 40px 20px 20px;
 	}
 
