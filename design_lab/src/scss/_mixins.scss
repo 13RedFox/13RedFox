@@ -1,0 +1,12 @@
+@mixin border-div($border-color: $text-color) {
+	$border-size: 2px;
+	$border: $border-size solid $border-color;
+	border: $border;
+	border-top: none;
+	color: $border-color;
+	&::before,
+	&::after {
+		border-top: $border;
+	}
+	@content;
+}

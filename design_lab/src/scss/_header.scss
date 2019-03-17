@@ -1,0 +1,56 @@
+.first-screen {
+	background: $corp-blue url("#{$img-path}hero-bg.jpg") no-repeat;
+	background-size: cover;
+	color: $white;
+
+	.row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-height: 100vh;
+
+		& > * {
+			display: flex;
+			text-align: center;
+		}
+	}
+
+	.logo {
+		flex-grow: 3;
+		align-items: flex-end;
+		padding-bottom: 1rem;
+	}
+
+	&__title {
+		flex-grow: 1;
+		align-items: center;
+
+		& > * {
+			text-transform: uppercase;
+			letter-spacing:$letter-spacing; 
+			line-height: 1.2;
+			font-size: $main-title;
+		}
+	}
+
+	&__text {
+		flex-grow: 3;
+		max-width: 580px;
+
+		& > * {
+			line-height: 1.5;
+		}
+	}
+
+	&__btn {
+		flex-grow: 2;
+
+		& > * {
+			display: block;
+			width: 25px;
+			height: 35px;
+			background: url("#{$img-path}scroll.svg") no-repeat center;
+			background-size: 87%;
+		}
+	}
+}

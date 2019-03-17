@@ -1,0 +1,250 @@
+@import "vars";
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	color: $black-text;
+	background-color: $violet;
+}
+
+.container {
+	width: 100%;
+	max-width: $container-width;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	min-height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+}
+.body-wrapper {
+	overflow: hidden;
+
+}
+.pricing {
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $white;
+		flex-basis: 320px;
+		transition: all .5 ease;
+		box-shadow: 0 0 20px 5px rgba($black, .5);
+		background-color: $light-grey;
+		position: relative;
+
+
+
+		&:hover {
+
+			.btn {
+				transform: translateY(-110%);
+				background-color: $pink;
+			}
+
+		}
+
+		& > * {
+			width: 100%;
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+		}
+
+		&-header {
+			
+			padding: 30px 0;
+			font-family: $sec-light;
+		}
+
+		.price {
+			font-size: $huge-size;
+			margin-bottom: 15px;
+
+
+			&__currency-symbol {
+				top: -1.5em;
+			}
+
+			&__currency-symbol,
+			&__currency {
+				font-size: $middle-size;
+			}
+		}
+
+		.title {
+			font-size: $large-size;
+			font-family: $sec-bold;
+			text-transform: uppercase;
+		}
+
+		&-body {
+			flex-direction: column;
+			display: flex;
+			align-items: center;
+			width: 140%;
+			background-color: $white;
+			padding: 30px 0 60px;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+		}
+
+		.icon {
+			$size: 30px;
+			width: $size;
+			height: $size;
+			margin-bottom: 30px;
+		}
+
+		.list {
+
+			&__item:not(:last-child) {
+				margin-bottom: 30px;
+			}
+
+			&__link {
+				color: $black-text;
+				text-decoration: none;
+				transition: color .3s ease;
+
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+
+		&-footer {
+			padding: 30px 0;
+			position: relative;
+		}
+
+		.discount {
+			font-size: $small-size;
+			color: $white-text;
+		}
+
+		.btn {
+			position: absolute;
+			background-color: $aqua;
+			color: $white;
+			text-transform: uppercase;
+			font-size: $middle-size;
+			border: none;
+			border-radius: 25px;
+			padding: 15px 0;
+			font-family: $sec-bold;
+			width: 100%;
+			max-width: 60%;
+			letter-spacing: 2px;
+			transform: translateY(30%);
+			transition: all 1s ease;
+			cursor: pointer;
+		}
+
+		&:nth-child(2) {
+
+			flex-basis: 360px;
+
+			.pricing__card-header {
+				padding: 45px 0;
+			}
+
+			.pricing__card-header {
+				/* padding: 30px 0 60px; */
+				width: 150%;
+			}
+			
+			.pricing__card-footer {
+				padding: 40px 0;
+			}
+
+			.btn {
+				background-color: $pink;
+				transform: translateY(-125%);
+			}
+		}
+		&:hover {
+			.tooltip{
+				display: flex;
+				opacity: 1;
+			}
+			
+		}
+	}
+}
+
+.banner {
+	$position: 20px;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $sec-light;
+	text-transform: uppercase;
+	@include circle(45px);
+	top: $position;
+	right: $position;
+	font-size: $large-size;
+	cursor: pointer;
+	
+
+	&::before,
+	&::after {
+		content: "";
+		
+	}
+
+	&::before {
+		$position: -8px;
+		top: $position;
+		right: $position;
+		@include circle(12px);
+	}
+	&::after {
+		$position: -13px;
+		top: $position;
+		right: $position;
+		@include circle(4px);
+	}
+
+	.tooltip {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $dark;
+		border-radius: 25px;
+		font-size: 1rem;
+		min-height: 25px;
+		min-width: 90px;
+		position: absolute;
+		right: 0;
+		transform: translateX(120%);
+		z-index: 100;
+		letter-spacing: 2px;
+		transition: all .3s ease;
+		opacity: 0;
+
+		&::before {
+			content: "";
+			border: 12px solid transparent;
+			border-right-color: $dark;
+			position: absolute;
+			left: 0;
+			transform: translateX(-65%);
+		}
+
+
+	}
+	
+}

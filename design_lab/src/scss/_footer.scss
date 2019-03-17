@@ -1,0 +1,26 @@
+.footer {
+	padding: 60px 0;
+
+	.row {
+		display: flex;
+		justify-content: center;
+	}
+
+	[class*="cls-"] {
+		stroke: $text-color;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: $small-text;
+	}
+
+	svg#logo {
+		$size: 50px;
+		width: $size;
+		height: $size;
+		margin-right: 2rem;
+	}
+}
