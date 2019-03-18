@@ -1,0 +1,23 @@
+// COLORS
+
+$white: #fff;
+$black: #000;
+
+// SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+ @if $target == 0 { @return 0 }
+ @return $target / $context + 0rem;
+}
+
+$base-size: 16px;
+
+$huge-size: px_to_rem(60px);
+$large-size: px_to_rem(30px);
+$middle-size: px_to_rem(18px);
+$small-size: px_to_rem(11px);
+
+$container-width: 1200px;
+
+//FONTS
+

@@ -1,0 +1,15 @@
+.header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	&__title {
+
+		font-size: $huge-size;
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-size: $large-size;
+	}
+}	

@@ -1,0 +1,41 @@
+// COLORS
+
+$white: #fff;
+$black: #000;
+$green: #02995b;
+$dark: #333;
+
+$container-bg: #fadc7e;
+
+//SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+ @if $target == 0 { @return 0 }
+ @return $target / $context + 0rem;
+}
+
+$base-size: 16px;
+
+$large-size: px_to_rem(70px);
+$middle-size: px_to_rem(56px);
+$small-size: px_to_rem(20px);
+
+$container-width: 1200px;
+
+//FONTS
+
+@font-face {
+	font-family: 'Miso Bold';
+	src: url("../fonts/miso-bold.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Miso Regular';
+	src: url("../fonts/miso-regular.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+$main-font: 'Miso Regular', sans-serif;
+$sec-bold:  'Miso Bold', Arial, sans-serif;
+$sec-light: 'Lato', sans-serif;

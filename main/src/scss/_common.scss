@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	font-size: $base-size;
+	background-color: $black;
+	color: $white;
+}
+
+.container {
+	width: 100%;
+	max-width: $container-width;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(26px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 0 40px;
+}
