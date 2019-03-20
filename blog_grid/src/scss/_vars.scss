@@ -1,0 +1,50 @@
+//COLORS
+
+$white: #fff;
+$black: #000;
+$small-text: #818181;
+$large-text: #1d1c1c;
+$load-text: #99a5b0;
+$main-bg: #e2e7ec;
+
+
+//SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+    @if $target==0 {
+        @return 0
+    }
+
+    @return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$huge-size: px_to_rem(30px);
+$large-size: px_to_rem(22px);
+$small-size: px_to_rem(13px);
+
+$container-width: 1120px;
+
+
+//FONTS
+
+@font-face {
+    font-family: 'Neue Hans';
+    src: url("../fonts/NeueHansKendrick-Regular.otf") format("OpenType");
+}
+
+$main-font: 'Neue Hans';
+
+//MIXIN
+
+@mixin frog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

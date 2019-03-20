@@ -1,0 +1,141 @@
+@import "vars";
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: $main-font;
+    font-size: $base-size;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    max-width: $container-width;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.blog {
+    min-height: 100vh;
+    background-color: $main-bg;
+
+
+
+    &__card {
+        display: flex;
+        flex-basis: 360px;
+        min-height: 540px;
+        background-color: $white;
+        transition: opacity .3s ease;
+
+        &:hover {
+            opacity: .9;
+        }
+
+
+        &:nth-child(1) {
+            position: relative;
+            flex-basis: 740px;
+        }
+
+        &:nth-child(-n+2) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        text-decoration: none;
+    }
+
+    .large &__box-img {
+        padding-top: 73%;
+        background-color: #fff;
+    }
+
+    &__box-img {
+        position: relative;
+        padding-top: 69.8%;
+    }
+
+    &__img {
+        @include frog;
+    }
+
+    .large &__info {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        max-width: 70%;
+        padding: 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .large &__title {
+        color: $white;
+    }
+
+    &__title {
+        font-size: $small-size;
+        color: $small-text;
+        margin-bottom: 20px;
+    }
+
+    .large &__text {
+        font-size: $huge-size;
+        color: $white;
+        margin-bottom: 0;
+    }
+
+    &__text {
+        font-size: $large-size;
+        font-weight: 800;
+        line-height: 1.4;
+        color: $large-text;
+        margin-bottom: 52px;
+    }
+
+    &__avatar {
+        display: flex;
+        max-width: fit-content;
+    }
+
+    &__load {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        &-img {
+            margin-right: 10px;
+        }
+
+        &-text {
+            font-size: $small-text;
+            font-weight: 800;
+            color: $load-text;
+        }
+    }
+}

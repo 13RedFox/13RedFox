@@ -14,8 +14,11 @@ $black: #000;
 //sizes
 
 @function px_to_rem($target, $context: $base-size) {
- @if $target == 0 { @return 0 }
- @return $target / $context + 0rem;
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
 }
 
 $base-size: 16px;
@@ -29,20 +32,25 @@ $container-width: 1100px;
 //fonts
 
 @font-face {
-font-family: "Bebas Bold";
-src: url("../fonts/BebasNeue Bold.otf") format("OpenType");
+	font-family: "Bebas Bold";
+	src: url("../fonts/BebasNeue Bold.otf") format("OpenType");
 }
 
 @font-face {
-font-family: "Bebas Light";
-src: url("../fonts/BebasNeue Light.otf") format("OpenType");
+	font-family: "Bebas Light";
+	src: url("../fonts/BebasNeue Light.otf") format("OpenType");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-$main-font: 'Roboto', sans-serif;
-$sec-bold:  "Bebas Bold", Arial, sans-serif;
-$sec-light:  "Bebas Light", Arial, sans-serif;
+$main-font: 'Roboto',
+sans-serif;
+$sec-bold: "Bebas Bold",
+Arial,
+sans-serif;
+$sec-light: "Bebas Light",
+Arial,
+sans-serif;
 
 
 
