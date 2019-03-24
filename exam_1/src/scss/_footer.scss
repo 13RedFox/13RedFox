@@ -1,0 +1,15 @@
+.footer {
+    background-color: $dark-grey-color;
+    font-family: $secondary-font;
+    color: $white-color;
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+font-size: 24px;
+text-transform: uppercase;
+    }
+}
