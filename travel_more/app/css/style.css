@@ -445,3 +445,85 @@ body {
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #496bfe), color-stop(41%, #5474fd));
 	background-image: linear-gradient(360deg, #496bfe 40%, #5474fd 41%);
 }
+
+.testimonials {
+	background: #28292a url("../img/testimonial_bg.png") no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+.testimonials .row {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding-top: 120px;
+}
+.testimonials__title {
+	font-size: 2.25rem;
+	font-weight: 400;
+	margin-bottom: 90px;
+}
+.testimonials__card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	background-color: #333;
+}
+.testimonials__wrap {
+	width: 100%;
+	max-width: 440px;
+	position: relative;
+	padding-top: 27.8%;
+}
+.testimonials__img {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.testimonials__content {
+	max-width: 660px;
+	padding: 50px 60px;
+}
+.testimonials__subtitle {
+	color: #fefefe;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.testimonials__text {
+	position: relative;
+	color: #e8e8e8;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 300;
+	line-height: 26px;
+	text-indent: 30px;
+}
+.testimonials__text::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../img/double-quotes.svg) no-repeat;
+	background-size: cover;
+	top: 0;
+	left: 0;
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	        transform: translateY(-50%) rotate(180deg);
+}
