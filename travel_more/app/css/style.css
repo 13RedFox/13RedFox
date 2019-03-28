@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700");
+@font-face {
+	font-family: "Aleo";
+	src: url("../fonts/aleo/aleo-regular-webfont.eot"), url("../fonts/aleo/aleo-regular-webfont.woff"), url("../fonts/aleo/aleo-regular-webfont.woff2"), url("../fonts/aleo/aleo-regular-webfont.ttf"), url("../fonts/aleo/aleo-regular-webfont.svg");
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	border: 15px solid #fff;
+	font-family: "Aleo", sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.first-screen {
+	background: #0578e1 url("../img/header_bg.png") no-repeat;
+	background-size: cover;
+}
+
+.fs {
+	min-height: 100vh;
+	font-family: "Josefin Sans", sans-serif;
+}
+.fs .row {
+	min-height: 100vh;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.fs__title {
+	font-weight: 700;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 4.8px;
+	margin: 0 0 15px;
+}
+.fs__text {
+	font-size: 1.375rem;
+	font-weight: 300;
+	letter-spacing: 6.82px;
+	margin-bottom: 50px;
+}
+.fs__form {
+	width: 100%;
+	max-width: 650px;
+	background-color: #fff;
+	font-size: .875rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 120px;
+}
+.fs__search {
+	width: 77%;
+	color: #999;
+	font-weight: 400;
+	line-height: 26px;
+	letter-spacing: 2.8px;
+	text-align: center;
+	padding: 20px 0;
+	border: none;
+}
+.fs__search::-webkit-input-placeholder {
+	color: #999;
+	font-size: .875rem;
+}
+.fs__search:-moz-placeholder {
+	color: #999;
+	font-size: .875rem;
+}
+.fs__search::-moz-placeholder {
+	color: #999;
+	font-size: .875rem;
+}
+.fs__search:-ms-input-placeholder {
+	color: #999;
+	font-size: .875rem;
+}
+.fs__btn {
+	position: relative;
+	width: 23%;
+	padding: 0;
+	border: 2px solid #fff;
+	background: #5474fd url("../img/search_small.svg") no-repeat 92% 50%;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "Aleo", sans-serif;
+	font-weight: 400;
+	letter-spacing: 1.4px;
+	cursor: pointer;
+	-webkit-transition: background-color .4s ease;
+	        transition: background-color .4s ease;
+}
+.fs__btn:hover {
+	background-color: #496bfe;
+}
+.fs__link {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	font-size: .875rem;
+	font-weight: 400;
+	letter-spacing: 2.8px;
+}
+.fs__link::after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 2px solid transparent;
+	left: 50%;
+	-webkit-transform: rotate(-45deg) translateX(-50%);
+	        transform: rotate(-45deg) translateX(-50%);
+	border-bottom-color: #fff;
+	border-left-color: #fff;
+}
