@@ -20,15 +20,10 @@
 	&__list {
 		display: flex;
 		width: 50%;
+		justify-content: space-between;
 	}
 
-	&__item {
-		margin-right: 40px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
+	&__item {}
 
 	&__link {
 		display: block;
