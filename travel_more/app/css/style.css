@@ -330,3 +330,118 @@ body {
 .how .h-finger {
 	background: url("../img/finger.svg") no-repeat;
 }
+
+.travel-first {
+	background: #ba999a url("../img/house.png") no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+.travel-first .row {
+	min-height: 100vh;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+.travel-first__card {
+	width: 50%;
+	font-family: "Josefin Sans", sans-serif;
+	background: rgba(35, 35, 35, .9);
+	padding: 50px 30px;
+	margin-bottom: 100px;
+}
+.travel-first__title {
+	color: #e8e8e8;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	margin-bottom: 30px;
+}
+.travel-first__subtitle {
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.travel-first__text {
+	color: #e8e8e8;
+	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 50px;
+}
+.travel-first__btn {
+	width: 225px;
+	height: 70px;
+	background-image: linear-gradient(45deg, #496bfe 40%, #5474fd 41%);
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: color .5s ease;
+	        transition: color .5s ease;
+}
+.travel-first__btn:hover {
+	color: #333;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #496bfe), color-stop(41%, #5474fd));
+	background-image: linear-gradient(360deg, #496bfe 40%, #5474fd 41%);
+}
+
+.travel-last {
+	background: #ba999a url("../img/rocks.png") no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+.travel-last .row {
+	min-height: 100vh;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+.travel-last__card {
+	width: 50%;
+	font-family: "Josefin Sans", sans-serif;
+	background: rgba(35, 35, 35, .9);
+	padding: 50px 30px;
+	margin-bottom: 100px;
+}
+.travel-last__title {
+	color: #e8e8e8;
+	font-size: 1.25rem;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	margin-bottom: 30px;
+}
+.travel-last__subtitle {
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.travel-last__text {
+	color: #e8e8e8;
+	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 50px;
+}
+.travel-last__btn {
+	width: 225px;
+	height: 70px;
+	background-image: linear-gradient(45deg, #496bfe 40%, #5474fd 41%);
+	color: #fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: color .5s ease;
+	        transition: color .5s ease;
+}
+.travel-last__btn:hover {
+	color: #333;
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #496bfe), color-stop(41%, #5474fd));
+	background-image: linear-gradient(360deg, #496bfe 40%, #5474fd 41%);
+}

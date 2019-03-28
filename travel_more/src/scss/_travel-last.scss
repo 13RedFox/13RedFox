@@ -1,0 +1,59 @@
+.travel-last {
+	background: #ba999a url('../img/rocks.png')no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+
+	.row {
+		min-height: 100vh;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	&__card {
+		width: 50%;
+		font-family: $secondary-font;
+		background: rgba($bg_dark, .9);
+		padding: 50px 30px;
+		margin-bottom: 100px;
+	}
+
+	&__title {
+		color: $light_text;
+		font-size: $small-size;
+		font-weight: 400;
+		letter-spacing: 1.5px;
+		margin-bottom: 30px;
+	}
+
+	&__subtitle {
+		font-size: $small-size;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		color: $light_text;
+		font-weight: 300;
+		line-height: 26px;
+		margin-bottom: 50px;
+	}
+
+	&__btn {
+		width: 225px;
+		height: 70px;
+		background-image: linear-gradient(45deg, $dark_blue 40%, $light_blue 41%);
+		color: $white;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		border: none;
+		cursor: pointer;
+		transition: color .5s ease;
+
+		&:hover {
+			color: $bg_grey;
+			background-image: linear-gradient(360deg, $dark_blue 40%, $light_blue 41%);
+		}
+	}
+}
