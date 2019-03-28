@@ -1,0 +1,61 @@
+.how {
+	background-color: $bg_grey;
+	padding: 80px 0;
+
+	.row {
+		justify-content: center;
+	}
+
+	&__list {
+		position: relative;
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			background: url('../img/wave.svg')no-repeat;
+			background-size: cover;
+			width: 100%;
+			max-width: 790px;
+			height: 100px;
+			left: 49%;
+			transform: translate(-50%, -50%);
+			z-index: 0;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $bg_grey;
+		z-index: 1;
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		background-size: cover;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		font-size: $large-size;
+		font-weight: 400;
+	}
+
+	.h-search {
+		background: url('../img/search.svg') no-repeat;
+	}
+
+	.h-select {
+		background: url('../img/select.svg') no-repeat;
+	}
+
+	.h-finger {
+		background: url('../img/finger.svg') no-repeat;
+	}
+}
