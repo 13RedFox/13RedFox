@@ -143,3 +143,50 @@ body {
 	border-bottom-color: #fff;
 	border-left-color: #fff;
 }
+
+.nav {
+	background-color: #5474fd;
+	padding: 28px 0;
+}
+.nav .row {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.nav__logo {
+	color: #fff;
+	text-decoration: none;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2.4px;
+}
+.nav__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 50%;
+}
+.nav__item {
+	margin-right: 40px;
+}
+.nav__item:last-child {
+	margin-right: 0;
+}
+.nav__link {
+	display: block;
+	color: #fff;
+	font-size: .875rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: color .5s ease;
+	        transition: color .5s ease;
+}
+.nav__link:hover {
+	color: #333;
+}

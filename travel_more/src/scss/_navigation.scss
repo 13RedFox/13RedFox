@@ -1,0 +1,47 @@
+.nav {
+	background-color: $light_blue;
+	padding: 28px 0;
+
+	.row {
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		color: $white;
+		text-decoration: none;
+		font-family: $secondary-font;
+		font-size: $big-size;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.4px;
+	}
+
+	&__list {
+		display: flex;
+		width: 50%;
+	}
+
+	&__item {
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__link {
+		display: block;
+		color: $white;
+		font-size: $little-size;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color .5s ease;
+
+		&:hover {
+			color: $bg_grey;
+		}
+	}
+
+}
