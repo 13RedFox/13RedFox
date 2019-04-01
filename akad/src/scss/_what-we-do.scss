@@ -1,0 +1,9 @@
+.wwd {
+	.img-wrapper {
+		@include padding-hack(65.7%);
+	}
+	&__text {
+		line-height: 2.2;
+		margin-bottom: px_to_rem(40px);
+	}
+}
