@@ -239,21 +239,25 @@ body {
 	background-image: linear-gradient(360deg, #496bfe 40%, #5474fd 41%);
 }
 .choose__gallery {
-	width: 45%;
+	width: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 }
 .choose__picture {
 	position: relative;
 	padding-top: 44.4%;
-	max-width: 350px;
-	margin-bottom: 5px;
+	width: 350px;
 }
-.choose__picture:last-child {
-	margin-bottom: 0;
-	margin-left: 29%;
-}
-.choose__img {
+.choose__picture > * {
 	position: absolute;
-	display: block;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -262,6 +266,11 @@ body {
 	height: 100%;
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+.choose__picture:first-child {
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	margin-bottom: 5px;
 }
 
 .how {
@@ -477,14 +486,13 @@ body {
 	background-color: #333;
 }
 .testimonials__wrap {
-	width: 100%;
-	max-width: 440px;
 	position: relative;
 	padding-top: 27.8%;
+	width: 100%;
+	max-width: 440px;
 }
-.testimonials__img {
+.testimonials__wrap > * {
 	position: absolute;
-	display: block;
 	top: 0;
 	right: 0;
 	bottom: 0;
