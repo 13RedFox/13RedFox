@@ -1,5 +1,5 @@
 .testimonials {
-	background: #28292a url('../img/testimonial_bg.png') no-repeat;
+	background: #28292a url('../img/testimonials-bg.png') no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 
@@ -28,18 +28,6 @@
 		max-width: 440px;
 	}
 
-	// &__img {
-	// 	position: absolute;
-	// 	display: block;
-	// 	top: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	object-fit: cover;
-	// }
-
 	&__content {
 		max-width: 660px;
 		padding: 50px 60px;
@@ -49,7 +37,7 @@
 		color: $light_white;
 		font-family: $secondary-font;
 		font-size: $small-size;
-		font-weight: 300;
+		font-weight: 400;
 		text-transform: uppercase;
 		margin-bottom: 30px;
 	}

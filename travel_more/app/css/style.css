@@ -456,7 +456,7 @@ body {
 }
 
 .testimonials {
-	background: #28292a url("../img/testimonial_bg.png") no-repeat;
+	background: #28292a url("../img/testimonials-bg.png") no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 }
@@ -510,7 +510,7 @@ body {
 	color: #fefefe;
 	font-family: "Josefin Sans", sans-serif;
 	font-size: 1.25rem;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
