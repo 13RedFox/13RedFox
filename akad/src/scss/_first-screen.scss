@@ -18,6 +18,5 @@
 	&__title {
 		@include title($main-title);
 		margin-bottom: px_to_rem(20px);
-		@include green-line(65px, 20px);
 	}
 }

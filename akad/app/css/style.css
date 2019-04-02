@@ -87,9 +87,6 @@ a:hover {
 	list-style: none;
 	margin-bottom: 1.07143rem;
 }
-.marked-list__link::first-letter {
-	text-transform: uppercase;
-}
 .marked-list__link > * {
 	color: #7beec7;
 	margin-right: .71429rem;
@@ -184,16 +181,6 @@ a:hover {
 	position: relative;
 	margin-bottom: 1.42857rem;
 }
-.first-screen__title::before {
-	content: "";
-	border-top: 20px solid #7beec7;
-	display: inline-block;
-	width: 65px;
-	position: absolute;
-	left: 0;
-	top: 50%;
-	z-index: -1;
-}
 
 .wwd .img-wrapper {
 	position: relative;
@@ -216,9 +203,6 @@ a:hover {
 	margin-bottom: 2.85714rem;
 }
 
-.section-icons {
-	padding-bottom: 3rem;
-}
 .section-icons__item {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -232,6 +216,7 @@ a:hover {
 	    flex-direction: column;
 	text-align: center;
 }
+
 .section-icons__item-title {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
@@ -240,10 +225,12 @@ a:hover {
 	position: relative;
 	margin-bottom: 1.07143rem;
 }
+
 .section-icons__item-text {
 	line-height: 2;
 	margin: 0;
 }
+
 .section-icons .img-wrapper {
 	position: relative;
 	padding-top: 21%;
@@ -270,4 +257,62 @@ a:hover {
 	left: 0;
 	top: 50%;
 	z-index: -1;
+}
+
+.plans .section-description {
+	margin-bottom: 7.14286rem;
+}
+
+.plans__card {
+	border-top: 5px solid #7beec7;
+	padding: 2.14286rem;
+	position: relative;
+	-webkit-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+.plans__card:hover {
+	-webkit-box-shadow: 0 0 50px rgba(0, 0, 0, .25);
+	        box-shadow: 0 0 50px rgba(0, 0, 0, .25);
+}
+.plans__card::before {
+	content: "";
+	border: 10px solid transparent;
+	border-right-color: #7beec7;
+	border-top-color: #7beec7;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.plans__card-title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 2.14286rem;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 1.07143rem;
+}
+
+.plans__card-price {
+	color: #fff;
+	background-color: #7beec7;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 5px 20px;
+	margin-bottom: 3.57143rem;
+}
+
+.plans__card-btn {
+	color: #fff;
+	background-color: #7beec7;
+	text-transform: uppercase;
+	padding: 15px 25px;
+}
+.plans__card-btn:hover {
+	background-color: #a8f4da;
+	color: #fff;
+}
+
+.plans .marked-list {
+	margin-bottom: 3.57143rem;
 }

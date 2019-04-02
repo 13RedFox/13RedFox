@@ -1,6 +1,5 @@
 .section-icons {
-	padding-bottom: 3rem;
-
+	
 	&__item {
 		display: flex;
 		align-items: center;
@@ -25,4 +24,3 @@
 		@include green-line(50px, 20px);
 	}
 }
-
