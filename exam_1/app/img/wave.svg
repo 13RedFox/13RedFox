@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 779 95" width="779" height="95">
-	<style>
-		tspan { white-space:pre }
-		.shp0 { opacity: 0.502;fill: none;stroke: #ffffff;stroke-linecap:round;stroke-dasharray: 0,5 } 
-	</style>
-	<path id="wave" class="shp0" d="M778,95c-207.67,-213.75 -383.94,0 -383.94,0c-200.58,-212.46 -393.06,0 -393.06,0" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="776" height="97" viewBox="0 0 776 97"><defs><path id="ikxwa" d="M513 1661s192.477-212.458 393.059 0c0 0 176.268-213.754 383.941 0"/><clipPath id="ikxwb"><use fill="#fff" xlink:href="#ikxwa"/></clipPath></defs><g><g opacity=".5" transform="translate(-512 -1565)"><use fill="#fff" fill-opacity="0" stroke="#fff" stroke-dasharray="0 5" stroke-linecap="round" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#ikxwb&quot;)" xlink:href="#ikxwa"/></g></g></svg>

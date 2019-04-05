@@ -1,8 +1,9 @@
-@import "variables";
+@import "vars";
+@import "mixins";
 @import "common";
-@import "header";
-@import "menu";
-@import "chooseus";
+@import "first-screen";
+@import "navigation";
+@import "choose";
 @import "how";
 @import "travel-first";
 @import "travel-last";

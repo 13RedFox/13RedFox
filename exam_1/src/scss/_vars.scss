@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700');
+@font-face {
+ font-family: "Aleo";
+ src: url("../fonts/aleo/aleo-regular-webfont.eot"),
+        url("../fonts/aleo/aleo-regular-webfont.woff"),
+        url("../fonts/aleo/aleo-regular-webfont.woff2"),
+        url("../fonts/aleo/aleo-regular-webfont.ttf"),
+        url("../fonts/aleo/aleo-regular-webfont.svg");
+}
+
+// COLORS
+
+$white: #fff;
+$black: #000;
+$grey: #cccccc;
+$pink: #ff6363;
+$aqua: #00a2ff;
+
+$bg_dark: #232323;
+$bg_grey: #333333;
+$light_white: #fefefe;
+$light_blue: #5474fd;
+$dark_blue: #496bfe;
+
+
+$dark_text: #999999;
+$light_text: #e8e8e8;
+
+// SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$huge-size: px_to_rem(48px);
+$large-size: px_to_rem(36px);
+$big-size: px_to_rem(24px);
+$middle-size: px_to_rem(22px);
+$small-size: px_to_rem(20px);
+$little-size: px_to_rem(14px);
+
+//FONTS
+
+$main-font: 'Aleo', sans-serif;
+$secondary-font: 'Josefin Sans', sans-serif;
+
+
+// $sections: (
+// 	first-screen: 'header-bg.png',
+// 	choose: 'choose-bg.png',
+// 	travel-first: 'house.png',
+// 	travel-last: 'rocks.png',
+// 	testimonials: 'testimonials-bg.png' 
+// );

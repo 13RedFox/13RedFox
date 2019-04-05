@@ -1,0 +1,69 @@
+.choose {
+	background: $bg_grey url('../img/choose_bg.png') no-repeat;
+	background-size: cover;
+
+	.row {
+		min-height: 100vh;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__content {
+		width: 50%;
+	}
+
+	&__title {
+		font-size: $large-size;
+		font-weight: 400;
+		margin-bottom: 60px;
+	}
+
+	&__text {
+		color: $light_text;
+		font-family: $secondary-font;
+		font-weight: 300;
+		line-height: 1.75;
+		letter-spacing: 1.6px;
+		margin-bottom: 45px;
+	}
+
+	.f-txt {
+		margin-bottom: 40px;
+	}
+
+	&__btn {
+		width: 225px;
+		height: 70px;
+		background-image: linear-gradient(45deg, $dark_blue 40%, $light_blue 41%);
+		color: $white;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 1.2px;
+		border: none;
+		cursor: pointer;
+		transition: color .5s ease;
+
+		&:hover {
+			color: $bg_grey;
+			background-image: linear-gradient(360deg, $dark_blue 40%, $light_blue 41%);
+		}
+	}
+
+	&__gallery {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+	}
+
+	&__picture {
+		@include padding-hack(44.4%, cover);
+		width: 350px;
+
+		&:first-child {
+			align-self: flex-start;
+			margin-bottom: 5px;
+		}
+	}
+}
