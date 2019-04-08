@@ -3,7 +3,8 @@
 	width: 100%;
 	top: 0;
 	font-family: $secondary-font;
-	padding-top: px_to_rem(30px); 
+	padding-top: px_to_rem(30px);
+	z-index: 5;
 
 	&__logo {
 		text-transform: uppercase;
@@ -24,6 +25,7 @@
 		min-height: 15px;
 		border-top: $border;
 		position: relative;
+		float: right;
 		@include transition(border-color);
 
 		&::before,

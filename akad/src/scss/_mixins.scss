@@ -49,3 +49,43 @@
 		z-index: -1;
 	}
 }
+
+@mixin section-button($color: $white, $bg-color: $corp-green) {
+	color: $color;
+	background-color: $bg-color;
+	padding: 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	border: none;
+	@include transition;
+	@content;
+
+	&:hover {
+		@if($bg-color == $white) {
+			background-color: darken($bg-color, 5%);
+			} @else {
+				background-color: lighten($bg-color, 10%);	
+			}
+		}
+	}
+
+
+@mixin placeholder {
+		::-webkit-input-placeholder {
+			@content;
+		}
+		::-moz-placeholder {
+			@content;
+		}
+		:-ms-input-placeholder {
+			@content;
+		}
+		:-moz-placeholder {
+			@content;
+		}
+	}
+
+
+
+	

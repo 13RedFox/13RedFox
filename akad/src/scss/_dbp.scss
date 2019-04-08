@@ -1,0 +1,15 @@
+.top-line,
+.first-screen,
+.wwd,
+.section-icons,
+// .plans,
+.contacts,
+.footer {
+	display: none;
+}
+
+html {
+	@media all and (max-width: 319px) {
+		display: none;
+	}
+}

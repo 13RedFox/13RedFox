@@ -1,0 +1,53 @@
+.contacts {
+	padding: px_to_rem(50px) 0;
+	background-color: $corp-green;
+
+	&__title {
+		@include title($section-title);
+		color: $white;
+		line-height: 1.5;
+		margin-bottom: px_to_rem(30px);
+	}
+
+	&__card {
+		background-color: $white;
+		padding: 20px;
+	}
+
+	&__card-title {
+		@include title($form-title);
+		line-height: 1.5;
+		margin-bottom: .5rem;
+	}
+
+	&__card-description {
+		line-height: 1.5;
+		margin-bottom: 1.6rem;
+	}
+
+	&__form {
+		display: flex;
+
+		@include placeholder {
+			color: $light-grey;
+			@include title($small-size);
+		}
+
+		[type="email"]{
+			border: 1px solid darken($middle-grey, 2%);
+			border-right: none;
+			padding-left: px_to_rem(15px);
+			color: $light-grey;
+			@include title($small-size);
+			width: 100%;
+			max-width: 74%;
+		}
+
+		[type="submit"]{
+			@include section-button;
+			font-weight: 700;
+			font-size: $middle-size;
+			max-width: calc(100% - 74%);
+		}
+	}
+}

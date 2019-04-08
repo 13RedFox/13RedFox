@@ -54,7 +54,20 @@ a {
 .section {
 	padding: px_to_rem(150px) 0;
 
+	@media all and (max-width: 1200px) {
+		padding: 2rem 0;		
+	}
+
+	&-heading-row {
+		margin-bottom: px_to_rem(100px);
+
+		@media all and (max-width: 1200px) {
+			margin-bottom: 2rem;		
+		}
+	}
+
 	&-title {
+		text-align: center;
 		@include title($section-title);
 		margin-bottom: px_to_rem(25px);
 		@include green-line(65px, 20px);
@@ -62,17 +75,32 @@ a {
 
 	&-description {
 		text-align: center;
-		margin-bottom: px_to_rem(100px);
+		margin: 0;
 		line-height: 2;
+		max-width: 66.666667%;
+		flex: 0 0 66.666667%;
+
+		@media all and (max-width: 1200px) {
+			max-width: 100%;
+		}
 	}	
 }
 
 .marked-list {
 	padding: 0;
+	margin: 0;
 
 	&__item {
 		list-style: none;
 		margin-bottom: px_to_rem(15px);
+
+		@media all and (max-width: 767px) {
+			text-align: center;
+		}
+
+		&:last-child {
+			margin-bottom: 0;			
+		}
 	}
 
 	&__link {
@@ -83,4 +111,9 @@ a {
 		}
 
 	}
+}
+
+.section-btn {
+	@include section-button($corp-green, $white);
+	font-weight: 700;
 }
