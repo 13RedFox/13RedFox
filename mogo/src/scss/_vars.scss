@@ -1,0 +1,44 @@
+// COLORS
+$red: #f38181;
+$white: #ffffff;
+$light-dark: #333333;
+$grey: #cccccc;
+$dark-grey: #999999;
+$black: #000000;
+$light-grey: #e5e5e5;
+$yellow: #fce38a;
+$aqua: #95e1d3;
+
+// SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$v_big-size: px_to_rem(150px);
+$big-size: px_to_rem(72px);
+$huge-size: px_to_rem(30px);
+$large-size: px_to_rem(24px);
+$middle-size: px_to_rem(18px);
+$small-size: px_to_rem(14px);
+$little-size: px_to_rem(12px);
+
+
+//FONTS 
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
+
+
+$main-font: 'Montserrat', sans-serif;
+$sec-font: 'Roboto', sans-serif;
+$title-font: 'Kaushan Script', cursive;
+
+// font-family: 'Kaushan Script', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
