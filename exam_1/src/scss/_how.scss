@@ -2,13 +2,20 @@
 	background-color: $bg_grey;
 	padding: 80px 0;
 
+	svg {
+		width: 50px;
+		height: 50px;
+		max-width: 50px;
+		max-height: 50px;
+	}
+
 	.row {
 		justify-content: center;
 	}
 
 	&__list {
 		position: relative;
-		width: 90%;
+		width: 80%;
 		display: flex;
 		justify-content: space-between;
 
@@ -17,11 +24,11 @@
 			position: absolute;
 			display: block;
 			background: url('../img/wave.svg')no-repeat;
-			background-size: cover;
+			background-size: 100%;
 			width: 100%;
-			max-width: 790px;
+			max-width: 690px;
 			height: 100px;
-			left: 49%;
+			left: 50%;
 			transform: translate(-50%, -50%);
 			z-index: 0;
 		}
@@ -31,31 +38,19 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-color: $bg_grey;
 		z-index: 1;
 	}
 
 	&__icon {
-		width: 60px;
-		height: 60px;
-		background-size: cover;
+		display: block;
+		background: $bg_grey;
+		border: 20px solid $bg_grey;
+		border-radius: 50%;
 		margin-bottom: 30px;
 	}
 
 	&__title {
 		font-size: $large-size;
 		font-weight: 400;
-	}
-
-	.h-search {
-		background: url('../img/search.svg') no-repeat;
-	}
-
-	.h-select {
-		background: url('../img/select.svg') no-repeat;
-	}
-
-	.h-finger {
-		background: url('../img/finger.svg') no-repeat;
 	}
 }

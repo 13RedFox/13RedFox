@@ -59,7 +59,8 @@
 
 	&__picture {
 		@include padding-hack(44.4%, cover);
-		width: 350px;
+		max-width: 350px;
+		width: 100%;
 
 		&:first-child {
 			align-self: flex-start;
