@@ -1,0 +1,11 @@
+.design {
+	background: linear-gradient(to top, rgba($white, 0.85) 0%, rgba($white, 0.85) 100%), url('../img/feauture-bg.png') no-repeat;
+	background-size: cover;
+	padding-top: 100px;
+
+	&__img-wrap {
+		@include padding-hack(108%, cover);
+		width: 100%;
+		max-width: 477px;
+	}
+}

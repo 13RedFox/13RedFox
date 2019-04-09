@@ -1,0 +1,64 @@
+.services-wwd {
+	padding: 100px 0;
+
+	&__img-wrap {
+		@include padding-hack(66.7%, cover);
+		width: 100%;
+		max-width: 540px;
+	}
+
+	&__title-wrap {
+		display: flex;
+		align-items: center;
+		border: 1px solid $light-grey;
+		padding: 15px;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 15px;
+			height: 15px;
+			border: 2px solid $grey;
+			border-right: none;
+			border-bottom: none;
+			top: 25px;
+			right: 20px;
+			transform: rotate(45deg);
+		}
+
+		&:focus::after {
+			transform: rotate(225deg);
+		}
+
+		&:focus ~ p {
+			display: block;
+		}
+	}
+
+	&__icon {
+		margin-right: 10px;
+	}
+
+	&__title {
+		color: $light-dark;
+		font-size: $small-size;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__text {
+		color: $grey;
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 300;
+		line-height: 24px;
+		margin: 0;
+		display: none;
+		border: 1px solid $light-grey;
+		border-top: none;
+		padding: 15px;
+	}
+}

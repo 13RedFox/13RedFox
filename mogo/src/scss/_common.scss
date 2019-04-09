@@ -45,4 +45,14 @@ a {
 		max-width: 60px;
 		border-bottom: 3px solid $red;
 	}
+
+	&__sub-text {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
+		padding-top: 40px;
+	}
 }
