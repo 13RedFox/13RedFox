@@ -242,3 +242,31 @@ a {
 	font-size: .875rem;
 	font-weight: 400;
 }
+
+.services {
+	padding: 100px 0;
+}
+.services__card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 60px 0 50px;
+}
+.services__icon {
+	margin-right: 20px;
+}
+.services__title {
+	color: #333;
+	font-size: .875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+.services__text {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0;
+}

@@ -6,4 +6,12 @@ $(document).ready( function() {
 			scrollTop: top
 		}, 500);
 	});
+
+	$("#block-2").on("click", function(e) {
+		e.preventDefault();
+		let top = $("#services").offset().top;
+		$("html, body").animate({
+			scrollTop: top
+		}, 500);
+	});
 });
