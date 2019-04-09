@@ -1,0 +1,35 @@
+.facts {
+	background: $aqua;
+	color: $white;
+	text-transform: uppercase;
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	&__item {
+		display: flex;
+		flex-basis: 240px;
+		flex-direction: column;
+		align-items: center;
+		border-right: 1px solid rgba($white, 0.3);
+		padding: 90px 0;
+
+		&:first-child {
+			border-left: 1px solid rgba($white, 0.3);
+		}
+	}
+
+	&__number {
+		font-size: $big-size;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: $small-size;
+		font-weight: 400;
+	}
+}

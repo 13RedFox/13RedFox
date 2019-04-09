@@ -14,4 +14,10 @@
 	&__img-wrap {
 		@include padding-hack(65.8%, cover);
 	}
+
+	&__img {
+		&:hover {
+			box-shadow: 10px 10px 0 $aqua;
+		}
+	}
 }
