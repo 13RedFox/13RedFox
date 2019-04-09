@@ -20,6 +20,41 @@ a {
 	text-decoration: none;
 }
 
+.sec-con {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.sec-con__title {
+	color: #333;
+	font-family: "Kaushan Script", cursive;
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.sec-con__text {
+	color: #333;
+	font-size: 1.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+.sec-con__line {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 60px;
+	border-bottom: 3px solid #f38181;
+}
+
 .first-screen {
 	background: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, .9)), to(rgba(243, 129, 129, .9))), #fce38a url("../img/header-bg.png") no-repeat;
 	background: linear-gradient(to top, rgba(252, 227, 138, .9) 0%, rgba(243, 129, 129, .9) 100%), #fce38a url("../img/header-bg.png") no-repeat;
@@ -131,4 +166,35 @@ a {
 .first-screen .sub-menu__number {
 	font-size: 1.5rem;
 	font-weight: 700;
+}
+
+.wwd {
+	padding: 100px 0;
+}
+.wwd__text {
+	color: #999;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding-top: 40px;
+}
+.wwd__img-wrap {
+	position: relative;
+	padding-top: 65.8%;
+}
+.wwd__img-wrap > * {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.wwd__link {
+	display: block;
 }

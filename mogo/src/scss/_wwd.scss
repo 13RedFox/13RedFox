@@ -1,0 +1,17 @@
+.wwd {
+	padding: 100px 0;
+
+	&__text {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
+		padding-top: 40px;
+	}
+
+	&__img-wrap {
+		@include padding-hack(65.8%, cover);
+	}
+}

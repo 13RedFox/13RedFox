@@ -1,8 +1,9 @@
-*{
+* {
 	box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
 	min-height: 100vh;
 }
 
@@ -15,4 +16,33 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+.sec-con {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__title {
+		color: $light-dark;
+		font-family: $title-font;
+		font-size: $large-size;
+		font-weight: 400;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: $light-dark;
+		font-size: $huge-size;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+
+	&__line {
+		display: flex;
+		width: 100%;
+		max-width: 60px;
+		border-bottom: 3px solid $red;
+	}
 }
