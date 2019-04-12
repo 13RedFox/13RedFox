@@ -1,0 +1,38 @@
+// COLORS 
+
+$main-bg: #292d3e;
+$yellow: #fedc3f;
+$aqua: #13e28d;
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #b7bacd;
+$nav-bg: #2b3040;
+$content-bg: #212534;
+$star: #4b536b;
+$border: #787c9b;
+$number: #aaadbb;
+
+// SIZE
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$huge-size: px_to_rem(32px);
+$large-size: px_to_rem(20px);
+$middle-size: px_to_rem(14px);
+$small-size: px_to_rem(12px);
+
+// FONTS
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+$main-font: 'Lato', sans-serif;
+
+// font-family: 'Lato', sans-serif;

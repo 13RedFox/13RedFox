@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	background: $main-bg url('../img/main-bg.png') no-repeat;
+	background-size: cover;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+a {
+	text-decoration: none;
+}
