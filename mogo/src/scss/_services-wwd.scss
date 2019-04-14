@@ -31,10 +31,6 @@
 		&:focus::after {
 			transform: rotate(225deg);
 		}
-
-		&:focus ~ p {
-			display: block;
-		}
 	}
 
 	&__icon {
@@ -55,10 +51,11 @@
 		font-size: $small-size;
 		font-weight: 300;
 		line-height: 24px;
-		margin: 0;
-		display: none;
 		border: 1px solid $light-grey;
-		border-top: none;
+		text-align: justify;
+		height: 130px;
+		overflow: scroll;
+		margin: 0;
 		padding: 15px;
 	}
 }

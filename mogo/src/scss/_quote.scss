@@ -1,0 +1,47 @@
+.slider-quote {
+	background-color: $slider-bg;
+	padding: 70px 0;
+
+	.quote-icon {
+		width: 150px;
+		height: 150px;
+		border: 1px solid $aqua;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.blockquote {
+		padding-left: 80px;
+
+		&-text {
+			color: $dark-grey;
+			font-family: $sec-font;
+			font-size: $large-size;
+			line-height: 36px;
+			margin-bottom: 10px;
+		}
+
+		&-author {
+			position: relative;
+			color: $light-dark;
+			font-family: $title-font;
+			font-size: $large-size;
+			font-weight: 400;
+			padding-left: 70px;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				background: url('../img/line.jpg') no-repeat;
+				background-size: cover;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 60px;
+				height: 3px;
+			}
+		}
+	}
+}

@@ -94,9 +94,13 @@
 		align-items: center;
 		margin: 0;
 
+		&__item {
+			flex-basis: 250px;
+		}
+
 		&__link {
 			text-decoration: none;
-			display: block;
+			display: flex;
 			color: $white;
 			border-top: 3px solid $white;
 			transition: border-top-color .5s ease;
