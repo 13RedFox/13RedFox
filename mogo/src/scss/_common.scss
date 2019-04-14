@@ -24,7 +24,8 @@ a {
 ::-webkit-scrollbar-button {  background-color: transparent; }
 ::-webkit-scrollbar-track {  background-color: transparent;}
 ::-webkit-scrollbar-track-piece { background-color: $white;}
-::-webkit-scrollbar-thumb { height: 90px; background-color: $aqua; border-radius: 3px;}
+::-webkit-scrollbar-thumb { height: 90px; background-color: $aqua; border-radius: 3px;
+}
 
 .sec-con {
 	display: flex;
@@ -62,5 +63,29 @@ a {
 		line-height: 24px;
 		text-align: center;
 		padding-top: 40px;
+	}
+}
+
+
+.btn-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 15px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: $aqua;
+	color: $light-dark;
+	font-family: $title-font;
+	font-weight: 700;
+	cursor: pointer;
+	padding: 15px 20px;
+	border-radius: 10px;
+	transition: all .3s ease;
+
+	&:hover {
+		background-color: $red;
+		color: $aqua;
 	}
 }
