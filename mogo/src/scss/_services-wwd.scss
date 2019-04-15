@@ -13,6 +13,7 @@
 		border: 1px solid $light-grey;
 		padding: 15px;
 		position: relative;
+		cursor: pointer;
 
 		&::after {
 			content: "";
@@ -28,7 +29,7 @@
 			transform: rotate(45deg);
 		}
 
-		&:focus::after {
+		&:hover::after {
 			transform: rotate(225deg);
 		}
 	}
