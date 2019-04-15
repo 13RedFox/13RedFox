@@ -1,0 +1,30 @@
+.work {
+	padding: 100px;
+
+	.img-wrapper {
+		@include padding-hack(205.8%, cover);
+		width: 100%;
+		min-width: 285px;
+	}
+
+	.img-wrap {
+		@include padding-hack(181.6%, cover);
+		width: 100%;
+		min-width: 285px;
+	}
+
+	.img-hover img {
+		z-index: 1;
+	}
+	.img-hover:hover::before {
+		content: "";
+		position: absolute;
+		background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		transition-duration: 0.3s;
+	}
+}

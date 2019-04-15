@@ -1,0 +1,10 @@
+.logos {
+	padding: 50px 0;
+	background-color: $slider-bg;
+
+	&-company {
+		background: url('../img/logos.png') no-repeat;
+		background-size: contain;
+		min-height: 150px;
+	}
+}

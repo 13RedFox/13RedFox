@@ -19,7 +19,15 @@ $(document).ready(function () {
 		let top = $("#services").offset().top;
 		$("html, body").animate({
 			scrollTop: top
-		}, 500);
+		}, 1000);
+	});
+
+	$("#block-3").on("click", function (e) {
+		e.preventDefault();
+		let top = $("#work").offset().top;
+		$("html, body").animate({
+			scrollTop: top
+		}, 2000);
 	});
 
 	//////////////////////
