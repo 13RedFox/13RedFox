@@ -1,0 +1,89 @@
+.blog {
+	padding: 100px 0;
+	
+	&__wrap {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.img-wrapper {
+		@include padding-hack(63.1%, cover);
+		width: 100%;
+		max-width: 380px;
+		margin-bottom: 20px;
+	}
+
+	&__content {
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		color: $light-dark;
+		font-size: $small-size;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	&__date {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		top: 48%;
+		left: -2%;
+		width: 60px;
+		height: 70px;
+		transform: translate(2%,-48%);
+		background-color: $aqua;
+		color: $white;
+	}
+
+	.date__number {
+		font-size: $huge-size;
+		font-weight: 700;
+		margin: 0;
+	}
+
+	.date__month {
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 300;
+	}
+
+	&__rating {
+
+font-family: "Roboto - Light Italic";
+font-size: 15px;
+font-weight: 400;
+line-height: 24px;
+	}
+
+	&__view,
+	&__comment {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 300;
+	}
+
+	&__view {
+		margin-right: 15px;
+	}
+
+	.fas {
+		color: $aqua;
+		margin-right: 5px;
+	}
+
+	
+}

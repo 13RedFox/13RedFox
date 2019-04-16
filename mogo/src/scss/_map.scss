@@ -1,0 +1,25 @@
+.map {
+	padding: 50px 0;
+	color: $red;
+	background: linear-gradient(to top, rgba($white, 0.85)), url('../img/map-bg.jpg'), no-repeat;
+	background-size: cover;
+
+	&__icon {
+		font-size: $large-size;
+		margin-bottom: 10px;
+	}
+
+	&__title {
+		font-size: $large-size;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__line {
+		display: flex;
+		width: 100%;
+		max-width: 60px;
+		border-bottom: 3px solid $red;
+	}
+}
