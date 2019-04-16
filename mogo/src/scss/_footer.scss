@@ -1,3 +1,217 @@
 .footer {
-	
+	padding: 70px 0 20px;
+	background-color: $slider-bg;
+
+	.b-btm {
+		padding-bottom: 65px;
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: 20px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid $light-grey;
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		color: $grey;
+		font-size: 46px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: $dark-grey;
+		font-size: $small-size;
+		font-weight: 300;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	&__follower {
+		color: $light-dark;
+		font-size: $small-size;
+		font-family: $sec-font;
+		font-weight: 400;
+	}
+
+	&__number {
+		color: $black;
+		font-size: $middle-size;
+		font-weight: 700;
+		margin-right: 2px;
+	}
+
+	&__follow {
+		display: flex;
+		align-items: center;
+		margin-bottom: 35px;
+	}
+
+	.follow__text {
+		text-transform: capitalize;
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 400;
+		line-height: 24px;
+		margin-right: 20px;
+	}
+
+	.follow__list {
+		display: flex;
+		margin: 0;
+	}
+
+	.follow__item {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.follow__link {
+		display: block;
+	}
+
+	.fab {
+		display: flex;
+		justify-content: center;
+		width: 16px;
+		height: 16px;
+		font-size: $small-size;
+		color: $aqua;
+
+		&:hover {
+			color: none;
+		}
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 380px;
+	}
+
+	.form-control {
+		border: 1px solid $border-input;
+		border-radius: 0;
+
+		@include placeholder {
+			color: $grey;
+			font-family: $sec-font;
+			font-size: $small-size;
+			font-weight: 400;
+		}
+	}
+
+	.btn-outline-secondary {
+		background-color: $aqua;
+		border: none;
+		color: $white;
+		text-transform: uppercase;
+		font-size: $small-size;
+		font-weight: 700;
+		border-radius: 0;
+	}
+
+	&__blog,
+	&__instagram {
+		color: $light-dark;
+		font-size: $small-size;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	&-blog__wrap {
+		display: flex;
+		align-items: flex-start;
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.img-blog-wrapper {
+		@include padding-hack (22.6%, contain);
+		width: 100%;
+		max-width: 120px;
+		margin-right: 20px;
+	}
+
+	&-blog__text {
+		color: $light-dark;
+		font-size: $little-size;
+		font-weight: 400;
+		line-height: 18px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	&-blog__date {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-size: $little-size;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	&-instagram__wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+	}
+
+	.img-instagram-wrapper {
+		@include padding-hack(31.3%, cover);
+		width: 100%;
+		max-width: 80px;
+		margin-right: 2px;
+		margin-bottom: 2px;
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		&:nth-child(n+7) {
+			margin-bottom: 0;
+		}
+	}
+
+	&-instagram__view {
+		display: block;
+		color: $light-dark;
+		font-family: $sec-font;
+		font-size: $small-size;
+		font-weight: 400;
+		line-height: 24px;
+		transition: color .5s ease;
+
+		&:hover {
+			color: $aqua;
+		}
+	}
+
+	&-copy {
+		display: flex;
+	}
+	&-text__copy {
+		color: $light-dark;
+		font-size: $small-size;
+		font-weight: 400;
+	}
+
+	&-link__copy {
+		display: inline-flex;
+		color: $red;
+		transition: color .5s ease;
+
+		&:hover {
+			color: $aqua;
+		}
+	}
 }

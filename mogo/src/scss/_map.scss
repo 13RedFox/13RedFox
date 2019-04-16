@@ -16,6 +16,16 @@
 		margin-bottom: 15px;
 	}
 
+	&__link {
+		display: block;
+		color: $red;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $aqua;
+		}
+	}
+
 	&__line {
 		display: flex;
 		width: 100%;

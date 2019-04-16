@@ -30,6 +30,22 @@ $(document).ready(function () {
 		}, 2000);
 	});
 
+	$("#block-4").on("click", function (e) {
+		e.preventDefault();
+		let top = $("#blog").offset().top;
+		$("html, body").animate({
+			scrollTop: top
+		}, 2000);
+	});
+
+	$("#block-5").on("click", function (e) {
+		e.preventDefault();
+		let top = $("#footer").offset().top;
+		$("html, body").animate({
+			scrollTop: top
+		}, 2000);
+	});
+
 	//////////////////////
 	//									//
 	//			Facts				//
