@@ -1,0 +1,49 @@
+.clients {
+	padding: 100px;
+	min-height: 100vh;
+	background: linear-gradient(to top, rgba($white, 0.85)), url('../img/wps-bg.jpg'), no-repeat;
+	background-size: cover;
+
+	&__author {
+		@include padding-hack (20.4%, contain);
+		width: 100%;
+		max-width: 110px;
+		margin-right: 30px;
+	}
+
+	&__content {
+		font-size: $small-size;
+	}
+
+	&__title {
+		color: $light-dark;
+		font-size: $small-size;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__subtitle {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-weight: 400i;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+
+	&__line {
+		display: flex;
+		width: 100%;
+		max-width: 60px;
+		border-bottom: 3px solid $red;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: $dark-grey;
+		font-family: $sec-font;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+}

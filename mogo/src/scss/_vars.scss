@@ -33,8 +33,10 @@ $little-size: px_to_rem(12px);
 
 //FONTS 
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
-
+// @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 $main-font: 'Montserrat', sans-serif;
 $sec-font: 'Roboto', sans-serif;
