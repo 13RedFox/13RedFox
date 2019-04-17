@@ -1,13 +1,70 @@
 .wwd {
 	padding: 100px 0;
 
-		&__img-wrap {
+	&__img-wrap {
 		@include padding-hack(65.8%, cover);
-	}
+		width: 100%;
+		min-width: 350px;
+		transition: all .3s ease;
 
-	&__img {
 		&:hover {
-			box-shadow: 10px 10px 0 $aqua;
+			box-shadow:
+				1px 1px $aqua,
+				2px 2px $aqua,
+				3px 3px $aqua,
+				4px 4px $aqua,
+				5px 5px $aqua,
+				6px 6px $aqua,
+				7px 7px $aqua;
+			transform: translate(-7px, -7px);
+
+		}
+
+		&:hover::before {
+			content: "";
+			position: absolute;
+			background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			transition-duration: 0.3s;
+		}
+
+		&:hover .wwd__wrap {
+			display: flex;
+			transition-duration: 0.3s;
 		}
 	}
+
+	&__wrap {
+		position: absolute;
+		display: none;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		flex-direction: column;
+		text-align: center;
+		color: $white;
+		font-size: $middle-size;
+		z-index: 3;
+	}
+
+	&__icon {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.fas {
+		display: flex;
+		justify-content: center;
+		font-size: $large-size;
+	}
+
 }
