@@ -2,6 +2,14 @@
 	background-color: $slider-bg;
 	padding: 70px 0;
 
+	@media screen and (max-width: 991px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 992px) {
+		display: block;
+	}
+
 	.quote-wrap {
 		display: flex;
 	}

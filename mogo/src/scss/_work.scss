@@ -1,6 +1,13 @@
 .work {
-	padding: 100px 0;
 
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 100px 0;
+	}
+	
 	.img-wrapper {
 		@include padding-hack(81.3%, contain);
 		width: 100%;

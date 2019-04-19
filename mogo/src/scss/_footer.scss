@@ -199,12 +199,17 @@
 
 	&-copy {
 		display: flex;
+		justify-content: center;
 	}
 	&-text__copy {
 		color: $light-dark;
 		font-size: $small-size;
 		font-weight: 400;
 		margin: 0;
+
+		@media screen and (max-width: 575px) {
+			font-size: 12px;
+		}
 	}
 
 	&-link__copy {

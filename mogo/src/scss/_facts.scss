@@ -3,6 +3,14 @@
 	color: $white;
 	text-transform: uppercase;
 
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+
 	&__list {
 		display: flex;
 		justify-content: space-between;
@@ -32,5 +40,9 @@
 		font-size: $small-size;
 		font-weight: 400;
 		margin-bottom: 0;
+
+		@media screen and (min-width: 768px) {
+			text-align: center;
+		}
 	}
 }

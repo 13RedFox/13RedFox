@@ -1,5 +1,20 @@
 .our-team {
-	padding: 100px 0;
+	
+	@media screen and (max-width: 575px) {
+		padding: 30px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 50px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 70px 0;
+	}
+
+	@media screen and (min-width: 992px) {
+		padding: 100px 0;
+	}
 
 	.figure:focus .img-wrapper:hover .our-team__list {
 		display: flex;
@@ -12,7 +27,7 @@
 
 		.img-wrapper {
 			position: absolute;
-			@include padding-hack(124.3%);
+			@include padding-hack(124.3%, cover);
 			width: 100%;
 			min-width: 340px;
 			margin-bottom: 20px;

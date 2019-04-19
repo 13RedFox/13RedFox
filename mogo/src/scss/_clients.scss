@@ -1,8 +1,23 @@
 .clients {
-	padding: 100px 0;
 	min-height: 100vh;
 	background: linear-gradient(to top, rgba($white, 0.85)), url('../img/wps-bg.jpg'), no-repeat;
 	background-size: cover;
+
+	@media screen and (max-width: 575px) {
+		padding: 30px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 50px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 70px 0;
+	}
+
+	@media screen and (min-width: 992px) {
+		padding: 100px 0;
+	}
 
 	&__author {
 		@include padding-hack (20.4%, contain);

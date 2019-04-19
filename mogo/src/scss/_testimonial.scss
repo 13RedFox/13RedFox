@@ -1,5 +1,13 @@
 .testimonial {
 	padding: 70px 0;
+	
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: block;
+	}
 
 	&-wrap {
 		display: flex;

@@ -1,7 +1,23 @@
 .design {
 	background: linear-gradient(to top, rgba($white, 0.85) 0%, rgba($white, 0.85) 100%), url('../img/feauture-bg.png') no-repeat;
 	background-size: cover;
-	padding-top: 100px;
+
+
+	@media screen and (max-width: 575px) {
+		padding-top: 30px;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding-top: 50px;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding-top: 70px;
+	}
+
+	@media screen and (min-width: 992px) {
+		padding-top: 100px;
+	}
 
 	&__img-wrap {
 		@include padding-hack(108%, cover);
@@ -17,9 +33,38 @@
 		width: 100%;
 		height: 100%;
 		transform: translate(40%, 18%);
+
+		@media screen and (max-width: 575px) {
+			left: 35%;
+			transform: translateX(25%);
+		}
+
+		@media screen and (min-width: 576px) {
+			left: 35%;
+			top: 15%;
+			transform: translate(25%, 10%);
+		}
+
+		@media screen and (min-width: 768px) {
+			left: 45%;
+			top: 15%;
+			transform: translate(25%, 10%);
+		}
+
+		@media screen and (min-width: 992px) {
+			left: 55%;
+			top: 20%;
+			transform: translate(25%, 10%);
+		}
+
+		@media screen and (min-width: 1200px) {
+			left: 40%;
+			top: 18%;
+			transform: translate(40%, 18%);
+		}
 	}
 	&__phone {
-		@include padding-hack (100%, cover);
+		@include padding-hack (100%, contain);
 		width: 100%;
 		max-width: 274px;
 	}
