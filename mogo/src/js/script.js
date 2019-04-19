@@ -111,34 +111,34 @@ $(document).ready(function () {
 	//									//
 	//////////////////////
 
-	$('.next-btn').click(function () {
-		const currentWrap = $('.quote-wrap.curry');
-		const currentWrapIndex = $('.quote-wrap.curry').index();
-		let nextWrapIndex = currentWrapIndex + 1;
-		let nextWrap = $('.quote-wrap').eq(nextWrapIndex);
-		currentWrap.fadeOut(1000);
-		currentWrap.removeClass('curry');
+	// $('.next-btn').click(function () {
+	// 	const currentWrap = $('.quote-wrap.curry');
+	// 	const currentWrapIndex = $('.quote-wrap.curry').index();
+	// 	let nextWrapIndex = currentWrapIndex + 1;
+	// 	let nextWrap = $('.quote-wrap').eq(nextWrapIndex);
+	// 	currentWrap.fadeOut(1000);
+	// 	currentWrap.removeClass('curry');
 
-		if (nextWrapIndex == ($('.quote-wrap:last').index() + 1)) {
-			$('.quote-wrap').eq(0).fadeIn(1000);
-			$('.quote-wrap').eq(0).addClass('curry');
-		} else {
-			nextWrap.fadeIn(1000);
-			nextWrap.addClass('curry');
-		}
-	});
+	// 	if (nextWrapIndex == ($('.quote-wrap:last').index() + 1)) {
+	// 		$('.quote-wrap').eq(0).fadeIn(1000);
+	// 		$('.quote-wrap').eq(0).addClass('curry');
+	// 	} else {
+	// 		nextWrap.fadeIn(1000);
+	// 		nextWrap.addClass('curry');
+	// 	}
+	// });
 
-	$('.next-btn').click(function () {
+	// $('.next-btn').click(function () {
 
-		const currentWrap = $('.quote-wrap.curry');
-		const currentWrapIndex = $('.quote-wrap.curry').index();
-		let prevWrapIndex = currentWrapIndex - 1;
-		let prevWrap = $('.quote-wrap').eq(prevWrapIndex);
+	// 	const currentWrap = $('.quote-wrap.curry');
+	// 	const currentWrapIndex = $('.quote-wrap.curry').index();
+	// 	let prevWrapIndex = currentWrapIndex - 1;
+	// 	let prevWrap = $('.quote-wrap').eq(prevWrapIndex);
 
-		currentWrap.fadeOut(1000);
-		currentWrap.removeClass('curry');
-		prevWrap.fadeIn(1000);
-		prevWrap.addClass('curry');
-	});
+	// 	currentWrap.fadeOut(1000);
+	// 	currentWrap.removeClass('curry');
+	// 	prevWrap.fadeIn(1000);
+	// 	prevWrap.addClass('curry');
+	// });
 
 });

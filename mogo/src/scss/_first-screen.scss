@@ -12,6 +12,10 @@
 		font-size: $huge-size;
 		font-weight: 700;
 
+		@media screen and (max-width: 991px) {
+			text-align: left;
+		}
+
 		&:hover {
 			text-decoration: none;
 		}
@@ -20,18 +24,16 @@
 	.menu {
 		width: 100%;
 
+		@media screen and (max-width: 991.98px) {
+			display: none;
+		}
+
 		.active {
 			color: $yellow;
 			border-bottom: 2px solid $yellow;
 		}
 
-		&__item {
-			margin-right: px_to_rem(50px);
 
-			&:last-child {
-				margin-right: 0;
-			}
-		}
 
 		&__link {
 			display: block;
@@ -49,7 +51,22 @@
 	}
 
 	.fs-content {
-		padding: px_to_rem(150px) 0;
+
+		@media screen and (max-width: 575px) {
+			padding: 6rem 0;
+		}
+
+		@media (min-width: 576px) and (max-width: 991px) {
+			padding: 6rem 0;
+		}
+
+		@media screen and (min-width: 992px) {
+			padding: 9rem 0;
+		}
+
+		@media screen and (min-width: 1200px) {
+			padding: px_to_rem(150px) 0;
+		}
 	}
 
 	&__title {
@@ -57,6 +74,20 @@
 		font-size: $big-size;
 		font-weight: 400;
 		margin-bottom: px_to_rem(40px);
+
+		@media screen and (min-width: 320px) {
+			font-size: 30px;
+			margin-bottom: 1rem;
+		}
+
+		@media screen and (min-width: 992px) {
+			font-size: 30px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 50px;
+			margin-bottom: 1rem;
+		}
 	}
 
 	&__text {
@@ -65,6 +96,28 @@
 		line-height: 140px;
 		text-transform: uppercase;
 		margin-bottom: px_to_rem(70px);
+
+		@media screen and (max-width: 575px) {
+			font-size: 30px;
+			line-height: 1;
+			margin-bottom: 2rem;
+		}
+
+		@media screen and (min-width: 576px) {
+			font-size: 40px;
+			line-height: 1;
+			margin-bottom: 2rem;
+		}
+
+		@media screen and (min-width: 992px) {
+			font-size: 90px;
+			line-height: 1;
+		}
+
+		@media screen and (min-width: 1200px) {
+			font-size: 120px;
+			margin-bottom: 3rem;
+		}
 	}
 
 	&__line {
@@ -88,39 +141,36 @@
 		}
 	}
 
-	.sub-menu {
+	&__slider {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__slider-item {
+		width: 24%;
+		display: flex;
 		align-items: center;
+		border-top: 3px solid $white;
+		padding-top: 20px;
+		cursor: pointer;
+		transition: border .5s ease;
+
+		&:hover {
+			border-top: 3px solid $red;
+		}
+	}
+
+	&__slider-number {
+		font-size: $large-size;
+		font-weight: 700;
+		margin-right: 5px;
+	}
+
+	&__slider-text {
 		margin: 0;
-
-		&__item {
-			flex-basis: 250px;
-		}
-
-		&__link {
-			text-decoration: none;
-			display: flex;
-			color: $white;
-			border-top: 3px solid $white;
-			transition: border-top-color .5s ease;
-
-			&:hover {
-				border-top-color: $red;
-			}
-		}
-
-		&__text {
-			margin: 0;
-			opacity: 0.7;
-			font-size: $middle-size;
-			font-weight: 400;
-			text-transform: uppercase;
-		}
-
-		&__number {
-			font-size: $large-size;
-			font-weight: 700;
-		}
+		opacity: 0.7;
+		font-size: $middle-size;
+		font-weight: 400;
+		text-transform: uppercase;
 	}
 }

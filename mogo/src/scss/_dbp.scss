@@ -1,0 +1,24 @@
+// .first-screen,
+// .wwd,
+// .facts,
+// .services,
+// .design,
+// .services-wwd,
+// .slider-quote,
+// .our-team,
+// .logos,
+// .work,
+// .testimonial,
+// .clients,
+// .blog,
+// .map,
+// .footer
+//  {
+// 	display: none;
+// }
+
+html {
+	@media all and (max-width: 319px) {
+		display: none;
+	}
+}
