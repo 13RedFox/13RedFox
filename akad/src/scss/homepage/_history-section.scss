@@ -1,0 +1,46 @@
+.history {
+	padding: 35px 0;
+	transform: translateY(0);
+	margin-bottom: 0;
+
+	@media screen and (min-width: 1200px){
+		padding: 150px 0;
+	}
+
+	@media screen and (min-height: 769px) and (min-width: 1366px){
+		padding: 0 0 70px;
+		transform: translateY(-64%);
+		margin-bottom: -15.4%;
+	}
+
+	.img-wrapper {
+		@include padding-hack(87%);
+	}
+
+	.section-title {
+		margin-bottom: 15px;
+
+		@media screen and (min-width: 991px){
+			text-align: left;
+		}
+	}
+
+	&__text {
+		text-align: justify;
+		line-height: 1.8;
+		height: 170px;
+		overflow: hidden;
+		margin-bottom: 1rem;
+
+		@media screen and (min-width: 577px){
+			text-align: left;
+		}
+	}
+
+	.section-btn {
+		@include section-button($white, $corp-green);
+		font-weight: 700;
+		display: block;
+	}
+
+}

@@ -1,0 +1,88 @@
+.contacts {
+	padding: px_to_rem(50px) 0;
+	background-color: $corp-green;
+
+	@media all and (max-width: 1199px) {
+		padding: px_to_rem(25px) 0;
+	}
+
+	&__title {
+		@include title($section-title);
+		color: $white;
+		line-height: 1.5;
+		margin-bottom: px_to_rem(30px);
+
+		@media all and (max-width: 1199px) {
+			font-size: 1.7rem;
+			text-align: center;
+			margin-bottom: px_to_rem(15px);
+		}
+	}
+
+	&__card {
+		background-color: $white;
+		padding: 20px;
+	}
+
+	&__card-title {
+		@include title($form-title);
+		line-height: 1.5;
+		margin-bottom: .5rem;
+
+		@media all and (max-width: 1199px) {
+			text-align: center;
+			line-height: 1.2;
+		}
+	}
+
+	&__card-description {
+		line-height: 1.5;
+		margin-bottom: 1.6rem;
+
+		@media all and (max-width: 1199px) {
+			text-align: justify;
+		}
+	}
+
+	&__form {
+		display: flex;
+
+		@media all and (max-width: 991px) {
+			flex-direction: column;
+		}
+
+		@include placeholder {
+			color: $light-grey;
+			@include title($small-size);
+		}
+
+		[type="email"]{
+			border: 1px solid darken($middle-grey, 2%);
+			border-right: none;
+			padding-left: px_to_rem(15px);
+			color: $light-grey;
+			@include title($small-size);
+			width: 100%;
+			max-width: 74%;
+
+			@media all and (max-width: 991px) {
+				flex-direction: column;
+				border-right: 1px solid darken($middle-grey, 2%);
+				max-width: initial;
+				padding: 15px 0 15px 15px;
+				margin-bottom: 1rem;
+			}
+		}
+
+		[type="submit"]{
+			@include section-button;
+			font-weight: 700;
+			font-size: $middle-size;
+			max-width: calc(100% - 74%);
+
+			@media all and (max-width: 991px) {
+				max-width: initial;
+			}
+		}
+	}
+}

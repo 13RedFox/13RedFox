@@ -1,0 +1,54 @@
+.menu {
+    width: 100%;
+    background-color: $dark-blue-color;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white-color;
+        text-transform: uppercase;
+        min-height: 80px;
+    }
+
+    &__logo {
+        letter-spacing: 3px;
+        font-size: 24px;
+        font-weight: 800;
+        font-family: $secondary-font;
+        text-decoration: none;
+        color: $white-color;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $light-grey-color;
+        }
+    }
+
+    &__list {
+        display: flex;
+
+    }
+
+    &__item {
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        text-decoration: none;
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 400;
+        color: $white-color;
+        transition: color .3s ease;
+
+        &:hover {
+            color: $light-grey-color;
+        }
+    }
+}

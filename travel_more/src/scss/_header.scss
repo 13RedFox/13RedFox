@@ -1,0 +1,96 @@
+.first-screen {
+    min-height: 100vh;
+    margin: auto;
+    background: $dark-grey-color url('../img/header-bg.png') no-repeat;
+    background-size: cover;
+    font-family: $secondary-font;
+    color: $white-color;
+    display: flex;
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fs-title {
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        margin: 0 0 15px;
+    }
+
+    .fs-subtitle {
+        text-transform: capitalize;
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+
+    }
+
+
+    .fs-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $white-color;
+        min-height: 60px;
+        width: 100%;
+        max-width: 650px;
+        margin-bottom: 120px;
+
+    }
+
+    .fs-search {
+        width: calc(100% - 150px);
+        color: #999999;
+        text-align: center;
+        font-size: 14px;
+        border: none;
+        letter-spacing: 5px;
+        outline: none;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #999999;
+    }
+
+    .fs-btn {
+        display: flex;
+        min-height: 60px;
+        min-width: 145px;
+        border: none;
+        justify-content: center;
+        color: $white-color;
+        background: $dark-blue-color url('../img/search-icon.svg') no-repeat 92% 50%;
+        border: 2px solid $white-color;
+        cursor: pointer;
+    }
+
+    .fs-link {
+        display: flex;
+        text-decoration: none;
+        color: $white-color;
+        letter-spacing: 5px;
+        text-transform: capitalize;
+        position: relative;
+
+        &::after {
+            content: "";
+				position: absolute;
+				display: block;
+				font-size: 16px;
+				width: 8px;
+				height: 8px;
+				bottom: -15px;
+				left: 48%;
+				color: $white-color;
+				border: 1px solid $white-color;
+				border-top-color: transparent;
+				border-left-color: transparent;
+				transform: rotate(45deg);
+        }
+    }
+}

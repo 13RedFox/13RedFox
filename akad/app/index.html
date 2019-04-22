@@ -7,9 +7,11 @@
 	<link rel="shortcut icon" type="image/x-icon" href="fav/favicon.ico">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="homepage">
 	<div class="top-line">
 		<div class="container">
 			<div class="row justify-content-between">
@@ -25,261 +27,199 @@
 		</div>
 	</div>
 
-	<div class="first-screen">
+	<section class="first-screen">
 		<div class="container">
-			<div class="row">
-				<div class="col">
+			<div class="row justify-content-center">
+				<div class="col-xl-6">
 					<div class="first-screen__content">
-						<h1 class="first-screen__title">
-							our services
-						</h1>
-						<ul class="breadcrumbs">
-							<li class="breadcrumbs__item">
-								<a href="#" class="breadcrumbs__link">home</a>
-							</li>
-							<li class="breadcrumbs__item">
-								<a href="#" class="breadcrumbs__link">services</a>
-							</li>
-						</ul>
-					</div>
+						<div class="title-wrapper">
+							<h1 class="first-screen__title order-2">creative agency</h1>
+							<span class="first-screen__title-label order-1">we're</span>
+						</div>
+						<div id="outer">
+							<div id="inner"></div>
+						</div>
+						<p class="first-screen__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem aliquid suscipit dolor libero ipsum dolores optio nobis dignissimos, in minima?</p>
+					</div>	
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<section class="wwd section">
+	<section class="history">
 		<div class="container">
-			<div class="row justify-content-center section-heading-row">
-				<div class="col d-flex align-items-center flex-column">
-					<h2 class="section-title">
-						what we do
-					</h2>
-					<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dicta esse facere doloremque rerum maiores eum fugiat, debitis magni tenetur!</p>
-				</div>
-			</div>
 			<div class="row">
-				<div class="col-12 col-lg-6 order-2 order-lg-1">
-					<p class="wwd__text">
-						Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
-					</p>
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<ul class="marked-list">
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item1</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item2</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item3</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item4</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item5</span>
-								</li>
-							</ul>
-						</div>
-						<div class="col-12 col-md-6">
-							<ul class="marked-list">
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item1</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item2</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item3</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item4</span>
-								</li>
-								<li class="marked-list__item">
-									<span class="marked-list__link"><i class="fas fa-check-square"></i>item5</span>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+				<div class="col-12 col-lg-5">
 					<div class="img-wrapper">
-						<img class="img-fluid" src="img/image-man.jpg" alt="scientist">
+						<img src="img/homepage/first-screen-item.jpg" alt="table">
 					</div>
 				</div>
+				<div class="offset-lg-1 col-lg-6 pt-4">
+					<h2 class="section-title"><span class="section-title__marker">history</span> of agency</h2>
+	
+					<p class="history__text">
+						Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+						quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
+					</p>
+					<div class="row justify-content-end">
+						<div class="col-12 col-xl-4">
+							<a href="#" class="section-btn">read more</a>	
+						</div>
+					</div>
+					
+				</div>
 			</div>
-			<!-- /.row -->
 		</div>
 	</section>
 
-	<section class="section-icons">
+	<section class="choose">
 		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6 col-xl-3 mb-4 mb-md-0">
-					<div class="section-icons__item">
-						<div class="img-wrapper">
-							<img class="section-icons__img" src="img/diagram.png" alt="icon">
-						</div>
-						<h3 class="section-icons__item-title">
-							keep pulse going
-						</h3>
-						<p class="section-icons__item-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
-						</p>
-	
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-xl-3 mb-4 mb-md-0">
-					<div class="section-icons__item">
-						<div class="img-wrapper">
-							<img class="section-icons__img" src="img/diagram.png" alt="icon">
-						</div>
-						<h3 class="section-icons__item-title">
-							keep pulse going
-						</h3>
-						<p class="section-icons__item-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
-						</p>
-	
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-xl-3 mb-4 mb-md-0">
-					<div class="section-icons__item">
-						<div class="img-wrapper">
-							<img class="section-icons__img" src="img/diagram.png" alt="icon">
-						</div>
-						<h3 class="section-icons__item-title">
-							keep pulse going
-						</h3>
-						<p class="section-icons__item-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
-						</p>
-	
-					</div>
-				</div>
-				<div class="col-12 col-md-6 col-xl-3">
-					<div class="section-icons__item">
-						<div class="img-wrapper">
-							<img class="section-icons__img" src="img/diagram.png" alt="icon">
-						</div>
-						<h3 class="section-icons__item-title">
-							keep pulse going
-						</h3>
-						<p class="section-icons__item-text">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
-						</p>
-	
-					</div>
-				</div>
-			</div>
-			<!-- /.row -->
-		</div>
-		<!-- /.container -->
-	</section>
-
-	<section class="plans section">
-		<div class="container">
-			<div class="row justify-content-center section-heading-row">
-				<div class="col d-flex align-items-center flex-column">
-					<h2 class="section-title">
-						pricing plans
+			<div class="row mb-100">
+				<div class="col-12 text-center">
+					<h2 class="section-title inline">
+						<span class="section-title__marker">why</span> choose us
 					</h2>
-					<p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dicta esse facere doloremque rerum maiores eum fugiat, debitis magni tenetur!</p>
+	
+					<p class="section-description center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsum. Laborum officia rerum totam, modi, voluptas odit? Quos nesciunt, aliquid!</p>
 				</div>
 			</div>
-			<div class="row justify-content-lg-between">
-				<div class="col-12 col-md-6 col-xl-4">
-					<div class="plans__card">
-						<h3 class="plans__card-title">
-							Basic
-						</h3>
-						<div class="plans__card-price">
-							$35.99 monthly
+	
+			<div class="row justify-content-between">
+				<div class="col-6 pt-4">
+					<div class="row mb-5">
+						<div class="col-6">
+							<div class="choose__card">
+								<img src="img/homepage/infinity.png" alt="icon">
+	
+								<h5 class="choose__card-title">unlimited options</h5>
+	
+								<ul class="choose__card-list">
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+								</ul>
+							</div>
 						</div>
-						<ul class="marked-list">
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item1</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item2</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item3</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item4</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item5</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item6</span>
-							</li>
-						</ul>
-						<a href="#" class="plans__card-btn">get started</a>
+						<div class="col-6">
+							<div class="choose__card">
+								<img src="img/homepage/infinity.png" alt="icon">
+	
+								<h5 class="choose__card-title">unlimited options</h5>
+	
+								<ul class="choose__card-list">
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="choose__card">
+								<img src="img/homepage/infinity.png" alt="icon">
+	
+								<h5 class="choose__card-title">unlimited options</h5>
+	
+								<ul class="choose__card-list">
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="choose__card">
+								<img src="img/homepage/infinity.png" alt="icon">
+	
+								<h5 class="choose__card-title">unlimited options</h5>
+	
+								<ul class="choose__card-list">
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+									<li class="choose__card-item">Information architecture</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-							<div class="col-12 col-md-6 col-xl-4">
-					<div class="plans__card">
-						<h3 class="plans__card-title">
-							Basic
-						</h3>
-						<div class="plans__card-price">
-							$35.99 monthly
-						</div>
-						<ul class="marked-list">
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item1</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item2</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item3</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item4</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item5</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item6</span>
-							</li>
-						</ul>
-						<a href="#" class="plans__card-btn">get started</a>
+				<div class="col-5">
+					<div class="img-wrapper">
+						<img src="img/homepage/about_img3.jpg" alt="about">
 					</div>
 				</div>
-							<div class="col-12 col-md-6 col-xl-4">
-					<div class="plans__card">
-						<h3 class="plans__card-title">
-							Basic
-						</h3>
-						<div class="plans__card-price">
-							$35.99 monthly
-						</div>
-						<ul class="marked-list">
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item1</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container">
+			<div class="row mb-100">
+				<div class="col-12 text-center">
+					<h3 class="section-title inline">
+						<span class="section-title__marker">our</span> portfolio
+					</h3>
+	
+					<p class="section-description center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, ipsum. Laborum officia rerum totam, modi, voluptas odit? Quos nesciunt, aliquid!</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">
+					<div class="portfolio-category">
+						<h4 class="portfolio-category__title section-title">choose category</h4>
+						<ul class="portfolio-category__list">
+							<li class="portfolio-category__item active">
+								<a href="#" class="portfolio-category__link">item_1</a>
 							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item2</span>
+							<li class="portfolio-category__item">
+								<a href="#" class="portfolio-category__link">item_2</a>
 							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item3</span>
+							<li class="portfolio-category__item">
+								<a href="#" class="portfolio-category__link">item_3</a>
 							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item4</span>
+							<li class="portfolio-category__item">
+								<a href="#" class="portfolio-category__link">item_4</a>
 							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item5</span>
-							</li>
-							<li class="marked-list__item">
-								<span class="marked-list__link"><i class="fas fa-check-square"></i>item6</span>
+							<li class="portfolio-category__item">
+								<a href="#" class="portfolio-category__link">item_5</a>
 							</li>
 						</ul>
-						<a href="#" class="plans__card-btn">get started</a>
+					</div>
+				</div>
+	
+				<div class="col-9">
+					<div class="grid">
+						<div class="grid-item">
+							<img src="img/homepage/choose1.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose2.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose3.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose4.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose5.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose6.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose7.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose8.jpg" alt="img">
+						</div>
+						<div class="grid-item">
+							<img src="img/homepage/choose6.jpg" alt="img">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -289,17 +229,17 @@
 	<section class="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-12 col-xl-6 mb-5 mb-xl-0">
 					<h2 class="contacts__title">
 						Lorem ipsum dolor sit amet, consectetur
 					</h2>
 					<div class="row">
-						<div class="col-4">
+						<div class="col-12 col-lg-6 col-xl-4 col-lg-3 offset-lg-3 offset-xl-0 ">
 							<button class="section-btn white-btn">get in touch</button>		
 						</div>
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-12 col-xl-6">
 					<div class="contacts__card">
 						<h3 class="contacts__card-title">
 							stay informed with our newsletter
@@ -321,7 +261,7 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-12 col-xl-6 mb-4 mb-xl-0">
 					<nav class="footer-nav">
 						<ul class="footer-nav__list">
 							<li class="footer-nav__item">
@@ -345,11 +285,8 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="col-6 d-flex align-items-end flex-column">
-					<p class="footer-copyrights">
-						Created by akhouad 2016. All Rights Reserved
-					</p>
-					<ul class="social-menu">
+				<div class="col-12 col-xl-6 d-flex align-items-xl-end flex-column">
+					<ul class="social-menu order-xl-2">
 						<li class="social-menu__item">
 							<a href="#" class="social-menu__link" target="_blank">
 								<i class="fab fa-facebook-f"></i>
@@ -381,7 +318,9 @@
 							</a>
 						</li>
 					</ul>
-	
+					<p class="footer-copyrights order-xl-1">
+						Created by akhouad 2016. All Rights Reserved
+					</p>
 				</div>
 			</div>
 		</div>
@@ -390,6 +329,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

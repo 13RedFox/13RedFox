@@ -1,0 +1,76 @@
+.plans {
+
+	&__card {
+		border-top: 5px solid $corp-green;
+		padding: px_to_rem(30px);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		@include transition;
+
+		&:hover {
+			box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+		}
+
+		&::before {
+			content: "";
+			border: 10px solid transparent;
+			border-right-color: $corp-green;
+			border-top-color: $corp-green;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		@media all and (min-width: 768px) and (max-width: 1199px) {
+			box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+	&__card-title {
+		@include title($section-title);
+		margin-bottom: px_to_rem(15px);
+
+		@media all and (max-width: 1199px) {
+			text-align: center;
+		}
+	}
+
+	&__card-price {
+		color: $white;
+		background-color: $corp-green;
+		text-transform: uppercase;
+		padding: 5px;
+		text-align: center;
+		margin-bottom: px_to_rem(50px);
+		flex: 0 0 60%;
+		max-width: 60%;
+		font-weight: 700;
+
+		@media all and (max-width: 1199px) {
+			align-self: center;
+			padding-left: px_to_rem(30px);
+			padding-right: px_to_rem(30px);
+		}
+	}
+
+	&__card-btn {
+		@include section-button;
+		flex: 0 0 48%;
+		max-width: 48%;
+		display: block;
+
+		&:hover {
+			background-color: lighten($corp-green, 10%);
+			color: $white;
+		}
+
+		@media all and (max-width: 1199px) {
+			max-width: initial;
+		}
+	}
+
+	.marked-list {
+		margin-bottom: px_to_rem(50px);
+	}
+}

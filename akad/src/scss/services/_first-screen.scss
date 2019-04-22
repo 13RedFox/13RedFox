@@ -1,0 +1,25 @@
+.services {
+	.first-screen {
+
+		&::before {
+			background-image: url("#{$img-path}/header_bg.jpg");
+		}
+
+		&__content {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		&__title {
+			@include title($main-title);
+			margin-bottom: px_to_rem(20px);
+
+			@media all and (max-width: 576px) {
+				font-size: 2.3rem;
+			}
+		}
+	}	
+}

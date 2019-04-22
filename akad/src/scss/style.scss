@@ -1,13 +1,19 @@
-@import "vars";
-@import "mixins";
-@import "common";
-@import "top-line";
-@import "first-screen";
-@import "what-we-do";
-@import "section-icons";
-@import "plans";
-@import "contacts";
-@import "footer";
+@import "common/vars";
+@import "common/mixins";
+@import "common/common";
+@import "common/top-line";
+@import "common/contacts";
+@import "common/footer";
+@import "common/dbp";
 
+//HOMEPAGE
+@import "homepage/first-screen";
+@import "homepage/history-section";
+@import "homepage/choose";
+@import "homepage/portfolio";
 
-@import "dbp";
+//SERVICES
+@import "services/first-screen";
+@import "services/what-we-do";
+@import "services/section-icons";
+@import "services/plans";

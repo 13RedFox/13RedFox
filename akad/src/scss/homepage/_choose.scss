@@ -1,0 +1,46 @@
+.choose {
+
+	.section-title {
+		@media all and (max-width: 576px){
+			margin-bottom: 0;	
+		}
+	}
+
+	.section-description {
+
+	}
+
+	&__card {
+		text-transform: uppercase;
+		
+		& > * {
+			margin-bottom: 1rem;
+
+			&:last-child {
+				margin-bottom: 0;				
+			}
+		}
+	}
+
+	&__card-title {
+		font-weight: 700;
+		font-size: $logo-size;
+		font-family: $secondary-font;
+	}
+
+	&__card-list {
+		padding: 0;
+	}
+
+	&__card-item {
+		list-style: none;
+		margin-bottom: .5rem;
+		color: $footer-text;
+		font-size: $middle-size;
+	}
+
+	.img-wrapper {
+		@include padding-hack(110%);
+	}
+
+}

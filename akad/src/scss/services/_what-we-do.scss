@@ -1,0 +1,16 @@
+.wwd {
+
+	.img-wrapper {
+		@include padding-hack(75%);
+	}
+
+	&__text {
+		line-height: 2.2;
+		margin-bottom: px_to_rem(40px);
+
+		@media all and (max-width: 1200px) {
+			margin-bottom: px_to_rem(20px);
+			text-align: justify;
+		}
+	}
+}

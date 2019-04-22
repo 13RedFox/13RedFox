@@ -1,0 +1,71 @@
+.homepage {
+
+	.first-screen {
+
+		&::before {
+			opacity: .25;
+			background-color: red;
+
+			@media all and (min-width: 577px) {
+				background-image: url("#{$img-path}/homepage/first-screen_bg.jpg");
+			}
+		}
+
+		.title-wrapper {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-family: $secondary-font;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			width: 100%;
+			flex-grow: 1.5;
+			justify-content: flex-end;
+
+			@media screen and (max-height: 768px){
+				flex-grow: 0;
+				justify-content: center;
+			}
+		}
+
+		&__content {
+			display: flex;
+			min-height: 100vh;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+
+		}
+
+		&__title {
+			font-size: $main-title-home;
+			padding: 15px 0;
+			font-weight: 700;
+			border: 10px solid currentColor;
+			margin: 0;
+			width: 100%;
+			text-align: center;
+		}
+
+		&__title-label {
+			font-size: $logo-size;
+			background-color: $corp-green;
+			padding: 5px 15px;
+			letter-spacing: 2px;
+		}
+
+		&__subtitle {
+			text-align: center;
+			margin-bottom: 0;
+			flex-grow: 3;
+
+			@media screen and (max-height: 768px){
+				flex-grow: 0;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,27 @@
+// HOMEPAGE
+.top-line,
+.first-screen,
+.history,
+.choose,
+.portfolio,
+.contacts,
+.footer
+ {
+	// display: none;
+}
+
+
+// SERVICES PAGE
+// .first-screen,
+// .wwd,
+// .section-icons,
+// .plans
+//  {
+// 	display: none;
+// }
+
+html {
+	@media all and (max-width: 319px) {
+		display: none;
+	}
+}

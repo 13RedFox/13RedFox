@@ -1,0 +1,87 @@
+.chooseus {
+    background: #373d3e url("../img/choose-bg.png") no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 120px 0;
+
+    .row {
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 47%;
+        color: $white-color;
+    }
+
+    &__title {
+        text-transform: capitalize;
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 36px;
+        margin: 60px 0;
+    }
+
+    .chs-txt {
+        letter-spacing: 1px;
+        font-family: $secondary-font;
+        color: $light-color;
+    }
+
+    &__text-1 {
+        margin-bottom: 40px;
+    }
+
+    &__text-2 {
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        min-height: 60px;
+        min-width: 225px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $dark-blue-color;
+        color: $white-color;
+        border: none;
+        text-transform: uppercase;
+        font-family: $main-font;
+        font-weight: 500;
+        cursor: pointer;
+        background-image: linear-gradient(45deg, $dark-blue-color 35%, $light-blue-color 36% );
+        transition: background-image .3s ease;
+
+        &:hover {
+            background-image: linear-gradient(-45deg, $dark-blue-color 35%, $light-blue-color 36% );
+        }
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .box__img {
+        position: relative;
+        min-width: 350px;
+        padding-top: 63%;
+
+        &:first-child {
+            margin-bottom: 5px;
+        }
+    }
+
+    .chs-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+
+}
