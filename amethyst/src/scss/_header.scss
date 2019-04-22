@@ -1,0 +1,169 @@
+.header {
+	min-height: 100vh;
+	background: $white linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%);
+	color: $white;
+	padding: 20px 0 60px;
+
+
+	// ************ top - header *************
+
+	&__social-menu {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 110px;
+		margin: 0;
+		padding: 15px 0;
+
+		&__item {
+			display: flex;
+			align-items: center;
+		}
+
+		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 20px;
+			height: 20px;
+		}
+	}
+
+	.fab {
+		color: $white;
+	}
+
+	.header-email,
+	.header-phone {
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+	}
+
+	.header-email {
+		margin-right: 45px;
+	}
+
+	.header-email__text,
+	.header-phone__text {
+		color: $light-white;
+		margin-right: 5px;
+	}
+
+	.header-email__email,
+	.header-phone__number {
+		display: block;
+		font-weight: 700;
+		color: $white;
+		font-size: $middle-size;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $hover;
+		}
+	}
+
+	// ************ main - header *************
+
+	&-logo {
+		display: block;
+		color: $white;
+		text-align: center;
+		font-family: $title-font;
+		font-size: $header-logo;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&-menu {
+		display: flex;
+		justify-content: space-around;
+
+		.active {
+			color: $white;
+		}
+
+		&__link {
+			display: block;
+			color: #dedede;
+			font-weight: 700;
+			text-transform: uppercase;
+			transition: all .3s ease;
+
+			&:hover {
+				color: $white;
+			}
+
+			&:active {
+				color: $hover;
+			}
+		}
+	}
+
+	.mb-180 {
+		margin-bottom: 180px;
+	}
+
+	// ************ slider - header *************
+
+	&-slider {
+
+		&__title,
+		&__subtitle {
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+
+		&__title {
+			font-size: $header-title;
+			margin-bottom: 10px;
+		}
+
+		&__subtitle {
+			font-size: $base-title;
+			line-height: 1;
+			margin-bottom: 60px;
+		}
+
+		&__text {
+			font-size: $middle-size;
+			font-weight: 400;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		&__btn {
+			text-transform: uppercase;
+			padding: 10px 0;
+			border: 2px solid #ccc;
+			width: 100%;
+			max-width: 150px;
+			border-radius: 30px;
+			color: $white;
+			background-color: transparent;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $hover;
+			}
+		}
+	}
+
+	.carousel-indicators {
+		bottom: -50px;
+	}
+
+	.carousel-control-prev {
+		left: -2%;
+		width: 2%;
+	}
+
+	.carousel-control-next {
+		right: -2%;
+		width: 2%;
+	}
+
+}
