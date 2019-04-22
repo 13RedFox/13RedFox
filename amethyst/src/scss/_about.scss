@@ -1,0 +1,41 @@
+.about {
+	padding-top: 70px;
+
+	.main-text {
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		color: $main-text;
+		text-align: center;
+	}
+
+	&-wrap {
+		display: flex;
+
+		&__icon {
+			color: $violet;
+			font-size: $base-title;
+			line-height: 1;
+			margin-right: 15px;
+		}
+
+		.content__title {
+			color: $main-title;
+			font-size: $middle-size;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		.content__text {
+			color: $main-text;
+		}
+
+		
+	}
+	.main__btn {
+		border-color: $violet;
+		color: $main-title;
+	}
+}
