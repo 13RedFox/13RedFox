@@ -1,0 +1,40 @@
+.testimonials {
+	padding: 60px 0;
+
+	&__text {
+		color: $main-text;
+		font-family: $sec-font;
+		text-align: center;
+	}
+
+	.img-wrapper {
+		max-width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 20px;
+	}
+
+	&__content {
+
+		&-title {
+			color: $main-title;
+			font-size: $base-size;
+			text-transform: uppercase;
+			font-weight: 600;
+		}
+
+		&-text {
+			color: $main-text;
+		}
+	}
+
+	&__company {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__link {
+		display: block;
+	}
+}
