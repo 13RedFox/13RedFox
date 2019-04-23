@@ -1,0 +1,40 @@
+.services {
+	padding-top: 60px;
+
+	&__content {
+		background-color: $main-title;
+		padding: 110px 20px;
+	}
+
+	&__text {
+		color: $white;
+		text-align: center;
+	}
+
+	&-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&:hover .services__icon,
+		&:hover .services__subtext {
+			color: $main-title;
+		}
+	}
+
+	.active {
+		color: $main-title;
+	}
+
+	&__icon {
+		font-size: $facts-title;
+		color: $dark-grey;
+		margin-bottom: 10px;
+	}
+
+	&__subtext {
+		font-size: $service-title;
+		color: $dark-grey;
+		font-weight: 700;
+	}
+}
