@@ -52,4 +52,16 @@ $(document).ready(function () {
 			});
 	});
 
+	//////////////////////
+	//									//
+	//			Skills			//
+	//									//
+	//////////////////////
+
+	$('.skills__wrap').each(function () {
+		$(this).find('.skills__bar').animate({
+			width:$(this).attr('data-percent')
+		}, 2000);
+	});
+
 });

@@ -1,0 +1,38 @@
+.benefits {
+	padding: 60px 0;
+	background-color: $main-title;
+
+	.main-title {
+		color: $white;
+	}
+
+	&__text {
+		color: $white;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		$size: 90px;
+		width: $size;
+		height: $size;
+		border-radius: 50%;
+		border: 2px solid $white;
+		color: $white;
+		font-size: $facts-title;
+		cursor: pointer;
+		transition: all .3s ease;
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		color: $white;
+		font-size: $card-title;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+}
