@@ -1,0 +1,52 @@
+.subscribe {
+	background: $white url('../img/subscribe-bg.jpg') no-repeat center;
+	background-size: cover;
+	padding: 100px 0;
+
+	@media screen and (max-width: 575px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 30px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 50px 0;
+	}
+
+	&__title {
+		font-size: $huge-size;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-weight: 300;
+		line-height: 27px;
+	}
+
+	&__email {
+		width: 65%;
+		opacity: 0.5;
+		font-weight: 300;
+		border: 1px solid $black;
+		padding: 15px 0 15px 15px;
+		margin-right: 30px;
+
+		@media screen and (max-width: 575px) {
+			margin-right: 0;
+			width: 100%;
+		}
+	}
+
+	.main__btn {
+		background-color: $green;
+		transition: box-shadow .3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 5px 3px rgba(150, 185, 44, 1);
+		}
+	}
+}

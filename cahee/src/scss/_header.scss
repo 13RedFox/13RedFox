@@ -1,0 +1,168 @@
+.header {
+	min-height: 100vh;
+	padding: 50px 0;
+	background: $white;
+
+	@media screen and (min-width: 768px) {
+		background: $white url('../img/header-bg.jpg') no-repeat center;
+		background-size: cover;
+	}
+
+	&__logo {
+		display: block;
+		color: $black;
+		font-family: $sec-font;
+		font-size: $logo-size;
+		font-weight: 400;
+		text-transform: capitalize;
+
+		&:hover {
+			color: $black;
+		}
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	&__menu {
+		position: relative;
+	}
+
+	&__list {
+		display: none;
+
+		@media all and (min-width: 992px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	.burger-menu {
+		display: flex;
+		width: 50px;
+		padding: 7.5px 0 7.5px 2%;
+
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	.bar {
+		display: flex;
+		margin-bottom: 8px;
+		width: 30px;
+		height: 2px;
+		background-color: $orange;
+		z-index: 999;
+	}
+
+	.mobile {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	.active {
+		border-top-color: $orange;
+	}
+
+	&__link {
+		display: block;
+		color: $black;
+		font-weight: 700;
+		line-height: 25px;
+		text-transform: uppercase;
+		padding-top: 5px;
+		border-top: 2px solid transparent;
+		transition: color .3s ease;
+
+		&:hover {
+			color: $orange;
+		}
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	&__info {
+		padding-top: 100px;
+	}
+
+	&__title {
+		font-size: $title-size;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-weight: 300;
+		line-height: 27px;
+		margin-bottom: 30px;
+	}
+
+	.main__btn {
+		transition: box-shadow .3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 3px 3px rgba(255, 96, 51, 1);
+		}
+	}
+
+	&__scroll {
+		display: flex;
+		position: relative;
+	}
+
+	.scroll-downs {
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		width: 34px;
+		height: 55px;
+		cursor: pointer;
+	}
+
+	.mousey {
+		width: 3px;
+		padding: 10px 15px;
+		height: 35px;
+		border: 2px solid $black;
+		border-radius: 25px;
+		opacity: 0.75;
+		box-sizing: content-box;
+	}
+
+	.scroller {
+		width: 5px;
+		height: 10px;
+		border-radius: 25%;
+		background-color: $black;
+		animation-name: scroll;
+		animation-duration: 2.2s;
+		animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes scroll {
+		0% {
+			opacity: 0;
+		}
+
+		10% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateY(15px);
+			opacity: 0;
+		}
+	}
+}

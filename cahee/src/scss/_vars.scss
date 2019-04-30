@@ -1,0 +1,47 @@
+// COLORS:
+
+$white: #ffffff;
+$grey: #9d9d9d;
+$green: #96b92c;
+$yellow: #ffe92f;
+$blue: #355b82;
+$violet: #b07cf7;
+$black: #262626;
+$light-blue: #5585a2;
+$services-bg:#70bfff;
+$aqua: #00c4c4;
+$red: #f72b3b;
+$orange: #ff6033;
+
+// SIZE:
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$main-title: px_to_rem(85px);
+$title-size: px_to_rem(60px);
+$logo-size: px_to_rem(50px);
+$huge-size: px_to_rem(40px);
+$big-size: px_to_rem(32px);
+$large-size: px_to_rem(20px);
+$middle-size: px_to_rem(18px);
+$small-size: px_to_rem(13px);
+
+// FONTS:
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700');
+
+$main-font: 'Raleway',
+sans-serif;
+$sec-font: 'Pacifico',
+cursive;
+
+// font-family: 'Pacifico', cursive;
+// font-family: 'Raleway', sans-serif;

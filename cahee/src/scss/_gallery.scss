@@ -1,0 +1,52 @@
+.gallery {
+	background-color: $yellow;
+	padding: 100px 0;
+
+	@media screen and (max-width: 575px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+
+	&__title {
+		font-size: $main-title;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.img__wrapper-large {
+		@include padding-hack(71%, cover);
+		width: 100%;
+	}
+
+	.img__wrapper-small {
+		@include padding-hack(70.4%, cover);
+		width: 100%;
+	}
+
+	.img__wrapper {
+		@include padding-hack(70%, cover);
+		width: 100%;
+	}
+
+	.main__btn {
+		background-color: $light-blue;
+		transition: box-shadow .3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 5px 3px rgba(85,133,162,1);
+		}
+	}
+}

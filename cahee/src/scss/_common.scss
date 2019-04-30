@@ -1,0 +1,39 @@
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	background-color: $white;
+	color: $black;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+}
+
+.main__btn {
+	width: 200px;
+	height: 55px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	background-color: $orange;
+	border: none;
+	color: $white;
+	font-size: $large-size;
+	font-weight: 300;
+	line-height: 27px;
+	text-transform: uppercase;
+}
