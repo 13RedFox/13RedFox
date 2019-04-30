@@ -1,0 +1,42 @@
+.footer {
+	background-color: $black;
+	color: $grey;
+	padding: 30px 0;
+
+	&__copy {
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	&__logo {
+		display: block;
+		color: $grey;
+		font-family: $sec-font;
+		font-size: $footer-size;
+		font-weight: 400;
+		line-height: 1;
+
+		&:hover {
+			color: $grey;
+		}
+	}
+
+	&__text {
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	&__text--red {
+		color: $red;
+		font-weight: 700;
+	}
+
+	&__copy,
+	&__logo,
+	&__text {
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,106 @@
+.blog {
+	background-color: $violet;
+	padding: 100px 0;
+	color: $white;
+
+	@media screen and (max-width: 575px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+
+	&__title {
+		font-size: $main-title;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.img__wrapper {
+		@include padding-hack(84%, cover);
+		width: 100%;
+
+		&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0.1) 100%);
+			z-index: 2;
+		}
+
+		.blog__date {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			top: 5%;
+			left: 5%;
+			z-index: 3;
+			background-color: rgba($black, 0.5);
+
+			&-number {
+				font-size: $big-size;
+				font-weight: 700;
+				line-height: 1;
+			}
+
+			&-month {
+				font-size: $large-size;
+				font-weight: 400;
+				line-height: 1;
+				text-transform: uppercase;
+			}
+		}
+
+		.blog__info {
+			display: block;
+			position: absolute;
+			width: 90%;
+			bottom: 5%;
+			left: 5%;
+			z-index: 3;
+
+			&-text {
+				font-size: $middle-size;
+				font-weight: 700;
+				line-height: 1;
+				margin-bottom: 10px;
+			}
+
+			&-author {
+				font-style: $small-size;
+				font-weight: 300;
+			}
+		}
+	}
+
+	&__img {
+		z-index: 1;
+	}
+
+	.main__btn {
+		background-color: $red;
+		transition: box-shadow .3s ease;
+
+		&:hover {
+			box-shadow: 0px 0px 5px 3px rgba(247, 43, 59, 1);
+		}
+	}
+}

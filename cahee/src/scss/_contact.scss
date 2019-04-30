@@ -1,0 +1,84 @@
+.contact {
+	min-height: 100vh;
+	background: $white url('../img/contact-bg.jpg') no-repeat center;
+	background-size: cover;
+	padding: 100px 0;
+
+	@media screen and (max-width: 575px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 576px) {
+		padding: 20px 0;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 40px 0;
+	}
+
+	&__title {
+		font-size: $main-title;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.form-con {
+		padding: 10px 0 10px 15px;
+		background: rgba($aqua, 0.5);
+		border: none;
+		color: $white;
+		margin-bottom: 10px;
+
+		@include placeholder {
+			color: $white;
+			font-weight: 300;
+			line-height: 1;
+			border-left: 5px solid transparent;
+		}
+
+		&:focus {
+			background: rgba($aqua, 1);
+			border-left: 5px solid $blue;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__mess {
+		resize: none;
+		min-height: 250px;
+	}
+
+	&__address-info {
+		color: $black;
+		line-height: 1;
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	&__text-info {
+		font-size: $large-size;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+	}
+
+	&__info {
+		font-weight: 300;
+	}
+}
