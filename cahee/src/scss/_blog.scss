@@ -27,6 +27,15 @@
 		text-align: center;
 	}
 
+	&__link {
+		display: block;
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
 	.img__wrapper {
 		@include padding-hack(84%, cover);
 		width: 100%;
