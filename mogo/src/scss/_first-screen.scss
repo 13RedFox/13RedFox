@@ -13,7 +13,8 @@
 		font-weight: 700;
 
 		@media screen and (max-width: 991px) {
-			text-align: left;
+			text-align: center;
+			margin-bottom: 10px;
 		}
 
 		&:hover {
@@ -23,17 +24,36 @@
 
 	.menu {
 		width: 100%;
-
-		@media screen and (max-width: 991.98px) {
-			display: none;
-		}
+		position: relative;
 
 		.active {
 			color: $yellow;
-			border-bottom: 2px solid $yellow;
+			border-bottom: 2px solid transparent;
+
+			@media screen and (min-width: 992px) {
+				border-bottom: 2px solid $yellow;
+			}
 		}
 
 
+		.burger-menu {
+			display: flex;
+			width: 50px;
+			padding: 7.5px 0 7.5px 2%;
+
+			@media screen and (min-width: 992px) {
+				display: none;
+			}
+		}
+
+		.bar {
+			display: flex;
+			margin-bottom: 8px;
+			width: 30px;
+			height: 2px;
+			background-color: $yellow;
+			z-index: 999;
+		}
 
 		&__link {
 			display: block;
@@ -44,11 +64,19 @@
 
 			&:hover {
 				color: $yellow;
-				border-bottom: 2px solid $yellow;
 				text-decoration: none;
+
+				@media screen and (min-width: 992px) {
+					border-bottom: 2px solid $yellow;
+				}
 			}
 		}
 	}
+
+
+
+
+
 
 	.fs-content {
 

@@ -1,12 +1,19 @@
 <header class="first-screen">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-lg-2 col-xl-2">
+			<div class="col-lg-2">
 				<a href="#" class="logo__link">MoGo</a>
 			</div>
-			<div class="col-lg-7 col-xl-7 offset-lg-3 d-flex align-items-center">
+			<div class="col-lg-7 offset-lg-3 d-flex align-items-center">
 				<nav class="menu">
-					<ul class="menu__list d-flex justify-content-between mb-0">
+					<div class="burger-menu">
+						<a href="#">
+							<span class="bar" id="top"></span>
+							<span class="bar" id="middle"></span>
+							<span class="bar" id="bottom"></span>
+						</a>
+					</div>
+					<ul class="menu__list-mobile d-lg-flex justify-content-lg-between mb-0" id="desktop">
 						<li class="menu__item">
 							<a href="#" class="menu__link active" id="block-1">About</a>
 						</li>
@@ -33,6 +40,9 @@
 							</a>
 						</li>
 					</ul>
+
+
+
 				</nav>
 			</div>
 		</div> <!-- menu -->
