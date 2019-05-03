@@ -1,0 +1,24 @@
+.work {
+	padding: 100px 0;
+
+	&__link {
+		display: block;
+	}
+
+	.img-wrapper {
+		@include padding-hack(62%);
+		width: 100%;
+		max-width: 360px;
+	}
+
+	&__text {
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: violet;
+		font-size: $large-size;
+		font-weight: 700;
+	}
+}

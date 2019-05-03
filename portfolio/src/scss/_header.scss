@@ -1,0 +1,66 @@
+.header {
+	min-height: 100vh;
+	background: url('../img/cover.jpg') no-repeat;
+	background-size: cover;
+	color: $white;
+
+	&__overlay {
+		background: rgba(44, 62, 80, 0.3) url('../img/pattern.png') repeat;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+	}
+
+	&__title {
+		font-size: $huge-size;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.scroll-down {
+		display: block;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+	}
+
+	&__arrow {
+		display: block;
+		position: relative;
+		animation-name: drop;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-play-state: running;
+	}
+
+	@keyframes drop {
+		0% {
+			top: 0px;
+			opacity: 0;
+		}
+
+		30% {
+			top: 10px;
+			opacity: 1;
+		}
+
+		100% {
+			top: 25px;
+			opacity: 0;
+		}
+	}
+
+	.fa-2x {
+		display: block;
+		color: $white;
+		font-size: 1.5rem;
+	}
+
+}

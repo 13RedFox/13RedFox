@@ -1,0 +1,82 @@
+.header-nav {
+	background-color: #ccf;
+	padding: 10px 0;
+
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/* --- LOGO --- */
+
+	&__logo {
+		display: block;
+		font-family: $sec-font;
+		font-weight: 700;
+		font-size: $large-size;
+		color: $nav;
+		letter-spacing: 3px;
+
+		&:hover {
+			color: $nav;
+		}
+	}
+
+	/* --- NAVIGATION --- */
+
+	&__menu {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		@media screen and  (max-width: 991px) {
+			display: none;
+		}
+	}
+
+	&__link {
+		display: block;
+		color: $nav;
+		font-size: $small-size;
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		transition: all .2s ease-in-out 0s;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+/* --- BIRGER-MENU --- */
+
+	.burger-menu {
+		display: flex;
+		justify-content: center;
+		width: 25px;
+
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	.bar {
+		display: flex;
+		margin-bottom: 5px;
+		width: 25px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: $nav;
+		z-index: 999;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
