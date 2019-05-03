@@ -9,16 +9,17 @@
 		@include padding-hack(62%);
 		width: 100%;
 		max-width: 360px;
+		border: 1px solid $nav;
 	}
 
-	&__text {
-		position: absolute;
-		display: block;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		color: violet;
-		font-size: $large-size;
-		font-weight: 700;
-	}
+	// &__text {
+	// 	position: absolute;
+	// 	display: block;
+	// 	top: 10%;
+	// 	left: 50%;
+	// 	transform: translate(-50%, -10%);
+	// 	color: $nav;
+	// 	font-size: $large-size;
+	// 	font-weight: 700;
+	// }
 }
