@@ -3,6 +3,7 @@
 	color: $red;
 	background: linear-gradient(to top, rgba($white, 0.85)), url('../img/map-bg.jpg'), no-repeat;
 	background-size: cover;
+	position: relative;
 
 	&__icon {
 		font-size: $large-size;
@@ -31,5 +32,13 @@
 		width: 100%;
 		max-width: 60px;
 		border-bottom: 3px solid $red;
+	}
+
+	#map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 200px;
 	}
 }
