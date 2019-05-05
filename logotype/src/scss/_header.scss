@@ -32,6 +32,10 @@
 		color: $black;
 		font-size: $base-size;
 		text-align: center;
+
+		&:hover {
+			color: $black;
+		}
 	}
 
 	// --- HEADER__NAVIGATION ---
