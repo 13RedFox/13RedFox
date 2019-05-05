@@ -1,0 +1,166 @@
+.header {
+
+	// --- HEADER__INFO ---
+	&__info {
+		background-color: $bg;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		color: $dark;
+		letter-spacing: 0.35px;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.fas {
+		margin-right: 5px;
+	}
+
+	.fa-phone,
+	.fa-envelope {
+		color: $yellow;
+	}
+
+	&__work {
+		display: block;
+		padding: 15px 10px;
+		background-color: $yellow;
+		color: $black;
+		font-size: $base-size;
+		text-align: center;
+	}
+
+	// --- HEADER__NAVIGATION ---
+
+	&__logo {
+		display: flex;
+		text-transform: uppercase;
+		font-size: $logo-size;
+		padding: 30px 0;
+
+		&-text_first {
+			color: $yellow;
+			font-weight: 500;
+		}
+
+		&-text_second {
+			color: $black;
+			font-weight: 400;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+
+		.menu__link {
+			display: block;
+			font-size: $middle-size;
+			color: $menu;
+			text-transform: capitalize;
+			border: 1px solid transparent;
+			padding: 10px 15px;
+
+			&:hover {
+				border: 1px solid $yellow;
+			}
+		}
+
+		.active {
+			border: 1px solid $yellow;
+		}
+	}
+
+	// --- HEADER__SLIDER ---
+
+	&__slider {
+		background: linear-gradient(to right, rgba(0,0,0,0.47) 0%, rgba(0,0,0,0.47) 100%), url('../img/header-bg.jpg') no-repeat center;
+		background-size: cover;
+		color: $white;
+
+		.owl-carousel {
+			padding: 100px 0;
+			position: relative;
+
+			.active {
+				display: flex;
+				justify-content: center;
+			}
+		}
+
+		.arrow-owl {
+			border: 1px solid $white;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			top: 50%;
+			color: $white;
+			font-size: 30px;
+
+			&:hover {
+				background-color: $yellow;
+			}
+		}
+
+		.arrow-left {
+			left: 0;
+		}
+
+		.arrow-right {
+			right: 0;
+		}
+
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			max-width: 800px
+		}
+
+		&-title {
+			font-size: $logo-size;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			margin-bottom: 20px;
+		}
+
+		&-text {
+			color: $dark;
+			font-family: $sec-font;
+			font-size: $large-size;
+			text-align: center;
+			margin-bottom: 40px;
+		}
+
+		&-btn {
+			color: $white;
+			font-weight: 500;
+			letter-spacing: 0.35px;
+			border: 1px solid $yellow;
+			border-right: 20px solid $yellow;
+			background-color: transparent;
+			opacity: none;
+			padding: 10px 15px;
+			position: relative;
+
+			&::after {
+				content: "›";
+				position: absolute;
+				display: block;
+				top: 46%;
+				right: -15px;
+				transform: translate(-50%, -50%);
+				font-size: 20px;
+			}
+		}
+	}
+
+}
