@@ -1,0 +1,42 @@
+//COLORS:
+
+$white: #ffffff;
+$black: #000000;
+$yellow: #ffc222;
+$grey: #5e5e5e;
+
+//SIZE:
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 14px;
+
+$big-size: px_to_rem(30px);
+$huge-size: px_to_rem(24px);
+$large-size: px_to_rem(18px);
+$middle-size: px_to_rem(16px);
+$small-size: px_to_rem(12px);
+
+// FONTS:
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&subset=cyrillic-ext');
+
+$main-font: 'Roboto',
+sans-serif;
+$sec-font: 'PT Serif',
+serif;
+
+// font-family: 'PT Serif', serif;
+// font-family: 'Roboto', sans-serif;
+
+// <i class="fas fa-phone"></i>
+// <i class="fas fa-envelope"></i>
+// <i class="fas fa-briefcase"></i>
+// <i class="fas fa-check"></i>
+// <i class="fas fa-map-marker-alt"></i>
