@@ -1,0 +1,24 @@
+.about {
+	padding: 40px 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0.47) 100%), url('../img/about-bg.jpg') no-repeat center;
+	background-size: cover;
+	color: $white;
+
+	&__title {
+		font-size: $huge-size;
+		font-weight: 500;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		color: $dark;
+		font-family: $sec-font;
+		letter-spacing: 0.14px;
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		@include main-btn($white);
+	}
+}
