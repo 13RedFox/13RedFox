@@ -27,6 +27,8 @@ a:hover {
 	text-decoration: none;
 }
 
+/* --- MAIN --- */
+
 .btn__work {
 	display: block;
 	padding: 15px 10px;
@@ -38,6 +40,37 @@ a:hover {
 	&:hover {
 		color: $black;
 	}
+}
+
+.main__info {
+	display: flex;
+	padding-left: 105px;
+}
+
+.main__title {
+	color: $menu;
+	font-size: $huge-size;
+	font-weight: 500;
+	line-height: 24px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 10px;
+		left: -105px;
+		width: 100px;
+		height: 2px;
+		background-color: $yellow;
+	}
+}
+
+.main__text {
+	color: $grey;
+	font-family: $sec-font;
+	line-height: 18px;
 }
 
 /* --- SLIDER --- */

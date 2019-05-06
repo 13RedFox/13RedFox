@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	// --- SLIDER ---
+
 	$(function () {
 		// Owl Carousel
 		var owl = $(".owl-carousel");
@@ -16,5 +18,7 @@ $(document).ready(function () {
 			]
 		});
 	});
+
+	// --- END SLIDER ---
 
 });

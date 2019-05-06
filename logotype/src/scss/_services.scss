@@ -1,0 +1,69 @@
+.services {
+	padding: 60px 0 30px;
+
+	&__btn {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__all {
+		color: $bg;
+		letter-spacing: 0.35px;
+		border: 3px solid $dark;
+		background-color: transparent;
+		padding: 10px 30px;
+	}
+
+	&__cart {
+		box-shadow: 0 7px 24px 3px rgba(91, 89, 89, 0.14);
+		background-color: $bg-cart;
+		padding: 20px 40px 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-title {
+			color: $menu;
+			font-size: $large-size;
+			font-weight: 500;
+			margin-bottom: 20px;
+		}
+
+		&-text {
+			color: $grey;
+			font-family: $sec-font;
+			line-height: 18px;
+			letter-spacing: 0.14px;
+			text-align: justify;
+			margin-bottom: 80px;
+		}
+
+		&-btn {
+			@include main-btn($black);
+		}
+	}
+
+	&__icon {
+		width: 60px;
+		height: 60px;
+		fill: $yellow;
+		margin-bottom: 15px;
+	}
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__link {
+		text-transform: capitalize;
+		color: $black;
+		text-decoration: underline;
+
+		&:hover {
+			color: $black;
+			text-decoration: underline;
+		}
+	}
+}
