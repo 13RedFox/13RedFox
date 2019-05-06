@@ -25,19 +25,6 @@
 		color: $yellow;
 	}
 
-	&__work {
-		display: block;
-		padding: 15px 10px;
-		background-color: $yellow;
-		color: $black;
-		font-size: $base-size;
-		text-align: center;
-
-		&:hover {
-			color: $black;
-		}
-	}
-
 	// --- HEADER__NAVIGATION ---
 
 	&__logo {
@@ -86,41 +73,6 @@
 		background-size: cover;
 		color: $white;
 
-		.owl-carousel {
-			padding: 100px 0;
-			position: relative;
-
-			.active {
-				display: flex;
-				justify-content: center;
-			}
-		}
-
-		.arrow-owl {
-			border: 1px solid $white;
-			position: absolute;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 40px;
-			height: 40px;
-			top: 50%;
-			color: $white;
-			font-size: 30px;
-
-			&:hover {
-				background-color: $yellow;
-			}
-		}
-
-		.arrow-left {
-			left: 0;
-		}
-
-		.arrow-right {
-			right: 0;
-		}
-
 		&-content {
 			display: flex;
 			flex-direction: column;
@@ -145,25 +97,7 @@
 		}
 
 		&-btn {
-			color: $white;
-			font-weight: 500;
-			letter-spacing: 0.35px;
-			border: 1px solid $yellow;
-			border-right: 20px solid $yellow;
-			background-color: transparent;
-			opacity: none;
-			padding: 10px 15px;
-			position: relative;
-
-			&::after {
-				content: "›";
-				position: absolute;
-				display: block;
-				top: 46%;
-				right: -15px;
-				transform: translate(-50%, -50%);
-				font-size: 20px;
-			}
+			@include main-btn($white);
 		}
 	}
 

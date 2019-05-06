@@ -1,0 +1,22 @@
+@mixin main-btn($color) {
+	color: $color;
+	font-weight: 500;
+	letter-spacing: 0.35px;
+	border: 1px solid $yellow;
+	border-right: 20px solid $yellow;
+	background-color: transparent;
+	opacity: none;
+	padding: 10px 15px;
+	position: relative;
+
+	&::after {
+		content: "›";
+		position: absolute;
+		color: $white;
+		display: block;
+		top: 46%;
+		right: -15px;
+		transform: translate(-50%, -50%);
+		font-size: 20px;
+	}
+}

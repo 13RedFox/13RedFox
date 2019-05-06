@@ -26,3 +26,53 @@ ul {
 a:hover {
 	text-decoration: none;
 }
+
+.btn__work {
+	display: block;
+	padding: 15px 10px;
+	background-color: $yellow;
+	color: $black;
+	font-size: $base-size;
+	text-align: center;
+
+	&:hover {
+		color: $black;
+	}
+}
+
+/* --- SLIDER --- */
+
+.owl-carousel {
+	padding: 100px 0;
+	position: relative;
+
+	.active {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.arrow-owl {
+	border: 1px solid $white;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	color: $white;
+	font-size: 30px;
+
+	&:hover {
+		background-color: $yellow;
+	}
+}
+
+.arrow-left {
+	left: 0;
+}
+
+.arrow-right {
+	right: 0;
+}
