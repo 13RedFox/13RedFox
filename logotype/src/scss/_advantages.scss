@@ -11,14 +11,22 @@
 		width: 40px;
 		height: 40px;
 		border: 2px solid $yellow;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
+		@media screen and (min-width: 992px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__title {
 		text-align: center;
 		font-size: $middle-size;
 		line-height: 24px;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
+		@media screen and (min-width: 992px) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__text {
@@ -26,5 +34,9 @@
 		font-family: $sec-font;
 		line-height: 24px;
 		letter-spacing: 0.14px;
+	}
+
+	.fas {
+		margin-right: 0;
 	}
 }

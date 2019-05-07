@@ -1,12 +1,16 @@
 .news {
-	padding-top: 60px;
+	padding: 60px 0;
 	background-color: $bg-cart;
 
 	&__info {
 		background-color: $white;
 		box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
-		padding: 60px 35px 40px 70px;
+		padding: 60px 10px;
 		position: relative;
+
+		@media screen and (min-width: 768px) {
+			padding: 60px 35px 40px 70px;
+		}
 
 		&::before {
 			content: "";
@@ -84,5 +88,13 @@
 			line-height: 18px;
 			padding: 30px 5px 10px;
 		}
+	}
+
+	&__slider {
+		display: none;
+	}
+
+	.cloned {
+		display: block;
 	}
 }

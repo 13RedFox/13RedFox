@@ -1,14 +1,15 @@
+"use strict";
 
 var map;
 
 function initMap() {
-  // The location of Uluru
-  var kiev = {lat: 50.457431, lng: 30.367138};
-  // The map, centered at kiev
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 17, center: kiev, zoomControl: false, mapTypeControl: false, streetViewControl: false, fullscreenControl: false});
-  // The marker, positioned at kiev
-  var marker = new google.maps.Marker({position: kiev, map: map});
+	// The location of Uluru
+	var kiev = { lat: 50.457431, lng: 30.367138 };
+	// The map, centered at kiev
+	var map = new google.maps.Map(
+		document.getElementById('map'), { zoom: 17, center: kiev, zoomControl: false, mapTypeControl: false, streetViewControl: false, fullscreenControl: false });
+	// The marker, positioned at kiev
+	var marker = new google.maps.Marker({ position: kiev, map: map });
 }
 
 

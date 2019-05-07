@@ -1,0 +1,15 @@
+.header,
+.services,
+.about,
+.consultation,
+.advantages,
+.news,
+.footer {
+	display: block;
+}
+
+html {
+	@media all and (max-width: 319px) {
+		display: none;
+	}
+}

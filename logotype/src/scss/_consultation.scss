@@ -1,7 +1,10 @@
 .consultation {
 	padding: 40px 0;
-	background: url('../img/woman.jpg') no-repeat 90%;
-	background-size: contain;
+
+	@media screen and (min-width: 992px) {
+		background: url('../img/woman.jpg') no-repeat 100%;
+		background-size: contain;
+	}
 
 	&__text {
 		display: flex;
@@ -10,7 +13,8 @@
 		font-weight: 500;
 	}
 
-	input, textarea {
+	input,
+	textarea {
 		border: 1px solid $dark;
 	}
 

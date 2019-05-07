@@ -35,6 +35,10 @@ a:hover {
 	color: $dark;
 	letter-spacing: 0.35px;
 
+	@media screen and (max-width: 575px) {
+		font-size: $small-size;
+	}
+
 	&:hover {
 		color: $white;
 	}
@@ -99,6 +103,11 @@ a:hover {
 
 .owl-carousel {
 	position: relative;
+	display: none;
+
+	@media screen and (max-width: 575px) {
+		display: none;
+	}
 
 	.active {
 		display: flex;
@@ -112,10 +121,18 @@ a:hover {
 
 .arrow-left {
 	left: 0;
-	top: 50%;
+	top: 80%;
+
+	@media screen and (min-width: 576px) {
+		top: 50%
+	}
 }
 
 .arrow-right {
 	right: 0;
-	top: 50%;
+	top: 80%;
+
+	@media screen and (min-width: 576px) {
+		top: 50%
+	}
 }
