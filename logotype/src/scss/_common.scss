@@ -29,6 +29,27 @@ a:hover {
 
 /* --- MAIN --- */
 
+.main__link {
+	display: flex;
+	align-items: center;
+	color: $dark;
+	letter-spacing: 0.35px;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+.fas {
+	margin-right: 10px;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-map-marker-alt {
+	color: $yellow;
+}
+
 .btn__work {
 	display: block;
 	padding: 15px 10px;

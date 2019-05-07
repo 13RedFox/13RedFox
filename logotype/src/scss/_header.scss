@@ -5,26 +5,6 @@
 		background-color: $bg;
 	}
 
-	&__link {
-		display: flex;
-		align-items: center;
-		color: $dark;
-		letter-spacing: 0.35px;
-
-		&:hover {
-			color: $white;
-		}
-	}
-
-	.fas {
-		margin-right: 5px;
-	}
-
-	.fa-phone,
-	.fa-envelope {
-		color: $yellow;
-	}
-
 	// --- HEADER__NAVIGATION ---
 
 	&__logo {

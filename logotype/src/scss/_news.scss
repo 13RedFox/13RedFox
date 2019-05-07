@@ -44,4 +44,45 @@
 	.arrow-owl {
 		@include owl-corusel($dark, $dark, $white);
 	}
+
+	&__cart {
+
+		.img-wrapper {
+			@include padding-hack(72.4%, cover);
+			margin-bottom: 10px;
+		}
+
+		&-title {
+			color: $menu;
+			font-size: $middle-size;
+			font-weight: 500;
+			line-height: 18px;
+			letter-spacing: 0.8px;
+			margin-bottom: 15px;
+		}
+
+		&-text {
+			color: $grey;
+			font-family: $sec-font;
+			line-height: 18px;
+			letter-spacing: 0.14px;
+		}
+
+		&-date {
+			position: absolute;
+			top: 0;
+			left: 25px;
+			width: 45px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			background-color: $yellow;
+			color: $bg-cart;
+			// Style for "03.04"
+			font-family: $sec-font;
+			font-weight: 700;
+			line-height: 18px;
+			padding: 30px 5px 10px;
+		}
+	}
 }
