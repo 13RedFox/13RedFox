@@ -7,11 +7,7 @@
 	}
 
 	&__all {
-		color: $bg;
-		letter-spacing: 0.35px;
-		border: 3px solid $dark;
-		background-color: transparent;
-		padding: 10px 30px;
+		@include all;
 	}
 
 	&__cart {
@@ -24,8 +20,9 @@
 
 		&-title {
 			color: $menu;
-			font-size: $large-size;
+			font-size: $middle-size;
 			font-weight: 500;
+			text-align: center;
 			margin-bottom: 20px;
 		}
 
@@ -36,6 +33,8 @@
 			letter-spacing: 0.14px;
 			text-align: justify;
 			margin-bottom: 80px;
+			height: 90px;
+			overflow: hidden;
 		}
 
 		&-btn {

@@ -1,0 +1,30 @@
+.advantages {
+	padding: 50px 0 40px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.47) 0%, rgba(0, 0, 0, 0.47) 100%), url('../img/man-bg.jpg') no-repeat center;
+	background-size: cover;
+	color: $white;
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		border: 2px solid $yellow;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: $middle-size;
+		line-height: 24px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		color: $dark;
+		font-family: $sec-font;
+		line-height: 24px;
+		letter-spacing: 0.14px;
+	}
+}

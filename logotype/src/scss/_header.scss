@@ -55,6 +55,7 @@
 			text-transform: capitalize;
 			border: 1px solid transparent;
 			padding: 10px 15px;
+			transition: border .3s ease;
 
 			&:hover {
 				border: 1px solid $yellow;
@@ -67,6 +68,10 @@
 	}
 
 	// --- HEADER__SLIDER ---
+
+	&__owl {
+	padding: 100px 0;
+	}
 
 	&__slider {
 		background: linear-gradient(to right, rgba(0,0,0,0.47) 0%, rgba(0,0,0,0.47) 100%), url('../img/header-bg.jpg') no-repeat center;

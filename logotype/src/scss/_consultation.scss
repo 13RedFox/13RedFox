@@ -1,0 +1,30 @@
+.consultation {
+	padding: 40px 0;
+	background: url('../img/woman.jpg') no-repeat 90%;
+	background-size: contain;
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		color: $menu;
+		font-weight: 500;
+	}
+
+	input, textarea {
+		border: 1px solid $dark;
+	}
+
+	#consultation-textarea {
+		resize: none;
+		min-height: 165px;
+	}
+
+	&__wrap-btn {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__btn {
+		@include main-btn($menu);
+	}
+}

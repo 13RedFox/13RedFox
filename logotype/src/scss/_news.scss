@@ -1,0 +1,47 @@
+.news {
+	padding-top: 60px;
+	background-color: $bg-cart;
+
+	&__info {
+		background-color: $white;
+		box-shadow: 0 5px 15px 1px rgba(128, 127, 127, 0.13);
+		padding: 60px 35px 40px 70px;
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 65px;
+			height: 30px;
+			position: absolute;
+			top: 0;
+			left: 13%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $white;
+			background: $yellow url('../img/quote-right-solid.svg') no-repeat center;
+			background-size: contain;
+		}
+
+		&-title {
+			color: $menu;
+			font-size: $large-size;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.9px;
+			margin-bottom: 15px;
+		}
+
+		&-text {
+			color: $grey;
+			font-family: $sec-font;
+			line-height: 18px;
+			letter-spacing: 0.14px;
+			margin-bottom: 35px;
+		}
+	}
+
+	.arrow-owl {
+		@include owl-corusel($dark, $dark, $white);
+	}
+}

@@ -12,11 +12,49 @@
 	&::after {
 		content: "›";
 		position: absolute;
-		color: $white;
+		color: $color;
 		display: block;
 		top: 46%;
 		right: -15px;
 		transform: translate(-50%, -50%);
 		font-size: 20px;
+	}
+}
+
+@mixin all {
+	color: $bg;
+	letter-spacing: 0.35px;
+	border: 3px solid $dark;
+	background-color: transparent;
+	padding: 10px 30px;
+	transition: border-color .3s ease;
+
+	&:hover {
+		border-color: $yellow;
+	}
+}
+
+@mixin owl-corusel ($border, $color, $hover) {
+	border: 1px solid $border;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	color: $color;
+	font-size: 30px;
+	.arrow-left {
+		left: 0;
+		top: 50%;
+	}
+	
+	.arrow-right {
+		right: 0;
+		top: 50%;
+	}
+	&:hover {
+		background-color: $yellow;
+		color: $hover
 	}
 }

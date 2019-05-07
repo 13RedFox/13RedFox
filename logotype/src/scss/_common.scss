@@ -44,6 +44,7 @@ a:hover {
 
 .main__info {
 	display: flex;
+	flex-direction: column;
 	padding-left: 105px;
 }
 
@@ -76,7 +77,6 @@ a:hover {
 /* --- SLIDER --- */
 
 .owl-carousel {
-	padding: 100px 0;
 	position: relative;
 
 	.active {
@@ -86,26 +86,15 @@ a:hover {
 }
 
 .arrow-owl {
-	border: 1px solid $white;
-	position: absolute;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 40px;
-	height: 40px;
-	top: 50%;
-	color: $white;
-	font-size: 30px;
-
-	&:hover {
-		background-color: $yellow;
-	}
+	@include owl-corusel($white, $white, $white);
 }
 
 .arrow-left {
 	left: 0;
+	top: 50%;
 }
 
 .arrow-right {
 	right: 0;
+	top: 50%;
 }
