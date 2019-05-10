@@ -1,0 +1,56 @@
+.wwd {
+	padding: 100px 0;
+
+	&__title {
+		@include title($dark, 700, $dark);
+	}
+
+	&__content {
+		padding-top: 50px;
+
+		&-subtitle {
+			color: $dark;
+			font-size: $big-size;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&-title {
+			color: $dark;
+			font-size: $large-size;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		&-text {
+			max-height: 90px;
+			color: $dirt;
+			font-size: $middle-size;
+			line-height: 30px;
+			overflow: hidden;
+			margin-bottom: 30px;
+		}
+
+		&-btn {
+			@include btn;
+			margin-bottom: 30px;
+		}
+
+		&-adress {
+			display: block;
+			color: $dark;
+			font-style: italic;
+			font-weight: 600;
+
+			&:hover {
+				color: $dark;
+			}
+		}
+	}
+
+	&__adress {
+		margin-right: 10px;
+	}
+}

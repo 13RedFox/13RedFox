@@ -1,0 +1,43 @@
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	background-color: $white;
+	color: $black;
+	font-family: $main-font;
+	font-size: $base-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@keyframes drop {
+	0% {
+		top: 0px;
+		opacity: 0;
+	}
+
+	30% {
+		top: 5px;
+		opacity: 1;
+	}
+
+	100% {
+		top: 15px;
+		opacity: 0;
+	}
+}

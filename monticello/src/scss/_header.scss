@@ -1,0 +1,69 @@
+.header {
+	min-height: 100vh;
+	background: linear-gradient(45deg, #55b8ff 0%, #7e5aff9c 100%), url('../img/header-bg.png') no-repeat center;
+	background-size: cover;
+	padding: 50px 0;
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+
+		&-link {
+			display: flex;
+			color: $white;
+			text-transform: uppercase;
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		color: $white;
+		border: 1px solid rgba($white, 0.4);
+		border-radius: 50%;
+	}
+
+	&__content {
+		color: $white;
+		text-transform: uppercase;
+		text-align: center;
+
+		&-title {
+			font-size: $huge-size;
+			font-weight: 700;
+			letter-spacing: 4px;
+			margin-bottom: 35px;
+		}
+
+		&-text {
+			font-size: $middle-size;
+			font-weight: 400;
+			line-height: 22px;
+			letter-spacing: 5.4px;
+		}
+	}
+
+	&__scroll {
+		display: flex;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border: 1px solid $white;
+		border-radius: 50%;
+		color: $white;
+
+		&-down {
+			display: block;
+			position: relative;
+			animation-name: drop;
+			animation-duration: 1s;
+			animation-timing-function: linear;
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-play-state: running;
+		}
+	}
+}
