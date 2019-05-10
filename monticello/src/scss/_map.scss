@@ -1,0 +1,87 @@
+.map {
+	min-height: 700px;
+	padding: 100px 0;
+	position: relative;
+
+	#map {
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.shadow {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%);
+		display: block;
+		background-color: $white;
+		box-shadow: 0 -4px 30px rgba(133, 133, 133, 0.2);
+		padding: 90px 60px;
+	}
+
+	&__title {
+		@include title($dark, 700, $dark);
+		margin-bottom: 50px;
+	}
+
+	&__contacts {
+		font-size: $middle-size;
+		color: $dark;
+
+		&:hover {
+			color: $dark;
+		}
+	}
+
+	&__icon {
+		color: $purple1;
+		margin-right: 10px;
+	}
+
+	.address,
+	.phone,
+	.email {
+		margin-bottom: 25px;
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+
+		.all-form {
+			border: none;
+			border-bottom: 1px solid rgba($dark, 0.2);
+			padding-bottom: 20px;
+			color: $dark;
+			outline: none;
+
+			&:focus::-webkit-input-placeholder {
+				color: $dark;
+			}
+		}
+
+		:focus.all-form {
+			border-bottom: 1px solid rgba($dark, 0.8);
+		}
+
+		::-webkit-input-placeholder {
+			color: rgba($dark, 0.5);
+			font-size: $middle-size;
+			font-weight: 400;
+		}
+	}
+
+	&-btn {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__form-btn {
+		@include btn;
+	}
+}
