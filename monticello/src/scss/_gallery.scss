@@ -1,0 +1,20 @@
+.gallery {
+	padding: 150px 0;
+
+	&__title {
+		@include title($dark, 700, $dark);
+	}
+
+	&__img-wrapper {
+		@include padding-hack(33.2%, cover);
+		min-width: 255px;
+	}
+
+	&__img {
+		cursor: pointer;
+	}
+
+	&__btn {
+		@include btn;
+	}
+}
