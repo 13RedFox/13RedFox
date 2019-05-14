@@ -3,6 +3,8 @@
 	background: url('../img/cover.jpg') no-repeat;
 	background-size: cover;
 	color: $white;
+	padding: 50px 0;
+	position: relative;
 
 	&__overlay {
 		background: rgba(44, 62, 80, 0.3) url('../img/pattern.png') repeat;
@@ -18,6 +20,13 @@
 		font-size: $huge-size;
 		font-weight: 700;
 		text-transform: uppercase;
+	}
+
+	&__scroll {
+		display: block;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
 	}
 
 	.scroll-down {
