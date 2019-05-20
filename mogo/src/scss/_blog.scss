@@ -14,7 +14,7 @@
 	@media screen and (min-width: 992px) {
 		padding: 100px 0;
 	}
-	
+
 	&__wrap {
 		position: relative;
 		display: flex;
@@ -24,7 +24,6 @@
 	.img-wrapper {
 		@include padding-hack(63.1%, cover);
 		width: 100%;
-		max-width: 380px;
 		margin-bottom: 20px;
 	}
 
@@ -54,11 +53,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		top: 48%;
+		bottom: 5%;
 		left: -2%;
 		width: 60px;
 		height: 70px;
-		transform: translate(2%,-48%);
+		transform: translate(2%, -5%);
 		background-color: $aqua;
 		color: $white;
 	}
@@ -76,11 +75,10 @@
 	}
 
 	&__rating {
-
-font-family: "Roboto - Light Italic";
-font-size: 15px;
-font-weight: 400;
-line-height: 24px;
+		font-family: "Roboto - Light Italic";
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
 	}
 
 	&__view,
@@ -100,5 +98,5 @@ line-height: 24px;
 		margin-right: 5px;
 	}
 
-	
+
 }

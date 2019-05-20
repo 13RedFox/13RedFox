@@ -1,10 +1,13 @@
 .first-screen {
-	background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), $yellow url('../img/header-bg.png') no-repeat;
+	background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
 	background-size: cover;
-	min-height: 100vh;
 	color: $white;
 	padding: px_to_rem(25px) 0;
 	text-align: center;
+
+	@media screen and (min-width: 992px) {
+		background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), $yellow url('../img/header-bg.png') no-repeat;
+	}
 
 	.logo__link {
 		display: block;
@@ -25,6 +28,9 @@
 	.menu {
 		width: 100%;
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
 
 		.active {
 			color: $yellow;
@@ -38,8 +44,9 @@
 
 		.burger-menu {
 			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 50px;
-			padding: 7.5px 0 7.5px 2%;
 
 			@media screen and (min-width: 992px) {
 				display: none;
@@ -53,6 +60,34 @@
 			height: 2px;
 			background-color: $yellow;
 			z-index: 999;
+		}
+
+		&__icon {
+			display: flex;
+			width: 50px;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			@media all and (min-width: 992px) {
+				display: none;
+			}
+		}
+
+		&__phone-icon {
+			@media all and (max-width: 991px) {
+				display: none;
+			}
+		}
+
+		&__list-mobile {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			@media all and (max-width: 991px) {
+				flex-direction: column;
+				align-items: flex-end;
+			}
 		}
 
 		&__link {
@@ -73,19 +108,14 @@
 		}
 	}
 
-
-
-
-
-
 	.fs-content {
 
 		@media screen and (max-width: 575px) {
-			padding: 6rem 0;
+			padding-top: 6rem;
 		}
 
 		@media (min-width: 576px) and (max-width: 991px) {
-			padding: 6rem 0;
+			padding: 3.5rem 0;
 		}
 
 		@media screen and (min-width: 992px) {
