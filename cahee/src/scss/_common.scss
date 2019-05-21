@@ -36,4 +36,8 @@ ul {
 	font-weight: 300;
 	line-height: 27px;
 	text-transform: uppercase;
+
+	@media all and (max-width: 575px) {
+		width: 100%;
+	}
 }

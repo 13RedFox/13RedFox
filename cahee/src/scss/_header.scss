@@ -1,11 +1,16 @@
 .header {
-	min-height: 100vh;
+
 	padding: 50px 0;
 	background: $white;
+
+	@media all and (max-width: 575px) {
+		padding: 10px 0 70px;
+	}
 
 	@media screen and (min-width: 768px) {
 		background: $white url('../img/header-bg.jpg') no-repeat center;
 		background-size: cover;
+		min-height: 100vh;
 	}
 
 	&__logo {
@@ -92,6 +97,10 @@
 
 	&__info {
 		padding-top: 100px;
+
+		@media all and (max-width: 575px) {
+			padding-top: 50px;
+		}
 	}
 
 	&__title {

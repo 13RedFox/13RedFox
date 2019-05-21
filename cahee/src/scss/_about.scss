@@ -1,6 +1,8 @@
 .about {
 	background-color: $aqua;
 	color: $white;
+	scroll-behavior: auto;
+
 
 	@media screen and (max-width: 575px) {
 		padding: 20px 0;
