@@ -1,13 +1,53 @@
 /* WORKS
 ------------- */
 .works {
-	min-height: 100vh;
-	background-color: #cccccc;
 
-	&__img {
-		width: 100%;
-		max-width: 480px;
+	&__cart {
+		padding: 0;
+		color: $white;
+		line-height: 1.1;
+	}
+
+	.img-wrapper {
 		border-bottom: 1px solid $white;
-		border-right: 1px solid $white;
+		transition: all .3s ease;
+
+		@media all and (min-width: 768px) {
+			border-right: 1px solid $white;
+		}
+	}
+
+	.img-wrapper:hover .works__content {
+		opacity: 1;
+	}
+
+	&__img:hover {
+		background:linear-gradient(to right, rgba(232,69,69,1) 0%, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 100%);
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		opacity: 0;
+		transition: all .3s ease;
+
+		&-title {
+			font-size: $base-size;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 10px;
+		}
+
+		&-text {
+			font-weight: 400;
+			font-size: $base-size;
+			text-transform: capitalize;
+			opacity: .8;
+		}
 	}
 }
