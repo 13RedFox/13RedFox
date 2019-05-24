@@ -42,7 +42,14 @@
 			$(this).toggleClass('btn-active');
 		});
 
-		$(function() {
+		$(function () {
+			$('.header__top-btn').click(function () {
+				$('.header__menu-desktop').toggle();
+			});
+		});
+
+
+		$(function () {
 			// Owl Carousel
 			var owl = $(".owl-carousel");
 			owl.owlCarousel({
@@ -61,8 +68,5 @@
 
 
 	});
-
-
-
 
 })();
