@@ -1,0 +1,13 @@
+/* WORKS
+------------- */
+.works {
+	min-height: 100vh;
+	background-color: #cccccc;
+
+	&__img {
+		width: 100%;
+		max-width: 480px;
+		border-bottom: 1px solid $white;
+		border-right: 1px solid $white;
+	}
+}
