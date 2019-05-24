@@ -1,0 +1,93 @@
+/* TEAM
+------------- */
+.team {
+	padding: 50px 0;
+
+	@media all and (min-width: 768px) {
+		padding: 75px 0;
+	}
+
+	@media all and (min-width: 991px) {
+		padding: 100px 0;
+	}
+
+	.img-wrapper {
+		margin-bottom: 25px;
+	}
+
+	&__author {
+		border-radius: 40px 40px 0px 0px;
+
+		@media all and (min-width: 768px) {
+			border-radius: 20px 20px 0px 0px;
+		}
+
+		@media all and (min-width: 991px) {
+			border-radius: 10px 10px 0px 0px;
+		}
+	}
+
+	&__content {
+		margin-bottom: 30px;
+
+		&-title {
+			font-size: $middle-size;
+			line-height: 1.3;
+			color: $dark;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+
+			@media all and (max-width: 991px) {
+				text-align: center;
+			}
+		}
+
+		&-subtitle {
+			color: $red;
+			font-size: $small-size;
+			line-height: 1.3;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+
+			@media all and (max-width: 991px) {
+				text-align: center;
+			}
+		}
+
+		&-text {
+			color: $grey-text;
+			line-height: 1.5;
+		}
+	}
+
+	&__social {
+		display: flex;
+
+		@media all and (max-width: 991px) {
+			justify-content: center;
+		}
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			border: 1px solid $grey-icon;
+			margin-right: 5px;
+			color: $grey-icon;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $red;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+/* /.TEAM
+------------- */
