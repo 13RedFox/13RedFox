@@ -13,6 +13,7 @@
 
 	.img-wrapper {
 		margin-bottom: 25px;
+		@include padding-hack(94%);
 	}
 
 	&__author {
@@ -67,6 +68,14 @@
 			justify-content: center;
 		}
 
+		&-item {
+			margin-right: 5px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
 		&-icon {
 			display: flex;
 			justify-content: center;
@@ -74,16 +83,11 @@
 			width: 40px;
 			height: 40px;
 			border: 1px solid $grey-icon;
-			margin-right: 5px;
 			color: $grey-icon;
 			transition: color .3s ease;
 
 			&:hover {
 				color: $red;
-			}
-
-			&:last-child {
-				margin-right: 0;
 			}
 		}
 	}

@@ -11,6 +11,7 @@
 	.img-wrapper {
 		border-bottom: 1px solid $white;
 		transition: all .3s ease;
+		@include padding-hack(103%);
 
 		&:hover img {
 			filter: brightness(20%);

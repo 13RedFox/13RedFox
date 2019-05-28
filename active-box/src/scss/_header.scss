@@ -1,9 +1,17 @@
 /* HEADER
 ------------- */
 .header {
-	min-height: 100vh;
 	background: rgba($dark-blue, 0.95) url('../img/header-bg.jpg') no-repeat center / cover;
 	color: $white;
+	padding: 30px 0;
+
+	@media all and (min-width: 768px) {
+		padding: 50px 0;
+	}
+
+	@media all and (min-width: 992px) {
+		min-height: 100vh;
+	}
 
 	&__top-logo {
 		display: inline-block;

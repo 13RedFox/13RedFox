@@ -2,6 +2,10 @@
 ------------- */
 .client {
 
+	.img-wrapper {
+		@include padding-hack(85%);
+	}
+
 	&__photo,
 	&__wrap {
 		padding: 0;
