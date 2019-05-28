@@ -1,0 +1,22 @@
+/* About
+-------- */
+.about {
+	min-height: 100vh;
+	padding: 30px 0;
+	background-color: #ccc;
+
+	@media all and (min-width: 768px) {
+		padding: 50px 0;
+	}
+
+	@media all and (min-width: 992px) {
+		padding: 80px 0;
+	}
+
+	@media all and (min-width: 1200px) {
+		padding: 100px 0;
+	}
+}
+
+/* /.About
+-------- */

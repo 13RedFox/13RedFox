@@ -53,8 +53,8 @@ const task = {
 
 const path = {
 	src: {
-		html: `${targetPath}/src/index.html`,
-		js: `${targetPath}/src/js/script.js`,
+		html: `${targetPath}/src/*.+(ejs|html)`,
+		js: `${targetPath}/src/js/*.js`,
 		scss: `${targetPath}/src/scss/**/[^_]*.+(scss|sass)`,
 		img: [`${targetPath}/src/img/**/*.*`, `!${targetPath}/src/img/**/*.ini`],
 		fonts: [`${targetPath}/src/fonts/**/*.*`,`!${targetPath}/src/fonts/**/*.ini`],
@@ -71,9 +71,9 @@ const path = {
 		fav: `${targetPath}/app/fav/`
 	},
 	watch: {
-		html: [`${targetPath}/src/*.html`, `${targetPath}/src/partials/**/*.*`],
+		html: [`${targetPath}/src/*.html`, `${targetPath}/src/*.ejs`, `${targetPath}/src/partials/**/*.*`],
 		js: `${targetPath}/src/js/*.js`,
-		scss: `${targetPath}/src/scss/*.+(scss|sass)`,
+		scss: `${targetPath}/src/scss/**/*.+(scss|sass)`,
 		img: `${targetPath}/src/img/**/*.*`,
 		fonts: `${targetPath}/src/fonts/**/*.*`,
 		libs: `${targetPath}/src/libs/**/*.*`,
@@ -115,12 +115,16 @@ gulp.task(task.build.css, () => {
 gulp.task(task.dev.html, () => {
 	return gulp.src(path.src.html, { allowEmpty: true })
 	.pipe($.rigger())
+	.pipe($.ejs().on('error', $.notify.onError("EJS-Error: <%= error.message %>")))
+	.pipe($.rename({ extname: '.html' }))
 	.pipe(gulp.dest(path.app.html));
 });
 
 gulp.task(task.build.html, () => {
 	return gulp.src(path.src.html, { allowEmpty: true })
 	.pipe($.rigger())
+	.pipe($.ejs().on('error', $.notify.onError("EJS-Error: <%= error.message %>")))
+	.pipe($.rename({ extname: '.html' }))
 	.pipe($.htmlmin({ collapseWhitespace: true }))
 	.pipe(gulp.dest(path.app.html));
 });

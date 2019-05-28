@@ -1,0 +1,164 @@
+/* header
+--------- */
+.header {
+	min-height: 100vh;
+	background: linear-gradient(to right, rgba($bg-viol, .5) 0%, rgba($bg-viol, .5) 100%), url('../../img/header-bg.jpg') no-repeat center/cover;
+	color: $white;
+	padding: 15px 0;
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+
+		@media all and (min-width: 992px) {
+			justify-content: space-between;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+
+		@media all and (max-width: 991px) {
+			display: none;
+		}
+
+		@media all and (min-width: 992px) {
+			width: 100%;
+		}
+
+		&-link {
+			font-family: $main-font;
+			font-size: $huge-size;
+			text-transform: uppercase;
+			color: $white;
+			opacity: .5;
+			transition: opacity .3s ease;
+
+			&:hover {
+				color: $white;
+				opacity: 1;
+			}
+		}
+	}
+
+	/* Header-burger
+------------------	 */
+	&__burger-btn {
+		@include square(30px);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		@media all and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	&__burger-line {
+		position: relative;
+		display: flex;
+		background-color: $white;
+		width: 100%;
+		height: 3px;
+		border-radius: 5px;
+		transition: .3s ease;
+
+		&:hover {
+			background-color: transparent;
+		}
+
+		&:hover::before {
+			top: 0;
+			transform: rotate(-45deg);
+		}
+
+		&:hover::after {
+			bottom: 0;
+			transform: rotate(45deg);
+		}
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			border-radius: 5px;
+			background-color: $white;
+		}
+
+		&::before {
+			top: -10px;
+		}
+
+		&::after {
+			bottom: -10px;
+		}
+
+		.active {
+			transition: .3s ease;
+		}
+	}
+
+	/* END__Header-burger
+------------------	 */
+
+	&-fs {
+		padding-top: 150px;
+
+		@media all and (min-width: 768px) {
+			padding-top: 200px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-title {
+			font-size: 2rem;
+			line-height: 1;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 15px;
+
+			@media all and (min-width: 768px) {
+				font-size: 3.2rem;
+			}
+
+			@media all and (min-width: 991px) {
+				font-size: $header-title;
+			}
+		}
+
+		&-text {
+			font-family: $sec-font;
+			font-size: 1.4rem;
+			line-height: 1.2;
+			font-style: italic;
+			text-align: center;
+
+			@media all and (min-width: 768px) {
+				font-size: $big-size;
+				width: 80%;
+			}
+
+			@media all and (min-width: 1200px) {
+				width: 55%;
+			}
+		}
+	}
+}
+
+/* /.header
+----------- */
