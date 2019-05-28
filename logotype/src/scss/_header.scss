@@ -40,11 +40,11 @@
 			color: $menu;
 			text-transform: capitalize;
 			border: 1px solid transparent;
-			padding: 10px 0;
-			transition: border .3s ease;
+			padding: 10px;
+			transition: color .3s ease;
 
 			&:hover {
-				border: 1px solid $yellow;
+				color: $yellow;
 			}
 
 			@media screen and (max-width: 575px) {

@@ -4,6 +4,8 @@
 	&__btn {
 		display: flex;
 		justify-content: center;
+		width: 100%;
+		text-align: center;
 
 		@media screen and (min-width: 992px) {
 			justify-content: flex-end;
@@ -12,6 +14,9 @@
 
 	&__all {
 		@include all;
+		@media all and (max-width: 575px) {
+			width: 100%;
+		}
 	}
 
 	&__cart {
@@ -44,10 +49,15 @@
 			line-height: 18px;
 			letter-spacing: 0.14px;
 			text-align: justify;
-			margin-bottom: 80px;
-			height: 90px;
-			overflow: hidden;
+			margin-bottom: 30px;
 			text-align: center;
+
+			@media all and (min-width: 768px) {
+				margin-bottom: 50px;
+			}
+			@media all and (min-width: 992px) {
+				margin-bottom: 80px;
+			}
 
 			@media (min-width: 992px) and (max-width: 1199px) {
 				font-size: 0.8rem;

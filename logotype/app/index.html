@@ -25,7 +25,7 @@
 							<a href="tel:+380963092145" class="main__tel main__link mb-2 mb-sm-0"><i class="fas fa-phone"></i>+38 (096)
 								309 21
 								45</a>
-							<a href="email:layout585@gmail.com " class="main__email main__link mb-2 mb-sm-0"><i
+							<a href="mailto:layout585@gmail.com " class="main__email main__link mb-2 mb-sm-0"><i
 									class="fas fa-envelope"></i>layout585@gmail.com</a>
 						</div>
 						<div class="col-lg-4 col-xl-3">
@@ -87,21 +87,17 @@
 		</header>
 		<section class="services">
 			<div class="container">
-				<div class="row mb-5">
-					<div class="col">
-						<div class="row d-flex justify-content-center justify-content-lg-between">
-							<div class="col-lg-6 mb-4 mb-lg-0">
-								<div class="main__info">
-									<h3 class="main__title">наши услуги</h3>
-									<p class="main__text">Комплексный подход к вашему вопросу, своевременная правовую помощь, представление
-										интересов во всех судебных инстанциях.</p>
-								</div>
-							</div>
-							<div class="col-lg-3 pt-lg-4">
-								<div class="services__btn">
-									<button type="submit" class="services__all">Показать все услуги</button>
-								</div>
-							</div>
+				<div class="row d-flex justify-content-center justify-content-lg-between mb-5">
+					<div class="col-lg-6 mb-4 mb-lg-0">
+						<div class="main__info">
+							<h3 class="main__title">наши услуги</h3>
+							<p class="main__text">Комплексный подход к вашему вопросу, своевременная правовую помощь, представление
+								интересов во всех судебных инстанциях.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 d-flex align-items-center justify-content-end">
+						<div class="services__btn">
+							<a href="#" class="services__all">Показать все услуги</a>
 						</div>
 					</div>
 				</div>
@@ -255,11 +251,11 @@
 						<form action="#" id="consultation-form">
 							<div class="row">
 								<div class="col-lg-10 col-xl-4 d-flex flex-column flex-md-row justify-content-md-between justify-content-xl-start flex-xl-column mb-3 mb-xl-0">
-									<div class="consultation__email consultation__text mb-3 mb-md-0" for="consultation-form">
+									<div class="consultation__email consultation__text mb-3" for="consultation-form">
 										<label for="consultation-email">E-mail</label>
 										<input id="consultation-email" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
 									</div>
-									<div class="consultation__phone consultation__text mb-3 mb-md-0" for="consultation-form">
+									<div class="consultation__phone consultation__text mb-3" for="consultation-form">
 										<label for="consultation-phone">Контактный телефон</label>
 										<input id="consultation-phone" type="tel" pattern="[0-9]{10}" required>
 									</div>
@@ -286,7 +282,7 @@
 		<section class="advantages">
 			<div class="container">
 				<div class="row ">
-					<div class="col-md-12 col-lg-4 d-flex flex-column align-items-center mb-5">
+					<div class="col-md-12 col-lg-4 d-flex flex-column align-items-center mb-5 mb-lg-0">
 						<div class="advantages__icon">
 							<i class="fas fa-check"></i>
 						</div>
@@ -294,7 +290,7 @@
 						<p class="advantages__text">Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических
 							лиц.</p>
 					</div>
-					<div class="col-md-12 col-lg-4 d-flex flex-column align-items-center mb-5">
+					<div class="col-md-12 col-lg-4 d-flex flex-column align-items-center mb-5 mb-lg-0">
 						<div class="advantages__icon">
 							<i class="fas fa-check"></i>
 						</div>
@@ -388,18 +384,30 @@
 		</section>
 		<footer class="footer">
 			<div class="container">
-				<div class="row d-flex justify-content-lg-between mb-4">
+				<div class="row d-flex justify-content-lg-between pb-4">
 					<div class="col-lg-4 mb-5 mb-lg-0">
 						<div class="footer__info">
 							<h4 class="footer__info-title">Комплексное закрытие предприятия</h4>
 							<p class="footer__info-text">Полное прекращение существования юридического лица с сохранением легальности всей
 								предыдущей деятельности.</p>
+		
 							<a href="#" class="btn__work mb-4"><i class="fas fa-briefcase"></i>Бесплатная консультация</a>
-							<a href="tel:+380963092145" class="main__tel main__link mb-2"><i class="fas fa-phone"></i>+38 (096) 309 21
-								45</a>
-							<a href="email:layout585@gmail.com " class="main__email main__link mb-2"><i
-									class="fas fa-envelope"></i>layout585@gmail.com</a>
-							<a href="#" class="main__map main__link"><i class="fas fa-map-marker-alt"></i>Киев, ул.Пушиной, 13</a>
+							<adress class="footer__info-adddress">
+								<ul class="footer__address-menu">
+									<li class="footer__address-item mb-2">
+										<a href="tel:+380963092145" class="main__tel main__link"><i class="fas fa-phone"></i>+38 (096) 309
+											21
+											45</a>
+									</li>
+									<li class="footer__address-item mb-2">
+										<a href="mailto:layout585@gmail.com " class="main__email main__link"><i
+												class="fas fa-envelope"></i>layout585@gmail.com</a>
+									</li>
+									<li class="footer__address-item">
+										<a href="#" class="main__map main__link"><i class="fas fa-map-marker-alt"></i>Киев, ул.Пушиной, 13</a>
+									</li>
+								</ul>
+							</adress>
 						</div>
 					</div>
 					<div class="col-lg-7">
