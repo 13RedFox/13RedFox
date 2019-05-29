@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	min-height: 100vh;
+}
+
+body {
+	background-color: #cccccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.songs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 600px;
+	background-color: #ffcccc;
+}
