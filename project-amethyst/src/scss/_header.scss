@@ -1,0 +1,66 @@
+/* HEADER
+--------- */
+.header {
+	background-image: linear-gradient(-215deg, rgba(153, 102, 204, 0.81) 0%, rgba(225, 133, 34, 0.81) 100%);
+
+	@media all and (min-width: 992px) {
+		min-height: 100vh;
+	}
+
+	&__top {
+		color: $white;
+		border-top: 1px solid rgba(226, 226, 220, 0.5);
+		border-bottom: 1px solid rgba(226, 226, 220, 0.5);
+
+		&-social {
+			max-width: 120px;
+			&-list {
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+				padding-right: 20px;
+			}
+
+			&-link {
+				color: $white;
+
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+
+		&-social,
+		&-email {
+			border-right: 1px solid $light-grey;
+		}
+
+		&-email,
+		&-phone {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+
+		}
+
+		&-email-text,
+		&-phone-text {
+			color: $light-white;
+			font-size: $middle-size;
+			font-weight: 400;
+		}
+
+		&-email-info,
+		&-phone-info {
+			font-size: $middle-size;
+			font-weight: 700;
+		}
+
+		&-email {
+			padding-right: 20px;
+		}
+	}
+}
+
+/* End HEADER
+--------- */

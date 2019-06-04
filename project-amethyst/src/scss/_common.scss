@@ -1,0 +1,28 @@
+/* MAIN STYLE
+------- */
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-size: $base-size;
+	background-color: $white;
+	color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+}
+
+/* End MAIN STYLE
+------- */
