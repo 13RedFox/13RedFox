@@ -1,0 +1,95 @@
+/* About
+-------- */
+.about {
+	padding: 20px 0;
+	background-color: $bg-lightgrey;
+
+	@media all and (min-width: 992px) {
+		padding: 50px 0;
+	}
+
+	@media all and (min-width: 992px) {
+		padding: 110px 0;
+	}
+
+	.img-wrapper {
+		@include padding-hack(145%);
+		background-color: $bg-viol;
+	}
+
+	&__info {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: 992px) {
+			top: 25%;
+		}
+
+		&>svg {
+			margin-bottom: 35px;
+		}
+
+		&-title {
+			font-family: $sec-font;
+			@include text-styling(2rem, 400, $white);
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	&__desc {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media all and (min-width: 1200px) {
+			padding-top: 70px;
+		}
+
+		&-content {
+			margin-bottom: 50px;
+
+			@media all and (min-width: 1200px) {
+				margin-bottom: 80px;
+			}
+		}
+
+		&-text {
+			@include text-styling($middle-size, 400, $grey);
+			font-style: italic;
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		&-bold {
+			font-weight: 700;
+		}
+
+		&-link {
+			display: block;
+			padding: 10px 40px;
+			border: 1px solid $btn;
+			text-transform: capitalize;
+			@include text-styling($middle-size, 400, $btn);
+			font-style: italic;
+
+			@media all and (max-width: 991px) {
+				width: 100%;
+				text-align: center;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+/* End About
+------------ */
