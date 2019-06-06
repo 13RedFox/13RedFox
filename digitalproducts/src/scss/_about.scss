@@ -75,18 +75,7 @@
 		}
 
 		&-link {
-			display: block;
-			padding: 10px 40px;
-			border: 1px solid $btn;
-			text-transform: capitalize;
-			@include text-styling($middle-size, 400, $btn);
-			font-style: italic;
-
-			@media all and (max-width: 991px) {
-				width: 100%;
-				text-align: center;
-				padding: 10px 0;
-			}
+			@include btn($btn);
 		}
 	}
 }

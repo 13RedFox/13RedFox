@@ -1,0 +1,82 @@
+/* Works
+-------- */
+.works {
+	padding: 30px 0;
+	background: linear-gradient(to right, rgba($bg-viol, 0.5) 0%, rgba($bg-viol, 0.5) 100%), url('../img/works-bg.jpg') no-repeat center/cover;
+
+	@media all and (min-width: 992px) {
+		padding: 40px 0 50px;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-icon {
+			margin-bottom: 30px;
+		}
+
+		&-title {
+			font-family: $sec-font;
+			@include text-styling ($main-title, 400, $white);
+			text-transform: uppercase;
+			margin-bottom: 60px;
+		}
+
+		&-link {
+			@include btn($white);
+		}
+	}
+
+	.owl-carousel {
+		margin-bottom: 50px;
+	}
+
+	.arrow-owl {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		$size: 30px;
+		width: $size;
+		height: $size;
+	}
+
+	.arrow-left {
+		left: -5%;
+		transform: translateX(-50%) rotate(45deg);
+		border-bottom: 2px solid $white;
+		border-left: 2px solid $white;
+
+		@media all and (min-width: 1200px) {
+			left: -15%;
+		}
+	}
+
+	.arrow-right {
+		right: -5%;
+		transform: translateX(50%) rotate(45deg);
+		border-top: 2px solid $white;
+		border-right: 2px solid $white;
+
+		@media all and (min-width: 1200px) {
+			right: -15%;
+		}
+	}
+
+	.owl-dot span {
+		background-color: transparent!important;
+		border: 2px solid $white;
+	}
+
+	.owl-dot.active span {
+		background-color: $white!important;
+	}
+
+	.img-wrapper {
+		@include padding-hack(74.4%);
+	}
+}
+
+/* End works style
+------------------ */

@@ -24,3 +24,18 @@
 		object-fit: $object-fit;
 	}
 }
+
+@mixin btn($color) {
+	display: block;
+	padding: 10px 40px;
+	border: 1px solid $color;
+	text-transform: capitalize;
+	@include text-styling($middle-size, 400, $color);
+	font-style: italic;
+
+	@media all and (max-width: 991px) {
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+	}
+}
