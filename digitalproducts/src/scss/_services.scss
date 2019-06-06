@@ -1,0 +1,83 @@
+/* SERVICES
+----------- */
+.services {
+	background-color: $bg-lightgrey;
+
+	&-dark {
+		background-color: $bg-services;
+	}
+
+	&__content {
+		padding: 120px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&>svg {
+			margin-bottom: 20px;
+		}
+
+		&-title {
+			@include text-styling($huge-size, 700, $grey);
+			margin-bottom: 15px;
+			text-transform: uppercase;
+		}
+
+		&-text {
+			width: 60%;
+			@include text-styling($base-size, 400, $grey);
+			font-style: italic;
+			text-align: center;
+			line-height: 1;
+		}
+	}
+
+	&__large {
+
+		&-content {
+			background: linear-gradient(to right, rgba($bg-viol, 0.5) 0%, rgba($bg-viol, 0.5) 100%), url('../img/services-item.png') no-repeat center/cover;
+			min-height: 100%;
+			padding: 80px 0 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			@media all and (min-width: 768px) {
+				padding-top: 120px;
+			}
+
+			&>svg {
+				margin-bottom: 20px;
+			}
+
+			&-title {
+				@include text-styling($huge-size, 700, $white);
+				margin-bottom: 20px;
+				text-transform: uppercase;
+
+				@media all and (min-width: 768px) {
+					margin-bottom: 50px;
+				}
+
+				@media all and (min-width: 992px) {
+					margin-bottom: 100px;
+				}
+			}
+
+			&-text {
+				@include text-styling($base-size, 400, $white);
+			font-style: italic;
+			text-align: center;
+			line-height: 1;
+			padding: 0 15px;
+			margin-bottom: 0;
+			}
+
+			&-author {
+				@include text-styling($base-size, 700, $white);
+			}
+		}
+	}
+}
+/* END SERVICES
+--------------- */
