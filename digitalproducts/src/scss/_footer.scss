@@ -1,0 +1,50 @@
+/* Footer
+--------- */
+.footer {
+	background-color: $bg-viol;
+	padding: 20px 0;
+
+	@media all and (min-width: 768px) {
+		padding: 30px 0;
+	}
+
+	@media all and (min-width: 992px) {
+		padding: 50px 0;
+	}
+
+	@media all and (min-width: 1200px) {
+		padding: 70px 0;
+	}
+
+	&__copy {
+		@include text-styling($base-size, 400, $white);
+		text-align: center;
+
+		&-bold {
+			font-weight: 700;
+		}
+
+		@media all and (min-width: 768px) {
+			text-align: left;
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: space-between;
+
+		&-link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			$size: 30px;
+			width: $size;
+			height: $size;
+			background-color: $white;
+			color: $bg-viol;
+			border-radius: 50%;
+		}
+	}
+}
+/* End Footer style
+--------- */

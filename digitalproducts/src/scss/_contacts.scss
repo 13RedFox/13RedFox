@@ -1,0 +1,172 @@
+/* Contacts
+----------- */
+.contacts {
+	position: relative;
+	padding: 50px 0;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+		opacity: 0.5;
+		background-color: $bg-viol;
+	}
+
+	&__icon {
+		margin-bottom: 15px;
+	}
+
+	&__title {
+		font-family: $sec-font;
+		@include text-styling($main-title, 400, $white);
+		text-transform: uppercase;
+	}
+
+	&__wrap {
+		display: flex;
+		position: relative;
+		height: 200px;
+
+		&-card {
+			position: absolute;
+			right: -276px;
+			display: flex;
+			width: 100%;
+			max-width: 350px;
+			transition: all .3s ease;
+			cursor: pointer;
+
+
+			@media all and (max-width: 991px) {
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+			}
+
+			&:hover {
+				right: -16px;
+			}
+
+			&:last-child {
+				top: 92px;
+
+				@media all and (max-width: 991px) {
+					top: 112px;
+				}
+			}
+
+			&:last-child:hover {
+				right: -16px;
+			}
+
+			&-icon {
+				background-color: $bg-viol;
+				$size: 90px;
+				min-width: $size;
+				min-height: $size;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&-text {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				@include text-styling($base-size, 400, $grey);
+				background-color: rgba($bg-lightgrey, .5);
+				text-align: center;
+				padding: 10px 25px;
+
+				@media all and (min-width: 768px) {
+					padding: 10px 35px;
+				}
+
+				&:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+
+		&-name,
+		&-email,
+		&-message {
+			background-color: rgba($bg-lightgrey, .5);
+			color: $white;
+			font-style: italic;
+			border: none;
+			border-radius: 2px;
+			padding: 15px 0 15px 20px;
+
+			@include placeholder {
+				@include text-styling($base-size, 400, $white);
+			}
+		}
+
+		&-wrap {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			margin-bottom: 20px;
+
+			@media all and (min-width: 768px) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&-name,
+		&-email {
+			width: 100%;
+
+			@media all and (min-width: 768px) {
+				width: 48%;
+			}
+		}
+
+		&-name {
+			margin-bottom: 20px;
+
+			@media all and (min-width: 768px) {
+				margin-bottom: 0;
+			}
+		}
+
+		&-message {
+			width: 100%;
+			margin-bottom: 40px;
+			resize: none;
+			min-height: 200px;
+		}
+
+		&-btn {
+			background-color: $bg-viol;
+			font-family: $sec-font;
+			@include text-styling($middle-size, 700, $white);
+			padding: 20px 60px;
+			text-transform: uppercase;
+			letter-spacing: 0.3px;
+			border: none;
+			border-radius: 2px;
+
+			@media all and (max-width: 991px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* End Contacts style
+----------- */
