@@ -15,12 +15,17 @@
 	}
 
 	&__top-menu {
+		display: none;
 		padding-top: 10px;
 		position: fixed;
 		top: 10px;
 		z-index: 999;
 		width: 100%;
 		transition: all .3s ease;
+
+		@media all and (min-width: 768px) {
+			display: block;
+		}
 	}
 
 	.fixed {
@@ -35,11 +40,6 @@
 	&__menu {
 		display: flex;
 		justify-content: flex-end;
-
-		@media all and (max-width: 767px) {
-			flex-direction: column;
-			align-items: flex-end;
-		}
 
 		&-list {
 			display: flex;
@@ -76,7 +76,6 @@
 
 	&__content {
 		font-family: $sec-font;
-		padding-top: 100px;
 		text-align: center;
 
 		&-title {
