@@ -187,7 +187,23 @@ function initMap() {
 	map.setMapTypeId('styled_map');
 }
 
+
+
 $(document).ready(function () {
+
+	//Fixed menu
+	const
+		$window = $(window),
+		$target = $('.header__top-menu'),
+		$h = $target.offset().top;
+	$window.on('scroll', function () {
+		let scrollTop = window.pageYoffset || document.documentElement.scrollTop;
+		if (scrollTop > $h) {
+			$target.addClass('fixed');
+		} else {
+			$target.removeClass('fixed');
+		}
+	});
 
 	// Burger BTN
 	$('.burger').click(function () {
@@ -231,6 +247,7 @@ $(document).ready(function () {
 			loop: true,
 			dots: false,
 			nav: true,
+			autoplay: true,
 			navText: [
 				'<span class="arrow-owl arrow-left"></span>',
 				'<span class="arrow-owl arrow-right"></span>'
@@ -251,5 +268,21 @@ $(document).ready(function () {
 			}
 		});
 	});
+
+	const btnTop = $('.btn-top')
+		$(window).on('scroll', function () {
+			if ($(window).scrollTop() >= 500) {
+				btnTop.show();
+			} else {
+				btnTop.hide();
+			}
+		});
+
+		btnTop.on('click', function () {
+			$(window).scrollTop({
+				top: 0,
+				behavior: 'smooth'
+			});
+		});
 
 });

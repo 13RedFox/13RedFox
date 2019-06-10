@@ -1,7 +1,9 @@
 /* Main style
 ------------- */
-html,body {
+html,
+body {
 	min-height: 100vh;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -11,12 +13,68 @@ body {
 	color: $black;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
 	margin: 0;
 }
 
 a:hover {
 	text-decoration: none;
 }
+
+.btn-top {
+	display: none;
+	$size: 50px;
+	width: $size;
+	height: $size;
+	position: fixed;
+	bottom: 110px;
+	right: 15px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: rgba($bg-viol, .5);
+	cursor: pointer;
+
+	@media all and (min-width: 768px) {
+		bottom: 100px;
+		right: 20px;
+	}
+
+	@media all and (min-width: 992px) {
+		bottom: 200px;
+		$size: 80px;
+		width: $size;
+		height: $size;
+	}
+
+	&::before {
+		content: '';
+		display: flex;
+		position: absolute;
+		left: 30%;
+		transform: translateX(-50%);
+		border: 1px solid $white;
+		border-bottom: none;
+		border-right: none;
+		$size: 15px;
+		width: $size;
+		height: $size;
+		transform: rotate(45deg);
+
+		@media all and (min-width: 768px) {
+			$size: 30px;
+			width: $size;
+			height: $size;
+		}
+	}
+}
+
 /* End main style
 ------------- */

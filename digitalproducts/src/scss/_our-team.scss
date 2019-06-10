@@ -14,7 +14,7 @@
 
 	&__title {
 		font-family: $sec-font;
-		@include text-styling($main-title, 400, $grey);
+		@include text-styling($main-title, 700, $grey);
 		text-transform: uppercase;
 	}
 
@@ -92,6 +92,12 @@
 			background-color: $white;
 			color: $bg-viol;
 			border-radius: 50%;
+			transition: all .3s ease;
+
+			&:hover {
+				border: 2px solid $grey;
+				color: $grey;
+			}
 		}
 	}
 

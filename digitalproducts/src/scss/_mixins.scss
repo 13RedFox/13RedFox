@@ -32,6 +32,13 @@
 	text-transform: capitalize;
 	@include text-styling($middle-size, 400, $color);
 	font-style: italic;
+	transition: all .3s ease;
+
+			&:hover,
+			&:active {
+				border-color: $bg-viol;
+				color: $bg-viol;
+			}
 
 	@media all and (max-width: 991px) {
 		width: 100%;

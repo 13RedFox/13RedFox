@@ -19,7 +19,7 @@
 
 		&-title {
 			font-family: $sec-font;
-			@include text-styling ($main-title, 400, $white);
+			@include text-styling ($main-title, 600, $white);
 			text-transform: uppercase;
 			margin-bottom: 60px;
 		}
