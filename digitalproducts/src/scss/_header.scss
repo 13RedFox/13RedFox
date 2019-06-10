@@ -15,12 +15,17 @@
 	}
 
 	&__top-menu {
+		display: none;
 		padding-top: 10px;
 		position: fixed;
 		top: 10px;
 		z-index: 999;
 		width: 100%;
 		transition: all .3s ease;
+
+		@media all and (min-width: 768px) {
+			display: block;
+		}
 	}
 
 	.fixed {
