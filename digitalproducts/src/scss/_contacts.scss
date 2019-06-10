@@ -4,6 +4,8 @@
 	position: relative;
 	padding: 50px 0;
 	overflow: hidden;
+	z-index: 1;
+	pointer-events: none;
 
 	&::before {
 		content: "";
@@ -38,6 +40,7 @@
 			display: flex;
 			width: 100%;
 			max-width: 350px;
+			pointer-events: all;
 			transition: all .3s ease;
 			cursor: pointer;
 
@@ -98,6 +101,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		pointer-events: all;
 		width: 100%;
 
 		&-name,
@@ -166,6 +170,16 @@
 			}
 		}
 	}
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	pointer-events: all;
 }
 
 /* End Contacts style
