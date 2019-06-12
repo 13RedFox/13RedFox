@@ -112,7 +112,7 @@
 			font-style: italic;
 			border: none;
 			border-radius: 2px;
-			padding: 15px 0 15px 20px;
+			padding: 15px 20px;
 
 			@include placeholder {
 				@include text-styling($base-size, 400, $white);
