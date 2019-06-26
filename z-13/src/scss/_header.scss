@@ -9,7 +9,7 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
-		background-color: rgba($black, 0.26);
+		background-color: rgba($black, 0.5);
 
 		&-logo {
 			display: flex;
@@ -73,11 +73,11 @@
 		}
 
 		&-text {
-			@include text-styling(1rem, 400, $white);
+			@include text-styling(1rem, 400, rgba($white, .7));
 			text-align: justify;
 
 			@media all and (min-width: 768px) {
-				@include text-styling(1.3rem, 400, $white);
+				@include text-styling(1.3rem, 400, rgba($white, .7));
 			}
 		}
 	}
