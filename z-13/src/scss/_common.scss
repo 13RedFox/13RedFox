@@ -1,0 +1,35 @@
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	font-family: $main-font;
+	font-weight: 300;
+	font-size: 20px;
+	background-color: grey;
+	color: black;
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	font-weight: 100;
+	margin: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.scrollImg {
+	background-color: #ffffff;
+	background: url('http://netdna.webdesignerdepot.com/uploads/2014/07/featured36.jpg')no-repeat center/cover;
+	background-attachment: fixed;
+}

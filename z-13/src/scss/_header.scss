@@ -1,0 +1,82 @@
+/* Header style
+--------------- */
+.header {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		background-color: rgba($black, 0.26);
+
+		&-logo {
+			display: flex;
+			font-family: $sec-font;
+			color: $white;
+			text-transform: capitalize;
+
+			&:hover {
+				color: $white;
+			}
+		}
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&-link {
+			@include text-styling(14px, 400, $white);
+			font-family: $option-font;
+			text-transform: capitalize;
+			transition: all .3s ease;
+
+
+			@media all and (min-width: 576px) {
+				@include text-styling(18px, 400, $white);
+			}
+
+			&:hover {
+				color: $black;
+				border-bottom: 2px solid $white;
+			}
+		}
+
+		.active {
+			color: $black;
+			border-bottom: 2px solid $white;
+		}
+	}
+
+	&__content {
+		// background-color: rgba($black, 0.4);
+		background: url('http://images.designtrends.com/wp-content/uploads/2015/12/22095633/Chalkboard-Texture.jpg')no-repeat center/cover;
+		border-radius: 10px;
+		font-family: $option-font;
+		padding: 15px 10px;
+
+		&-title {
+			@include text-styling(3rem, 400, $white);
+			text-transform: uppercase;
+			text-align: center;
+
+			@media all and (min-width: 768px) {
+				@include text-styling(5rem, 400, $white);
+			}
+		}
+
+		&-text {
+			@include text-styling(1rem, 400, $white);
+			text-align: justify;
+
+			@media all and (min-width: 768px) {
+				@include text-styling(1.3rem, 400, $white);
+			}
+		}
+	}
+}
+
+/* End header style
+------------------- */
