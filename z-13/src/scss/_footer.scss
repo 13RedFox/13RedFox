@@ -1,0 +1,135 @@
+.footer {
+	background-color: rgba($black, 0.8);
+	padding: 10px 0;
+	color: $white;
+
+	&__social {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		width: 80%;
+		margin-bottom: 10px;
+
+		@media all and (min-width: 768px) {
+			width: 30%;
+			margin-bottom: 20px;
+		}
+
+		@media all and (min-width: 992px) {
+			width: 20%;
+		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		$size: 45px;
+		width: $size;
+		height: $size;
+		line-height: 75px;
+		text-align: center;
+		border-radius: 50%;
+		border: 5px solid $white;
+		transition: all 0.5s ease;
+
+		@media all and (min-width: 768px) {
+			$size: 75px;
+		}
+	}
+
+	.facebook:hover {
+		border: 5px solid #3b5998;
+		box-shadow: 0 0 15px #3b5998;
+	}
+
+	&__link:hover .fa-facebook-f {
+		color: #3b5998;
+		text-shadow: 0 0 15px #3b5998;
+	}
+
+	.linkedin:hover {
+		border: 5px solid #00aced;
+		box-shadow: 0 0 15px #00aced;
+	}
+
+	&__link:hover .fa-linkedin-in {
+		color: #00aced;
+		text-shadow: 0 0 15px #00aced;
+	}
+
+	.github:hover {
+		border: 5px solid #4dc247;
+		box-shadow: 0 0 15px #4dc247;
+	}
+
+	&__link:hover .fa-github-square {
+		color: #4dc247;
+		text-shadow: 0 0 15px #4dc247;
+	}
+
+	.instagram:hover {
+		border: 5px solid #dd4b39;
+		box-shadow: 0 0 15px #dd4b39;
+	}
+
+	&__link:hover .fa-instagram {
+		color: #dd4b39;
+		text-shadow: 0 0 15px #dd4b39;
+	}
+
+	&__text {
+		display: flex;
+		align-items: flex-end;
+		font-family: $sec-font;
+	}
+
+}
+
+.fab {
+	font-size: 1rem;
+	transition: all 0.5s ease;
+
+	@media all and (min-width: 768px) {
+		font-size: 1.5rem;
+	}
+}
+
+
+
+.fa-heart {
+	color: #ff5252;
+	font-size: 2rem;
+	padding: 0 5px;
+}
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+}
+
+.pulse {
+	animation-name: pulse;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}

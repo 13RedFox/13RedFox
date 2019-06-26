@@ -1,0 +1,28 @@
+/* WORK STYLE
+------------- */
+.work {
+	padding: 70px 0;
+
+	@media all and (min-width: 768px) {
+		padding: 100px 0;
+	}
+
+	&__title {
+		font-family: $option-font;
+		@include text-styling(3rem, 400, $white);
+		text-transform: uppercase;
+	}
+
+	&__link {
+		display: block;
+	}
+
+	.img-wrapper {
+		@include padding-hack(62%);
+		border: 1px solid $black;
+	}
+}
+
+
+/* END WORK STYLE
+----------------- */

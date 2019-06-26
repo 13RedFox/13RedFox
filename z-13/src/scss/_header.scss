@@ -4,6 +4,7 @@
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
+	position: relative;
 
 	&__top {
 		display: flex;
@@ -28,10 +29,14 @@
 		}
 
 		&-link {
-			@include text-styling(14px, 400, $white);
+			@include text-styling(12px, 400, $white);
 			font-family: $option-font;
 			text-transform: capitalize;
 			transition: all .3s ease;
+
+			@media all and (min-width: 360px) {
+				@include text-styling(14px, 400, $white);
+			}
 
 
 			@media all and (min-width: 576px) {
@@ -51,16 +56,16 @@
 	}
 
 	&__content {
-		// background-color: rgba($black, 0.4);
-		background: url('http://images.designtrends.com/wp-content/uploads/2015/12/22095633/Chalkboard-Texture.jpg')no-repeat center/cover;
+		background-color: rgba($black, 0.4);
 		border-radius: 10px;
 		font-family: $option-font;
-		padding: 15px 10px;
+		padding: 15px;
 
 		&-title {
 			@include text-styling(3rem, 400, $white);
 			text-transform: uppercase;
 			text-align: center;
+			margin-bottom: 10px;
 
 			@media all and (min-width: 768px) {
 				@include text-styling(5rem, 400, $white);
@@ -75,6 +80,62 @@
 				@include text-styling(1.3rem, 400, $white);
 			}
 		}
+	}
+
+	&__scroll {
+		display: block;
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+
+
+	}
+
+	.scroll-down {
+		display: none;
+		border: 2px solid $white;
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		text-align: center;
+
+		@media all and (min-width: 992px) {
+			display: block;
+		}
+	}
+
+	&__arrow {
+		display: block;
+		position: relative;
+		animation-name: drop;
+		animation-duration: 1s;
+		animation-timing-function: linear;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-play-state: running;
+	}
+
+	@keyframes drop {
+		0% {
+			top: 0;
+			opacity: 0;
+		}
+
+		30% {
+			top: 10px;
+			opacity: 1;
+		}
+
+		100% {
+			top: 25px;
+			opacity: 0;
+		}
+	}
+
+	.fa-2x {
+		display: block;
+		color: #fff;
+		font-size: 1.5rem;
 	}
 }
 
