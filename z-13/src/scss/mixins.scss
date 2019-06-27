@@ -24,3 +24,11 @@
 		object-fit: $object-fit;
 	}
 }
+
+@mixin anim {
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+	background-size: 500%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animate 20s linear infinite;
+}

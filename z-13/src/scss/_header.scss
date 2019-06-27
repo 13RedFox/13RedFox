@@ -14,8 +14,8 @@
 		&-logo {
 			display: flex;
 			font-family: $sec-font;
-			color: $white;
 			text-transform: capitalize;
+			@include anim;
 
 			&:hover {
 				color: $white;
@@ -38,14 +38,14 @@
 				@include text-styling(14px, 400, $white);
 			}
 
-
 			@media all and (min-width: 576px) {
 				@include text-styling(18px, 400, $white);
 			}
 
-			&:hover {
+			&:hover,
+			&:active {
 				color: $black;
-				border-bottom: 2px solid $white;
+				@include anim;
 			}
 		}
 
@@ -87,8 +87,6 @@
 		position: absolute;
 		bottom: 5%;
 		left: 50%;
-
-
 	}
 
 	.scroll-down {
@@ -113,23 +111,6 @@
 		animation-delay: 0s;
 		animation-iteration-count: infinite;
 		animation-play-state: running;
-	}
-
-	@keyframes drop {
-		0% {
-			top: 0;
-			opacity: 0;
-		}
-
-		30% {
-			top: 10px;
-			opacity: 1;
-		}
-
-		100% {
-			top: 25px;
-			opacity: 0;
-		}
 	}
 
 	.fa-2x {

@@ -8,15 +8,34 @@
 	}
 
 	&__link {
-		display: block;
+		display: flex;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -2px;
+			left: -2px;
+			background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+			background-size: 500%;
+			width: calc(100% + 4px);
+			height: calc(100% + 4px);
+			animation: animate 20s linear infinite;
+		}
+
+		&::before {
+			filter: blur(5px);
+		}
 	}
 
 	.img-wrapper {
 		@include padding-hack(62%);
-		border: 1px solid $black;
+	}
+
+	&__img {
+		filter: brightness(70%);
 	}
 }
-
 
 /* END WORK STYLE
 ----------------- */

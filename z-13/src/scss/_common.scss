@@ -39,3 +39,35 @@ a:hover {
 	@include text-styling(3rem, 400, $white);
 	text-transform: uppercase;
 }
+
+@keyframes drop {
+	0% {
+		top: 0;
+		opacity: 0;
+	}
+
+	30% {
+		top: 10px;
+		opacity: 1;
+	}
+
+	100% {
+		top: 25px;
+		opacity: 0;
+	}
+}
+
+@keyframes animate {
+
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 300% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
+}
