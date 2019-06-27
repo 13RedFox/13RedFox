@@ -15,7 +15,11 @@
 			display: flex;
 			font-family: $sec-font;
 			text-transform: capitalize;
-			@include anim;
+			color: $white;
+
+			@media all and (min-width: 992px) {
+				@include anim;
+			}
 
 			&:hover {
 				color: $white;
