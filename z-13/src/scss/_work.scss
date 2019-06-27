@@ -1,16 +1,10 @@
 /* WORK STYLE
 ------------- */
 .work {
-	padding: 70px 0;
+	padding: 40px 0;
 
 	@media all and (min-width: 768px) {
 		padding: 100px 0;
-	}
-
-	&__title {
-		font-family: $option-font;
-		@include text-styling(3rem, 400, $white);
-		text-transform: uppercase;
 	}
 
 	&__link {

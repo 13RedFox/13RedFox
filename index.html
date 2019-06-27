@@ -38,7 +38,7 @@
 			<div class="fixed-top">
 				<div class="header__top">
 					<div class="container">
-						<div class="row justify-content-between align-items-center py-3">
+						<div class="row justify-content-between align-items-center py-1 py-md-3">
 							<div class="col-6 col-md-3">
 								<a href="/" class="header__top-logo">serhii shabala</a>
 							</div>
@@ -85,11 +85,11 @@
 
 </header> <!-- End .header -->	<section class="work" id="work">
 	<div class="container">
-		<div class="row mb-5">
+		<div class="row mb-3 mb-md-5">
 			<div class="col d-flex flex-column align-items-center">
-				<h2 class="work__title">my work</h2>
+				<h2 class="main__title">my work</h2>
 			</div>
-		</div> <!-- main -->
+		</div>
 		<div class="row">
 			<div class="col-md-6 col-lg-4 mb-3">
 				<a href="mogo/app/" class="work__link">
@@ -130,13 +130,41 @@
 				<a href="mogo/app/" class="work__link">
 					<div class="img-wrapper">
 						<img src="img/nike.jpg" alt="Nike" class="work__img">
-						<!-- <p class="work__text">Black Nike</p> -->
 					</div>
 				</a>
 			</div> <!-- col-md-4 -->
 		</div>
 	</div>
-</section>	<footer class="footer">
+</section>	<section id="contacts" class="contacts">
+	<div class="container d-flex flex-column align-items-center">
+		<div class="row mb-3 mb-md-5">
+			<div class="col d-flex flex-column align-items-center">
+				<h2 class="main__title">contacts</h2>
+			</div>
+		</div>
+		<div class="contacts__wrapper">
+			<div class="row">
+				<div class="col-lg-6 mb-3 mb-lg-0">
+					<div class="contacts__info">
+						<h3 class="contacts__info-title">My contacts:</h4>
+							<a href="tel:+380970762387" class="contacts__info-profile contacts__info-tel"><i
+									class="fas fa-mobile-alt"></i>+38-097-23-87</a>
+							<a href="mailto: sergei181989@gmail.com" class="contacts__info-profile contacts__info-email"><i
+									class="far fa-envelope"></i>sergei181989@gmail.com</a>
+							<a href="https://goo.gl/maps/vLHYvHPL4CtGdCp49" class="contacts__info-profile contacts__info-map" target="_blank"><i
+									class="fas fa-map-marker-alt"></i>Ukraine, Kremenchug</a>
+					</div> <!-- End .contacts__card -->
+				</div>
+				<div class="col-lg-6">
+					<div class="contacts__map">
+						<div id="map"></div>
+					</div> <!-- End .contacts__map -->
+				</div>
+			</div>
+		</div> <!-- End .contacts__wrapper -->
+
+	</div>
+</section> <!-- End .contacts -->	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -174,5 +202,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/48c5acbc54.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBs-s7-go09ilGE9lnejJvuvWrJifd1D1s&callback=initMap" async defer></script>
 </body>
 </html>
