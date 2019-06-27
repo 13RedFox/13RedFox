@@ -34,6 +34,11 @@
 
 	&__img {
 		filter: brightness(70%);
+		transition: filter .5s ease;
+
+		&:hover {
+			filter: none;
+		}
 	}
 }
 
