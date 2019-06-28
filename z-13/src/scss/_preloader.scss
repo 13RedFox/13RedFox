@@ -1,0 +1,47 @@
+.cssload-loader {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color: rgba(#212227, 0.9);
+}
+
+.cssloader-wrapper {
+	position: relative;
+	left: calc(50% - 31px);
+	width: 100px;
+	height: 100px;
+	margin: 130px 0;
+	perspective: 780px;
+}
+
+.cssload-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.cssload-one {
+	left: 0%;
+	top: 0%;
+	animation: cssload-rotate-one 1.15s linear infinite;
+	border-bottom: 3px solid #5C5EDC;
+}
+
+.cssload-two {
+	right: 0%;
+	top: 0%;
+	animation: cssload-rotate-two 1.15s linear infinite;
+	border-right: 3px solid rgba(76, 70, 101, 0.99);
+}
+
+.cssload-three {
+	right: 0%;
+	bottom: 0%;
+	animation: cssload-rotate-three 1.15s linear infinite;
+	border-top: 3px solid rgb(233, 144, 138);
+}

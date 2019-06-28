@@ -16,10 +16,10 @@
 			position: absolute;
 			top: -2px;
 			left: -2px;
-			background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
-			background-size: 500%;
 			width: calc(100% + 4px);
 			height: calc(100% + 4px);
+			background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+			background-size: 500%;
 			animation: animate 20s linear infinite;
 		}
 

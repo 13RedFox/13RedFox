@@ -6,6 +6,10 @@
 	align-items: center;
 	position: relative;
 
+	&__fixed {
+		z-index: 1;
+	}
+
 	&__top {
 		display: flex;
 		justify-content: space-between;

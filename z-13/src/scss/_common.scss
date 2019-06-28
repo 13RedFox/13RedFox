@@ -71,3 +71,48 @@ a:hover {
 		background-position: 0 0;
 	}
 }
+
+@keyframes cssload-rotate-one {
+	0% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+	}
+}
+
+@keyframes cssload-rotate-two {
+	0% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+	}
+}
+
+@keyframes cssload-rotate-three {
+	0% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+	}
+
+	100% {
+		transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+	}
+}
+
+::-webkit-scrollbar {
+	width: 3px;
+	height: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: #666;
+	border-radius: 3px;
+}
