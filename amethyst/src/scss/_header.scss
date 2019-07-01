@@ -1,153 +1,86 @@
+/* Header style
+--------------- */
 .header {
-	min-height: 100vh;
 	background: $white linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%);
 	color: $white;
-	padding: 20px 0 60px;
 
+	@media all and (min-width: 992px) {
+		min-height: 100vh;
+	}
 
-	// ************ top - header *************
+	&__top {
 
-	&__social-menu {
-		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 110px;
-		margin: 0;
-		padding: 15px 0;
+		&-contacts {
+			border: 1px solid rgba($white, 0.5);
+			margin-bottom: 50px;
+		}
 
-		&__item {
+		&-social {
 			display: flex;
-			align-items: center;
+			justify-content: space-between;
+			border-right: 1px solid rgba($white, 0.5);
+			padding: 17px 15px 10px 0;
 		}
 
-		&__link {
+		&-link {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 20px;
-			height: 20px;
-		}
-	}
-
-	.fab {
-		color: $white;
-	}
-
-	.header-email,
-	.header-phone {
-		display: flex;
-		align-items: center;
-		padding: 15px 0;
-	}
-
-	.header-email {
-		margin-right: 45px;
-	}
-
-	.header-email__text,
-	.header-phone__text {
-		color: $light-white;
-		margin-right: 5px;
-	}
-
-	.header-email__email,
-	.header-phone__number {
-		display: block;
-		font-weight: 700;
-		color: $white;
-		font-size: $middle-size;
-		transition: color .3s ease;
-
-		&:hover {
-			color: $hover;
-		}
-	}
-
-	// ************ main - header *************
-
-	&-logo {
-		display: block;
-		color: $white;
-		text-align: center;
-		font-family: $title-font;
-		font-size: $header-logo;
-		text-transform: uppercase;
-
-		&:hover {
-			color: $white;
-		}
-	}
-
-	&-menu {
-		display: flex;
-		justify-content: space-around;
-
-		.active {
-			color: $white;
-		}
-
-		&__link {
-			display: block;
-			color: #dedede;
-			font-weight: 700;
-			text-transform: uppercase;
-			transition: all .3s ease;
+			@include text-styling($big-size, 400, $white);
+			transition: color .3s ease;
 
 			&:hover {
-				color: $white;
-			}
-
-			&:active {
 				color: $hover;
 			}
 		}
-	}
 
-	.mb-180 {
-		margin-bottom: 180px;
-	}
+		&-info {
+			display: flex;
+			justify-content: flex-end;
 
-	// ************ slider - header *************
+			&_link {
+				display: flex;
+				border-left: 1px solid rgba($white, 0.5);
+				padding: 10px 15px;
+				margin-right: 40px;
 
-	&-slider {
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 
-		&__title,
-		&__subtitle {
+			&_text {
+				@include text-styling($base-size, 400, $light-white);
+				margin-right: 5px;
+			}
+
+			&_subtext {
+				@include text-styling($middle-size, 700, $white);
+			}
+		}
+
+		&-title {
+			font-family: $title-font;
+			@include text-styling($header-logo, 500, $white);
 			text-transform: uppercase;
-			font-weight: 700;
+			margin-bottom: 25px;
 		}
 
-		&__title {
-			font-size: $header-title;
-			margin-bottom: 10px;
-		}
+		&-menu {
+			display: flex;
+			justify-content: space-between;
 
-		&__subtitle {
-			font-size: $base-title;
-			line-height: 1;
-			margin-bottom: 60px;
-		}
+			&_link {
+				display: flex;
+				@include text-styling($base-size, 400, $white);
+				text-transform: uppercase;
+				transition: color .3s ease;
 
-		&__text {
-			font-size: $middle-size;
-			font-weight: 400;
-			text-align: center;
-			margin-bottom: 30px;
+				&:hover {
+					color: $hover;
+				}
+			}
 		}
 	}
-
-	.carousel-indicators {
-		bottom: -50px;
-	}
-
-	.carousel-control-prev {
-		left: -2%;
-		width: 2%;
-	}
-
-	.carousel-control-next {
-		right: -2%;
-		width: 2%;
-	}
-
 }
+
+/* End header style
+------------------- */

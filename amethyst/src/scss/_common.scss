@@ -28,35 +28,3 @@ p,
 ul {
 	margin: 0;
 }
-
-.mb-7 {
-	margin-bottom: 70px;
-}
-
-.main-title {
-	color: $main-title;
-	font-size: $base-title;
-	font-weight: 700;
-	margin-bottom: 20px;
-}
-
-.main-text {
-	color: $main-text;
-	font-family: $sec-font;
-}
-
-.main__btn {
-	text-transform: uppercase;
-	padding: 10px 0;
-	border: 2px solid #ccc;
-	width: 100%;
-	max-width: 150px;
-	border-radius: 30px;
-	color: $white;
-	background-color: transparent;
-	transition: color .3s ease;
-
-	&:hover {
-		color: $hover;
-	}
-}

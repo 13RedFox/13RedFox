@@ -42,17 +42,19 @@ $little-size: 12px;
 
 @font-face {
 	font-family: 'Georgia';
-	src: url("../fonts/georgiai.ttf") format("TrueType");
+	src: url("../fonts/georgiai.ttf") format("truetype");
 	font-weight: 900, 400i;
- }
+}
 
- @font-face {
+@font-face {
 	font-family: 'Anders';
-	src: url("../fonts/anders.ttf") format("TrueType");
- }
+	src: url("../fonts/anders.ttf") format("truetype");
+}
 
-$main-font: 'Lato', sans-serif;
-$sec-font: 'Georgia', sans-serif;
+$main-font: 'Lato',
+sans-serif;
+$sec-font: 'Georgia',
+sans-serif;
 $title-font: 'Anders';
 
 
