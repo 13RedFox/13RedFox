@@ -1,67 +1,47 @@
-function paddingHack(items) {
-	const gridWidth = $(items).parent().width();
+;
+(function () {
+	'use strict'
 
-	function setPadding() {
-		$(items).each(function () {
-			const img = $(this).find('img');
-			if (!img[0]) return;
-			$(this).css({
-				position: 'relative',
-				width: '100%',
-				paddingTop: `${Math.floor(parseFloat(img[0].naturalHeight / gridWidth * 100))}%`
-			});
-			$(img).css({
-				'position': 'absolute',
-				'top': '0',
-				'right': '0',
-				'bottom': '0',
-				'left': '0',
-				'width': '100%',
-				'height': '100%',
-				'object-fit': 'cover'
-			});
-		});
+	// Fixed header__top
+	window.onscroll = function () {
+		if (window.pageYOffset >= 1) {
+			$(".header__top").addClass("fixed__top");
+		} else {
+			$(".header__top").removeClass("fixed__top");
+		}
 	}
 
-	return {
-		init: setPadding
-	}
-}
+	$(document).ready(function () {
 
-const paddingHackEl = paddingHack('.img-wrapper');
-
-paddingHackEl.init();
-
-$(document).ready(function () {
-
-	//////////////////////
-	//									//
-	//			Facts				//
-	//									//
-	//////////////////////
-
-	$('.facts__number').each(function () {
-		$(this).prop('Counter', 0).animate({
-			Counter: $(this).text()
-		}, {
-				duration: 4000,
-				easing: 'swing',
-				step: function (now) {
-					$(this).text(Math.ceil(now));
+		$(function () {
+			// Owl Carousel
+			var owl = $(".owl-carousel");
+			owl.owlCarousel({
+				items: 1,
+				margin: 10,
+				loop: true,
+				nav: true,
+				navText: [
+					'<span class="arrow-owl arrow-left"></span>',
+					'<span class="arrow-owl arrow-right"></span>'
+				],
+				responsive:{
+					320:{
+						nav: false,
+						dots: false
+					},
+					768:{
+						nav: false,
+						dots: false
+					},
+					1200:{
+						loop: true,
+						nav: true
+					}
 				}
 			});
+		});
+
 	});
 
-	//////////////////////
-	//									//
-	//			Skills			//
-	//									//
-	//////////////////////
-
-	$('.skills__wrap').each(function () {
-		$(this).find('.skills__bar').animate({
-			width:$(this).attr('data-percent')
-		}, 2000);
-	});
-
-});
+})();

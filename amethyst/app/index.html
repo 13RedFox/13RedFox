@@ -6,9 +6,19 @@
 	<meta name="viewport" content="initial-scale=1.0, width=device-width">
 	<title>Amethyst</title>
 	<link rel="shortcut icon" type="image/x-icon" href="fav/favicon.ico">
+	<!-- Reset CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Bootstrap - 4 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,8 +28,8 @@
 			<div class="container-fluid header__top-contacts">
 				<div class="row">
 					<div class="container">
-						<div class="row d-flex justify-content-between align-items-center">
-							<div class="col-xl-2">
+						<div class="row d-flex justify-content-between align-items-start align-items-md-center">
+							<div class=" col-5 col-md-4 col-lg-2">
 								<ul class="header__top-social">
 									<li class="header__top-item">
 										<a href="#" class="header__top-link" target="_blank">
@@ -43,7 +53,7 @@
 									</li>
 								</ul> <!-- End .header__top-social -->
 							</div>
-							<div class="col-xl-6">
+							<div class="col-7 col-md-6 col-lg-7">
 								<div class="header__top-info">
 									<a href="mailto: info@example.com" class="header__top-info_link">
 										<p class="header__top-info_text">E-mail:</p>
@@ -61,7 +71,7 @@
 			</div><!-- End .header__top-contacts -->
 			<div class="container">
 				<div class="row d-flex justify-content-center">
-					<div class="col-xl-7 text-center">
+					<div class="col-lg-7">
 						<h3 class="header__top-title">amethyst</h3>
 						<ul class="header__top-menu">
 							<li class="header__top-menu_item">
@@ -89,8 +99,48 @@
 					</div>
 				</div>
 			</div>
-	
 		</div> <!-- End .header__top -->
+		<div class="header__content">
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="col-md-10">
+						<div class="owl-carousel owl-theme">
+							<div class="header__content-slider">
+								<h1 class="header__content-slider_title">amethyst</h1>
+								<h3 class="header__content-slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+								<p class="header__content-slider_text">Nam auctor arcu ut efficitur blandit. Ut posuere dolor nunc, vitae
+									eleifend
+									est ornare in. Suspendisse luctus scelerisque condimentum. Nam a dui non libero vestibulum convallis sit
+									amet
+									quis lectus. Nam interdum condimentum est, vel varius lorem tincidunt vel.</p>
+								<a href="#" class="header__content-slider_btn">view more</a>
+							</div> <!-- End .header__content-slider -->
+							<div class="header__content-slider">
+								<h1 class="header__content-slider_title">amethyst</h1>
+								<h3 class="header__content-slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+								<p class="header__content-slider_text">Nam auctor arcu ut efficitur blandit. Ut posuere dolor nunc, vitae
+									eleifend
+									est ornare in. Suspendisse luctus scelerisque condimentum. Nam a dui non libero vestibulum convallis sit
+									amet
+									quis lectus. Nam interdum condimentum est, vel varius lorem tincidunt vel.</p>
+								<a href="#" class="header__content-slider_btn">view more</a>
+							</div> <!-- End .header__content-slider -->
+							<div class="header__content-slider">
+								<h1 class="header__content-slider_title">amethyst</h1>
+								<h3 class="header__content-slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+								<p class="header__content-slider_text">Nam auctor arcu ut efficitur blandit. Ut posuere dolor nunc, vitae
+									eleifend
+									est ornare in. Suspendisse luctus scelerisque condimentum. Nam a dui non libero vestibulum convallis sit
+									amet
+									quis lectus. Nam interdum condimentum est, vel varius lorem tincidunt vel.</p>
+								<a href="#" class="header__content-slider_btn">view more</a>
+							</div> <!-- End .header__content-slider -->
+						</div> <!-- End .owl-carousel -->
+					</div>
+				</div>
+			</div>
+		</div> <!-- End .header__content -->
+	
 	</header> <!-- End .header -->
 	<section class="about">
 		<div class="container">
@@ -302,54 +352,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="testimonials">
-		<div class="container">
-			<div class="row d-flex justify-content-center mb-5">
-				<div class="col-6 d-flex flex-column align-items-center mb-5">
-					<h2 class="main-title">Testimonials</h2>
-					<p class="main-text">Aliquam dapibus massa diam, eu porta ipsum mollis vel. Etiam blandit</p>
-				</div>
-				<div class="col-12">
-					<p class="testimonials__text">Fusce libero enim, iaculis ac auctor et, sollicitudin non lacus. Pellentesque
-						turpis
-						lacus, aliquet in ornare at, laoreet vel quam. Aliquam tempor nibh a nisi cursus varius. Pellentesque non
-						blandit dui. Cras a pellentesque libero, vel ornare mi. Nulla imperdiet dui sit amet vulputate tempor. Cras
-						non ligula turpis. Quisque neque felis, facilisis ut metus eget, volutpat porttitor sapien. Curabitur quis
-						elit eget nibh fringilla tincidunt</p>
-				</div>
-			</div>
-			<div class="row d-flex justify-content-center">
-				<div class="col-4 d-flex align-items-center mb-5">
-					<div class="img-wrapper">
-						<img src="img/jpg/photo-2.jpg" alt="photo" class="testimonials__photo">
-					</div>
-					<div class="testimonials__content">
-						<h3 class="testimonials__content-title">Jake Peterson</h3>
-						<p class="testimonials__content-text">Product Designer</p>
-					</div>
-				</div>
-				<div class="col-12">
-					<div class="testimonials__company">
-						<a class="testimonials__link" href="#">
-							<img src="img/png/logo_1.png" alt="logo">
-						</a>
-						<a class="testimonials__link" href="#">
-							<img src="img/png/logo_2.png" alt="logo">
-						</a>
-						<a class="testimonials__link" href="#">
-							<img src="img/png/logo_3.png" alt="logo">
-						</a>
-						<a class="testimonials__link" href="#">
-							<img src="img/png/logo_4.png" alt="logo">
-						</a>
-						<a class="testimonials__link" href="#">
-							<img src="img/png/logo_5.png" alt="logo">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	
 	<section class="facts">
 		<div class="container">
 			<div class="row">
@@ -709,13 +712,13 @@
 	</section>
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

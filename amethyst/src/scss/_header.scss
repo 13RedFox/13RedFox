@@ -3,56 +3,103 @@
 .header {
 	background: $white linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%);
 	color: $white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	@media all and (min-width: 768px) {
+		padding-bottom: 50px;
+	}
 
 	@media all and (min-width: 992px) {
 		min-height: 100vh;
 	}
 
+	.fixed__top {
+		background-color: rgba($black, 0.7);
+		transition: all .3s ease;
+	}
+
 	&__top {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
 
 		&-contacts {
 			border: 1px solid rgba($white, 0.5);
-			margin-bottom: 50px;
+			margin-bottom: 30px;
+
+			@media all and (min-width: 992px) {
+				margin-bottom: 50px;
+			}
 		}
 
 		&-social {
 			display: flex;
 			justify-content: space-between;
-			border-right: 1px solid rgba($white, 0.5);
 			padding: 17px 15px 10px 0;
+
+			@media all and (min-width: 992px) {
+				border-right: 1px solid rgba($white, 0.5);
+			}
 		}
 
 		&-link {
 			display: flex;
 			@include text-styling($big-size, 400, $white);
-			transition: color .3s ease;
-
-			&:hover {
-				color: $hover;
-			}
+			@include hover;
 		}
 
 		&-info {
 			display: flex;
-			justify-content: flex-end;
+			flex-direction: column;
+			align-items: flex-end;
+
+			@media all and (min-width: 768px) {
+				flex-direction: row;
+				justify-content: flex-end;
+			}
 
 			&_link {
 				display: flex;
-				border-left: 1px solid rgba($white, 0.5);
-				padding: 10px 15px;
-				margin-right: 40px;
+				padding: 10px 0;
+				margin-right: 5px;
+
+				@media all and (min-width: 768px) {
+					padding: 10px 15px;
+					margin-right: 10px;
+				}
+
+				@media all and (min-width: 992px) {
+					padding: 10px 15px;
+					margin-right: 40px;
+				}
 
 				&:last-child {
 					margin-right: 0;
+				}
+
+				@media all and (min-width: 992px) {
+					border-left: 1px solid rgba($white, 0.5);
 				}
 			}
 
 			&_text {
 				@include text-styling($base-size, 400, $light-white);
-				margin-right: 5px;
+				display: none;
+
+				@media all and (min-width: 992px) {
+					display: block;
+					margin-right: 5px;
+				}
 			}
 
 			&_subtext {
+				@include text-styling($base-size, 700, $white);
+			}
+
+			@media all and (min-width: 768px) {
 				@include text-styling($middle-size, 700, $white);
 			}
 		}
@@ -62,6 +109,17 @@
 			@include text-styling($header-logo, 500, $white);
 			text-transform: uppercase;
 			margin-bottom: 25px;
+
+			@media all and (min-width: 768px) {
+				@include text-styling($header-logo, 500, $white);
+				margin-bottom: 25px;
+			}
+
+			@media all and (min-width: 992px) {
+				@include text-styling($header-logo, 500, $white);
+				text-align: center;
+				margin-bottom: 25px;
+			}
 		}
 
 		&-menu {
@@ -72,13 +130,105 @@
 				display: flex;
 				@include text-styling($base-size, 400, $white);
 				text-transform: uppercase;
-				transition: color .3s ease;
-
-				&:hover {
-					color: $hover;
-				}
+				@include hover;
 			}
 		}
+	}
+
+	&__content {
+		padding-top: 0px;
+
+		&-slider {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+
+			&_title {
+				@include text-styling($header-title, 700, $white);
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			&_subtitle {
+				@include text-styling($base-title, 400, $white);
+				text-transform: uppercase;
+				margin-bottom: 60px;
+			}
+
+			&_text {
+				@include text-styling($middle-size, 400, $white);
+				margin-bottom: 25px;
+			}
+
+			&_btn {
+				display: flex;
+				@include text-styling($base-size, 400, $white);
+				text-transform: uppercase;
+				background-color: transparent;
+				border: 2px solid $white;
+				border-radius: 30px;
+				padding: 5px 20px;
+				@include hover;
+			}
+		}
+	}
+
+
+	.owl-prev,
+	.owl-next {
+		position: absolute;
+		display: flex !important;
+		justify-content: center;
+		align-items: center;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		border: 2px solid $white !important;
+		border-radius: 50% !important;
+
+		&:hover {
+			background-color: transparent !important;
+		}
+	}
+
+	.owl-prev {
+		left: -100px;
+	}
+
+	.owl-next {
+		right: -100px;
+	}
+
+	.owl-prev span,
+	.owl-next span {
+		width: 10px;
+		height: 10px;
+	}
+
+	.owl-prev span {
+		border-top: 1px solid $white;
+		border-left: 1px solid $white;
+		transform: rotate(-45deg);
+	}
+
+	.owl-next span {
+		border-bottom: 1px solid $white;
+		border-right: 1px solid $white;
+		transform: rotate(-45deg);
+	}
+
+	.owl-dot:hover span {
+		background-color: rgba($white, 0.5) !important;
+	}
+
+	.owl-dots .owl-dot.active span {
+		background-color: transparent;
+		border: 2px solid $white;
+	}
+
+	.owl-dots .owl-dot span {
+		background-color: rgba($white, 0.5);
 	}
 }
 
