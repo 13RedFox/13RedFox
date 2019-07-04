@@ -1,34 +1,60 @@
+/* Quotes style
+--------------- */
 .quotes {
 	background-color: $main-text;
-	padding: 100px 0;
-	color: $white;
-	text-align: center;
+	padding: 30px 0;
+
+	@media all and (min-width: 768px) {
+		padding: 50px 0;
+	}
+
+	@media all and (min-width: 992px) {
+		padding: 80px 0;
+	}
+
+	@media all and (min-width: 1200px) {
+		padding: 100px 0;
+	}
 
 	&__title {
 		font-family: $sec-font;
-		font-size: $base-title;
-		font-weight: 700;
+		@include text-styling($card-title, 700, $white);
 		text-transform: uppercase;
 		letter-spacing: 0.6px;
 		margin-bottom: 50px;
 		position: relative;
 
+		@media all and (min-width: 992px) {
+			@include text-styling(1.7rem, 700, $white);
+		}
+
+		@media all and (min-width: 1200px) {
+			@include text-styling($base-title, 700, $white);
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
 			display: block;
-			bottom: -35%;
-			left: 48%;
+			bottom: -25%;
+			left: 50%;
 			width: 60px;
 			height: 2px;
+			transform: translateX(-50%);
 			background-color: $white;
 
+			@media all and (min-width: 768px) {
+				bottom: -35%;
+			}
 		}
 	}
 
 	&__text {
-font-size: $card-title;
-text-transform: uppercase;
-letter-spacing: 0.44px;
+		@include text-styling($card-title, 400, $white);
+		text-transform: uppercase;
+		letter-spacing: 0.44px;
 	}
 }
+
+/* End quotes style
+------------------- */
