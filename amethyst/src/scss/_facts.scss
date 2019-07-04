@@ -1,43 +1,52 @@
+/* Facts style
+-------------- */
 .facts {
 	background-color: $violet;
-	padding: 60px 0;
-	color: $white;
+	padding: 30px 0;
 
-	&__main-title {
-		font-size: $facts-title;
-		font-weight: 700;
-		letter-spacing: 0.72px;
-		margin-bottom: 30px;
+	@media all and (min-width: 768px) {
+		padding: 60px 0;
 	}
 
-	&__main-text {
-		font-family: $sec-font;
-		font-size: $middle-size;
-		letter-spacing: 0.36px;
-		margin-bottom: 70px;
-	}
+	&__title {
+		@include text-styling($big-size, 700, $white);
+		margin-bottom: 20px;
 
-	&__list {
-		display: flex;
-		justify-content: space-around;
-		width: 100%;
-	}
+		@media all and (min-width: 768px) {
+			@include text-styling($base-title, 700, $white);
+		}
 
-	&__item {
-		text-align: center;
-	}
-
-	&__number {
-		font-size: $facts-number;
-		font-weight: 700;
-		letter-spacing: 1.2px;
-		margin-bottom: 30px;
+		@media all and (min-width: 992px) {
+			@include text-styling($facts-title, 700, $white);
+		}
 	}
 
 	&__text {
-		font-size: $middle-size;
-		font-weight: 400;
-		text-transform: uppercase;
+		font-family: $sec-font;
+		font-style: italic;
+		@include text-styling($base-size, 400, $white);
+
+		@media all and (min-width: 768px) {
+			@include text-styling($middle-size, 400, $white);
+		}
+	}
+
+	&__number {
+		@include text-styling($facts-number, 700, $white);
+		line-height: 1;
+		margin-bottom: 15px;
+
+		@media all and (min-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__desc {
+		@include text-styling($middle-size, 400, $white);
 		letter-spacing: 0.36px;
+		text-transform: uppercase;
 	}
 }
+
+/* End facts style
+------------------ */
