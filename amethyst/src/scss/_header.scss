@@ -3,9 +3,7 @@
 .header {
 	background: $white linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%);
 	color: $white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-bottom: 30px;
 
 	@media all and (min-width: 768px) {
 		padding-bottom: 50px;
@@ -15,24 +13,9 @@
 		min-height: 100vh;
 	}
 
-	.fixed__top {
-		background-color: rgba($black, 0.7);
-		transition: all .3s ease;
-	}
-
 	&__top {
-		position: fixed;
-		top: 0;
-		width: 100%;
-		z-index: 2;
-
 		&-contacts {
 			border: 1px solid rgba($white, 0.5);
-			margin-bottom: 30px;
-
-			@media all and (min-width: 992px) {
-				margin-bottom: 50px;
-			}
 		}
 
 		&-social {
@@ -112,12 +95,12 @@
 
 			@media all and (min-width: 768px) {
 				@include text-styling($header-logo, 500, $white);
+				text-align: center;
 				margin-bottom: 25px;
 			}
 
 			@media all and (min-width: 992px) {
 				@include text-styling($header-logo, 500, $white);
-				text-align: center;
 				margin-bottom: 25px;
 			}
 		}
@@ -125,6 +108,11 @@
 		&-menu {
 			display: flex;
 			justify-content: space-between;
+			display: none;
+
+			@media all and (min-width: 768px) {
+				display: block;
+			}
 
 			&_link {
 				display: flex;
@@ -136,8 +124,6 @@
 	}
 
 	&__content {
-		padding-top: 0px;
-
 		&-slider {
 			display: flex;
 			flex-direction: column;
@@ -145,15 +131,25 @@
 			text-align: center;
 
 			&_title {
-				@include text-styling($header-title, 700, $white);
+				@include text-styling($header-logo, 700, $white);
 				text-transform: uppercase;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
+
+				@media all and (min-width: 768px) {
+					@include text-styling($header-title, 700, $white);
+					margin-bottom: 20px;
+				}
 			}
 
 			&_subtitle {
-				@include text-styling($base-title, 400, $white);
+				@include text-styling($big-size, 400, $white);
 				text-transform: uppercase;
-				margin-bottom: 60px;
+				margin-bottom: 30px;
+
+				@media all and (min-width: 768px) {
+					@include text-styling($base-title, 400, $white);
+					margin-bottom: 60px;
+				}
 			}
 
 			&_text {
@@ -173,7 +169,6 @@
 			}
 		}
 	}
-
 
 	.owl-prev,
 	.owl-next {

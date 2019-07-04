@@ -1,44 +1,59 @@
+/* About style
+-------------- */
 .about {
-	padding-top: 70px;
+	padding: 30px 0;
 
-	.main-text {
-		margin-bottom: 30px;
+	@media all and (min-width: 768px) {
+		padding: 50px 0 30px;
 	}
 
-	&__text {
-		color: $main-text;
-		text-align: center;
+	@media all and (min-width: 992px) {
+		padding: 70px 0 50px;
 	}
 
-	&-wrap {
+	&__wrap {
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-		&__icon {
-			color: $violet;
-			font-size: $base-title;
-			line-height: 1;
-			margin-right: 15px;
+		@media all and (min-width: 768px) {
+			flex-direction: row;
+			align-items: flex-start;
 		}
 
-		.content__title {
-			color: $main-title;
-			font-size: $middle-size;
-			font-weight: 700;
+		&-icon {
+			margin-bottom: 15px;
+
+			@media all and (min-width: 768px) {
+				margin-right: 15px;
+			}
+		}
+	}
+
+	&__content {
+		text-align: center;
+
+		@media all and (min-width: 768px) {
+			text-align: left;
+		}
+
+		&-title {
+			@include text-styling($middle-size, 700, $main-title);
 			text-transform: uppercase;
 			margin-bottom: 10px;
 		}
 
-		.content__text {
-			color: $main-text;
+		&-text {
+			@include text-styling($base-size, 400, $main-text);
 		}
 	}
 
-	.main__btn {
-		border-color: $violet;
-		color: $main-title;
 
-		&:hover {
-			font-weight: 700;
-		}
+	.fa-eye,
+	.fa-paint-brush,
+	.fa-heart {
+		color: $violet;
 	}
 }
+/* End about style
+------------------ */
