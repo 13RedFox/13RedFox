@@ -1,46 +1,64 @@
+/* Our-team style
+----------------- */
 .our-team {
-	padding-top: 60px;
+	padding-top: 30px;
 
-	.img-wrapper {
-		max-width: 250px;
-		margin-bottom: 20px;
+	@media all and (min-width: 768px) {
+		padding-top: 60px;
 	}
 
-	&__title {
-		color: $main-title;
-		font-size: $middle-size;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-
-	&__subtitle {
-		color: $dark-grey;
-		margin-bottom: 20px;
-	}
-
-	&__text {
-		color: $main-title;
-		font-size: $small-size;
-		font-weight: 400;
-		text-align: center;
-		margin-bottom: 25px;
-	}
-
-	.social-menu {
+	&__card {
 		display: flex;
-		justify-content: space-between;
-		width: 100%;
-		max-width: 100px;
+		flex-direction: column;
+		align-items: center;
 
-		&__link {
+		.img-wrapper {
+			@include padding-hack(100%);
+			margin-bottom: 15px;
+		}
+
+		&-name {
+			@include text-styling($middle-size, 700, $main-title);
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+
+		&-position {
+			@include text-styling($base-size, 400, $dark-grey);
+			text-transform: capitalize;
+			margin-bottom: 15px;
+		}
+
+		&-desc {
+			@include text-styling($small-size, 600, $main-title);
+			margin-bottom: 20px;
+		}
+
+		&-social {
+			display: flex;
+			justify-content: center;
+		}
+
+		&-item {
+			margin-right: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&-link {
 			display: block;
-			font-size: $big-size;
-			color: $light-grey;
+			@include text-styling($big-size, 400, $social);
 			transition: color .3s ease;
 
 			&:hover {
 				color: $violet;
 			}
 		}
+
 	}
 }
+
+/* End our-team style
+--------------------- */

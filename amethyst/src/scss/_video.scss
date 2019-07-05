@@ -1,0 +1,11 @@
+.video {
+	padding-bottom: 30px;
+
+	@media all and (min-width: 768px) {
+		padding-bottom: 60px;
+	}
+	&__item {
+		display: flex;
+		width: 100%;
+	}
+}

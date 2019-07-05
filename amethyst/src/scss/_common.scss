@@ -45,3 +45,50 @@ ul {
 .main__text {
 	@include text-styling($base-size, 400, $main-text);
 }
+
+/* Progress Bar */
+.barfiller {
+	width: 100%;
+	height: 12px;
+	background: #e3e3e3;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.barfiller .fill {
+	display: block;
+	position: relative;
+	width: 0px;
+	height: 100%;
+	background: #333;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.barfiller .tipWrap {
+	display: none;
+}
+
+.barfiller .tip {
+	margin-top: -30px;
+	padding: 2px 4px;
+	font-size: 11px;
+	color: #fff;
+	left: 0px;
+	position: absolute;
+	z-index: 2;
+	background: #333;
+}
+
+.barfiller .tip:after {
+	border: solid;
+	border-color: rgba(0, 0, 0, .8) transparent;
+	border-width: 6px 6px 0 6px;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 9px;
+	top: 100%;
+	z-index: 9
+}

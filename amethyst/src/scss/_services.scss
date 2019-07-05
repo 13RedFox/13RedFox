@@ -1,40 +1,101 @@
+/* Services style
+----------------- */
 .services {
-	padding-top: 60px;
+	padding-top: 30px;
 
-	&__content {
-		background-color: $main-title;
-		padding: 110px 20px;
+	@media all and (min-width: 768px) {
+		padding-top: 60px;
 	}
 
-	&__text {
-		color: $white;
-		text-align: center;
-	}
-
-	&-wrap {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-
-		&:hover .services__icon,
-		&:hover .services__subtext {
-			color: $main-title;
-		}
+	.main__subtitle {
+		margin-bottom: 0;
 	}
 
 	.active {
 		color: $main-title;
 	}
 
-	&__icon {
-		font-size: $facts-title;
-		color: $dark-grey;
-		margin-bottom: 10px;
+	&__top {
+		margin-bottom: 20px;
+
+		@media all and (min-width: 768px) {
+			margin-bottom: 35px;
+		}
 	}
 
-	&__subtext {
-		font-size: $service-title;
-		color: $dark-grey;
-		font-weight: 700;
+	&__left {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		background-color: #636363;
+	}
+
+	&__inner {
+		padding: 20px 10px;
+
+		@media all and (min-width: 768px) {
+			padding: 30px;
+		}
+
+		@media all and (min-width: 1200px) {
+			padding: 0 30px;
+		}
+
+		&-text {
+			@include text-styling($base-size, 400, $white);
+			margin-bottom: 20px;
+			text-align: center;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&__card {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media all and (min-width: 768px) {
+			margin-bottom: 50px;
+
+			&:nth-child(n+5) {
+				margin-bottom: 0;
+			}
+		}
+
+		@media all and (min-width: 992px) {
+			margin-bottom: 80px;
+
+			&:nth-child(n+5) {
+				margin-bottom: 0;
+			}
+		}
+
+		&:nth-child(n+6) {
+			margin-bottom: 0;
+		}
+
+		&-link {
+			@include text-styling($service-title, 700, $dark-grey);
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			text-transform: capitalize;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $main-title;
+			}
+		}
+
+		&-icon {
+			font-size: $facts-title;
+			margin-bottom: 20px;
+		}
 	}
 }
+
+/* End services style
+--------------------- */

@@ -109,13 +109,71 @@
 			});
 		});
 
+		// Services Owl Carousel
+		$(function () {
+
+			$('.services__card-link').on('click', function (e) {
+				e.preventDefault();
+				$('.services__card-link').removeClass('active');
+				$(this).addClass('active');
+			});
+
+			const owl = $(".services__owl-carousel");
+			owl.owlCarousel({
+				items: 1,
+				loop: true,
+				margin: 10,
+				dots: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				responsive: {
+					0: {
+						dots: false
+					},
+					768: {
+						dots: true
+					},
+					992: {
+						dots: true
+					}
+				}
+			});
+		});
+
 		$(function () {
 			// Works gallery
 			$('.works__filter-link').on('click', function (e) {
 				e.preventDefault();
-
 				$('.works__filter-link').removeClass('active');
 				$(this).addClass('active');
+			});
+
+		});
+
+		$(function () {
+			// Progress Bar
+			$('#bar1').barfiller({
+				barColor: 'linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%)',
+				duration: 1000,
+				animateOnResize: true,
+			});
+
+			$('#bar2').barfiller({
+				barColor: 'linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%)',
+				duration: 1000,
+				animateOnResize: true,
+			});
+
+			$('#bar3').barfiller({
+				barColor: 'linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%)',
+				duration: 1000,
+				animateOnResize: true,
+			});
+
+			$('#bar4').barfiller({
+				barColor: 'linear-gradient(-215deg, rgba(153, 102, 204, 1) 0%, rgba(225, 133, 34, 1) 100%)',
+				duration: 1000,
+				animateOnResize: true,
 			});
 
 		});
