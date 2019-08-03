@@ -1,0 +1,68 @@
+/* Blog style
+------------- */
+.blog {
+	padding: 30px 0;
+
+	&__card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.img-wrapper {
+			@include padding-hack(67%);
+			margin-bottom: 30px;
+		}
+
+		&-title {
+			@include text-styling($base-size, 700, $main-title);
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&-desc {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			padding: 5px 0;
+			border-top: 1px solid $social;
+			border-bottom: 1px solid $social;
+			margin-bottom: 20px;
+
+			@media (min-width: 992px) and (max-width: 1199px) {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			&_wrap {
+				display: flex;
+				align-items: center;
+				@include text-styling($base-size, 400, $dark-grey);
+				margin-right: 10px;
+
+				@media (min-width: 992px) and (max-width: 1199px) {
+					margin-right: 0;
+				}
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			&_icon {
+				margin-right: 5px;
+			}
+		}
+
+		&-text {
+			@include text-styling($base-size, 400, $main-text);
+			text-align: center;
+
+			@media all and (min-width: 1200px) {
+				padding: 0 10px;
+			}
+		}
+	}
+}
+
+/* End blog style
+----------------- */
