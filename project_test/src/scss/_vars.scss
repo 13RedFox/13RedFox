@@ -1,0 +1,39 @@
+// COLORS:
+
+$white: #ffffff;
+$black: #000000;
+$green: #48974c;
+$l-green: #449653;
+$grey: #cccccc;
+$title: #262626;
+$d-grey: #595959;
+$border: #e6e6e6;
+$main-bg: #f8f8f8;
+$slider: #404040;
+
+// SIZE:
+
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 16px;
+
+$v_big-size: px_to_rem(60px);
+$big-size: px_to_rem(36px);
+$huge-size: px_to_rem(30px);
+$large-size: px_to_rem(24px);
+$middle-size: px_to_rem(18px);
+$small-size: px_to_rem(14px);
+$little-size: px_to_rem(12px);
+
+// FONTS:
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant:400i,600i,700|PT+Sans:400,700&display=swap&subset=cyrillic');
+
+$main-font: 'PT Sans', sans-serif;
+$sec-font: 'Cormorant Infant', serif;

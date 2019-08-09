@@ -28,7 +28,8 @@ const task = {
 		html: 'html:dev',
 		css: 'css:dev',
 		js: 'js:dev',
-		img: 'img:dev'
+		img: 'img:dev',
+		video: 'video:dev'
 	},
 	build: {
 		libs: 'libs',
@@ -37,7 +38,8 @@ const task = {
 		css: 'css:build',
 		js: 'js:build',
 		img: 'img:build',
-		fav: 'fav:build'
+		fav: 'fav:build',
+		video: 'video:build'
 	},
 	watch: 'watch',
 	connect: 'connect',
@@ -59,7 +61,8 @@ const path = {
 		img: [`${targetPath}/src/img/**/*.*`, `!${targetPath}/src/img/**/*.ini`],
 		fonts: [`${targetPath}/src/fonts/**/*.*`,`!${targetPath}/src/fonts/**/*.ini`],
 		libs: [`${targetPath}/src/libs/**/*.*`,`!${targetPath}/src/libs/**/*.ini`],
-		fav: [`${targetPath}/src/fav/**/*.*`,`!${targetPath}/src/fav/**/*.ini`]
+		fav: [`${targetPath}/src/fav/**/*.*`,`!${targetPath}/src/fav/**/*.ini`],
+		video: [`${targetPath}/src/video/**/*.*`,`!${targetPath}/src/video/**/*.ini`]
 	},
 	app: {
 		html: `${targetPath}/app/`,
@@ -68,7 +71,8 @@ const path = {
 		img: `${targetPath}/app/img/`,
 		fonts: `${targetPath}/app/fonts/`,
 		libs: `${targetPath}/app/libs/`,
-		fav: `${targetPath}/app/fav/`
+		fav: `${targetPath}/app/fav/`,
+		video: `${targetPath}/app/video/`
 	},
 	watch: {
 		html: [`${targetPath}/src/*.html`, `${targetPath}/src/*.ejs`, `${targetPath}/src/partials/**/*.*`],
@@ -77,7 +81,8 @@ const path = {
 		img: `${targetPath}/src/img/**/*.*`,
 		fonts: `${targetPath}/src/fonts/**/*.*`,
 		libs: `${targetPath}/src/libs/**/*.*`,
-		fav: `${targetPath}/src/fav/**/*.*`
+		fav: `${targetPath}/src/fav/**/*.*`,
+		video: `${targetPath}/src/video/**/*.*`
 	},
 	serverRoot: `${targetPath}/app`,
 	template: 'template/**/*.*',
@@ -186,6 +191,12 @@ gulp.task(task.build.fonts, () => {
 	.pipe(browserSync.stream());
 });
 
+gulp.task(task.build.video, () => {
+	return gulp.src(path.src.video, { allowEmpty: true })
+	.pipe(gulp.dest(path.app.video))
+	.pipe(browserSync.stream());
+});
+
 gulp.task(task.watch, () => {
 	$.watch(path.watch.scss, gulp.series(task.dev.css)),
 	$.watch(path.watch.html, gulp.series(task.dev.html, task.validator)),
@@ -193,7 +204,8 @@ gulp.task(task.watch, () => {
 	$.watch(path.watch.img, gulp.series(task.dev.img)),
 	$.watch(path.watch.fonts, gulp.series(task.build.fonts)),
 	$.watch(path.watch.libs, gulp.series(task.build.libs)),
-	$.watch(path.watch.fav, gulp.series(task.build.fav))
+	$.watch(path.watch.fav, gulp.series(task.build.fav)),
+	$.watch(path.watch.video, gulp.series(task.build.video))
 });
 
 gulp.task(task.connect, () => {
@@ -226,6 +238,7 @@ gulp.task(
 		task.build.libs,
 		task.build.fav,
 		task.build.fonts,
+		task.build.video,
 		task.connect
 		));
 
@@ -238,7 +251,8 @@ gulp.task(
 		task.build.img,
 		task.build.libs,
 		task.build.fav,
-		task.build.fonts
+		task.build.fonts,
+		task.build.video
 		));
 
 gulp.task(task.check, () => {

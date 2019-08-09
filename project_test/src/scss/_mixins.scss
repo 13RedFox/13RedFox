@@ -1,0 +1,8 @@
+@mixin text-styling($size, $weight: 400, $color: black) {
+	font: {
+		size: $size;
+		weight: $weight;
+	}
+
+	color: $color;
+}

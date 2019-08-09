@@ -33,11 +33,12 @@
 	}
 
 	&__img {
-		filter: brightness(70%);
-		transition: filter .5s ease;
+		filter: brightness(20%);
+		transition: all .5s ease;
 
 		&:hover {
 			filter: none;
+			transform: scale(1.1);
 		}
 	}
 }

@@ -1,0 +1,35 @@
+.first-screen {
+	background: url(../img/slider-bg.jpg) no-repeat;
+	background-size: cover;
+	min-height: 560px;
+	padding-top: 70px;
+
+	.slider {
+		background-color: rgba($white, 0.95);
+		padding: 35px 30px 40px;
+
+		&__title {
+			font-family: $sec-font;
+			@include text-styling($v_big-size, 700, $slider);
+			line-height: 1;
+			letter-spacing: 0.36px;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			@include text-styling($middle-size, 400, $slider);
+			line-height: 1.5;
+			letter-spacing: 0.09px;
+		}
+	}
+
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin: 0;
+	}
+
+	.owl-theme .owl-dots {
+		text-align: left;
+		padding-top: 20px;
+		padding-left: 30px;
+	}
+}

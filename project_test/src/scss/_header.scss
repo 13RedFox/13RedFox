@@ -1,0 +1,40 @@
+.header {
+	padding-top: 30px;
+	background-color: $white;
+
+	&__title {
+		font-family: $sec-font;
+		@include text-styling($big-size, 700, $title);
+		line-height: 1;
+		letter-spacing: 0.18px;
+		margin-bottom: 5px;
+	}
+
+	&__text {
+		font-family: $sec-font;
+		@include text-styling($base-size, 400, $d-grey);
+		line-height: 1.5;
+		margin-bottom: 35px;
+	}
+
+	&__menu {
+		display: flex;
+		justify-content: space-between;
+		border-top: 1px solid $border;
+		padding: 15px 0;
+
+		&-link {
+			display: flex;
+			font-family: $main-font;
+			@include text-styling($base-size, 700, $title);
+			line-height: 1.5;
+			letter-spacing: 0.08px;
+			text-transform: uppercase;
+			transition: color 0.3s ease;
+
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+}
