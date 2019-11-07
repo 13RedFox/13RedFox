@@ -1,0 +1,31 @@
+// COLORS:
+
+$white: #ffffff;
+$black: #000000;
+$grey: #292929;
+$orange: #f45c07;
+$blue: #056572;
+$aqua: #038a7a;
+
+// SIZE:
+
+@function px_to_rem($target, $context: $base-size) {
+  @if $target == 0 {
+    @return 0;
+  }
+  @return $target / $context + 0rem;
+}
+
+$base-size: 16px;
+
+$small-size: px_to_rem(14px);
+$s1: px_to_rem(18px);
+$s2: px_to_rem(20px);
+$s3: px_to_rem(32px);
+$s4: px_to_rem(40px);
+
+$title: px_to_rem(50px);
+
+// FONTS:
+
+$main-font: "Montserrat", sans-serif;

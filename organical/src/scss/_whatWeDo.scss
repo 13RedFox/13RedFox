@@ -1,0 +1,50 @@
+.whatWeDo {
+  padding: 30px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 80px 0;
+  }
+
+  &__title {
+    @include text-styling($s4, 300, $grey);
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-icon {
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &-title {
+      @include text-styling($s3, 300, $grey);
+      text-transform: capitalize;
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-text {
+      @include text-styling($s1, 300, grey);
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.packages {
+  padding-top: 30px;
+
+  @media screen and (min-width: 576px) {
+    padding-top: 80px;
+  }
+
+  &__title {
+    @include text-styling($s3, 300, $grey);
+
+    @media screen and (min-width: 768px) {
+      @include text-styling($s4, 300, $grey);
+    }
+  }
+
+  &__card {
+    &-subtitle {
+      @include text-styling($s2, 700, $orange);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    &-title {
+      @include text-styling($s3, 300, $grey);
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      @include text-styling($s1, 400, grey);
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      display: inline-flex;
+      @include text-styling($s1, 400, $aqua);
+      text-decoration: underline;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: 992px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    &-wrapperImg {
+      margin-bottom: 20px;
+
+      @media screen and (min-width: 768px) {
+        @include text-styling($s1, 300, $grey);
+      }
+    }
+
+    &-img {
+      @media screen and (min-width: 992px) {
+        margin-right: 20px;
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include text-styling($s1, 400, $aqua);
+      text-transform: capitalize;
+      border: 2px solid $aqua;
+      border-radius: 30px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        border: 2px solid $orange;
+        padding: 10px 20px;
+        color: $orange;
+      }
+
+      @media screen and (min-width: 768px) {
+        width: auto;
+      }
+    }
+  }
+}

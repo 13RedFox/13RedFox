@@ -1,0 +1,45 @@
+.footer {
+  background: $blue;
+  padding: 30px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+
+  &__title {
+    @include text-styling($s1, 300, $white);
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      @include text-styling($s3, 300, $white);
+    }
+  }
+
+  &__text {
+    @include text-styling($s1, 300, $white);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      @include text-styling($s2, 300, $white);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btn {
+    @include text-styling($s2, 400, $blue);
+    background: $white;
+    padding: 15px 0;
+    width: 100%;
+    max-width: 295px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    border-radius: 40px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}

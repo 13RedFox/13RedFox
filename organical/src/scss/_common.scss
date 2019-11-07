@@ -1,0 +1,30 @@
+html,
+body {
+  background-color: $white;
+  color: $black;
+  font-family: $main-font;
+  font-size: $base-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.mb-10 {
+  margin-bottom: 100px;
+}
