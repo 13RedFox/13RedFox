@@ -1,8 +1,0 @@
-.services {
-	background: $corp-blue url("#{$img-path}services.jpg") no-repeat;
-	background-size: cover;
-
-	.border-div {
-		@include border-div($white);
-	}
-}
