@@ -1,0 +1,71 @@
+.header {
+  height: 100vh;
+  background-color: lightslategray;
+
+  &__logo {
+    display: block;
+    @include text-styling($s3, 700, $grey);
+    line-height: 22px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      @include text-styling($s2, 400, $grey);
+      line-height: 22px;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__title {
+    @include text-styling($s6, 400, $white);
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    @include text-styling($s3, 400, $white);
+    letter-spacing: 1.1px;
+  }
+
+  &__btn {
+    width: 100%;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $second-font;
+    @include text-styling($s2, 700, $white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 3px solid;
+    padding: 25px 0;
+    
+    &:hover {
+      color: $white;
+    }
+
+    &-left {
+      border-color: $white;
+    }
+
+    &-right {
+      background: $green;
+      border-color: $green;
+    }
+  }
+}
