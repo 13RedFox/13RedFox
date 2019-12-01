@@ -1,8 +1,38 @@
 .portfolio {
-  min-height: 100vh;
   padding: 50px 0;
 
   @media screen and (min-width: 768px) {
     padding: 100px 0;
+  }
+
+  &__tabs {
+    display: none;
+    justify-content: space-between;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    &-btn {
+      @include text-styling($s2, 400, $grey);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 2px solid $green;
+      padding: 5px 20px;
+      transition: color 0.3s easy;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    .active {
+      background: $green;
+      color: $white;
+    }
+  }
+
+  &__wrapper {
+    @include padding_hack(100%, cover);
   }
 }
