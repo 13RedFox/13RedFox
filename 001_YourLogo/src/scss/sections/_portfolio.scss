@@ -1,0 +1,8 @@
+.portfolio {
+  min-height: 100vh;
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+}

@@ -1,6 +1,32 @@
 .header {
-  height: 100vh;
-  background-color: lightslategray;
+  position: relative;
+  min-height: 100vh;
+
+  &__bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: $black url("./../img/header__bg.jpg");
+    background-size: cover;
+    filter: brightness(0.2);
+    z-index: 0;
+  }
+
+  &__top {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    background: rgba($white, .9);
+    padding: 15px 0;
+    z-index: 3;
+
+    @media screen and (min-width: 576px) {
+      padding: 30px 0;
+
+    }
+  }
 
   &__logo {
     display: block;
@@ -14,9 +40,13 @@
   }
 
   &__nav {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
 
     &-link {
       @include text-styling($s2, 400, $grey);
@@ -31,15 +61,36 @@
     }
   }
 
+  &__content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+
   &__title {
-    @include text-styling($s6, 400, $white);
+    @include text-styling($s3, 400, $white);
     letter-spacing: 3px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: 768px) {
+      @include text-styling($s5, 400, $white);
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 992px) {
+      @include text-styling($s6, 400, $white);
+    }
   }
 
   &__text {
-    @include text-styling($s3, 400, $white);
+    @include text-styling($base-size, 400, $white);
     letter-spacing: 1.1px;
+
+    @media screen and (min-width: 768px) {
+      @include text-styling($s3, 400, $white);
+    }
   }
 
   &__btn {
@@ -54,7 +105,7 @@
     text-transform: uppercase;
     border: 3px solid;
     padding: 25px 0;
-    
+
     &:hover {
       color: $white;
     }
@@ -66,6 +117,28 @@
     &-right {
       background: $green;
       border-color: $green;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 7%;
+    left: 50%;
+    $size: 25px;
+    height: $size;
+    width: $size;
+    transform: translateX(-50%);
+
+    &-btn {
+      $size: 15px;
+      width: $size;
+      height: $size;
+      border-right: 3px solid $white;
+      border-bottom: 3px solid $white;
+      transform: rotate(45deg);
     }
   }
 }

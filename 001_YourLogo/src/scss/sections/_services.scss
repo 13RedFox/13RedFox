@@ -1,0 +1,71 @@
+.services {
+  background-color: $aqua;
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+
+  &__card {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 45px 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $green;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    &:hover &-icon,
+    &:hover &-title,
+    &:hover &-text,
+    &:hover &-btn {
+      color: $white;
+      border-color: $white;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      $size: 60px;
+      width: $size;
+      height: $size;
+      @include text-styling($s5, 400, $grey);
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      @include text-styling($s2, 400, $grey);
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      @include text-styling($base-size, 400, $grey);
+      letter-spacing: 0.75px;
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include text-styling($s2, 400, $grey);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 2px solid $grey;
+      padding: 10px 0;
+
+      @media screen and (min-width: 992px) {
+        max-width: 150px;
+      }
+    }
+  }
+}

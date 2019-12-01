@@ -30,3 +30,34 @@ body {
 .mb-10 {
   margin-bottom: 100px;
 }
+
+.main__wrapper {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+
+    @media screen and (min-width: 992px) {
+    margin-bottom: 100px;
+  }
+}
+
+.main__title {
+  @include text-styling($s3, 700, $grey);
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    @include text-styling($s4, 700, $grey);
+    margin-bottom: 20px;
+  }
+}
+
+.main__text {
+  @include text-styling($base-size, 400, $grey);
+  letter-spacing: 0.75px;
+  text-align: center;
+}

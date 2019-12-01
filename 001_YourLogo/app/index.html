@@ -16,39 +16,44 @@
 
 <body>
  <header class="header" id="header">
-   <div class="container">
-     <div class="row justify-content-between py-5">
-       <div class="col-2">
-         <a href="#" class="header__logo">YourLogo</a>
-       </div>
-       <div class="col-8">
-         <ul class="header__nav">
-           <li class="header__nav-item">
-             <a href="#header" class="header__nav-link">home</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#about" class="header__nav-link">about</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#servicing" class="header__nav-link">servicing</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#portfolio" class="header__nav-link">portfolio</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#blog" class="header__nav-link">blog</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#contactUs" class="header__nav-link">contact us</a>
-           </li>
-           <li class="header__nav-item">
-             <a href="#" class="header__nav-link">
-               <i class="fas fa-search"></i>
-             </a>
-           </li>
-         </ul> <!-- End .header__nav -->
+   <div class="header__bg"></div>
+   <div class="header__top">
+     <div class="container">
+       <div class="row justify-content-between">
+         <div class="col-6 col-md-2">
+           <a href="#" class="header__logo">YourLogo</a>
+         </div>
+         <div class=" col-6 col-md-8">
+           <ul class="header__nav">
+             <li class="header__nav-item">
+               <a href="#header" class="header__nav-link">home</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#about" class="header__nav-link">about</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#services" class="header__nav-link">servicing</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#portfolio" class="header__nav-link">portfolio</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#blog" class="header__nav-link">blog</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#contactUs" class="header__nav-link">contact us</a>
+             </li>
+             <li class="header__nav-item">
+               <a href="#" class="header__nav-link">
+                 <i class="fas fa-search"></i>
+               </a>
+             </li>
+           </ul> <!-- End .header__nav -->
+         </div>
        </div>
      </div>
+   </div> <!-- End .header__top -->
+   <div class="container header__content">
      <div class="row">
        <div class="col-12">
          <div class="row mb-10">
@@ -58,17 +63,160 @@
            </div>
          </div>
          <div class="row justify-content-center">
-           <div class="col-3">
+           <div class="col-12 col-md-4 mb-3 mb-md-0">
              <a href="#" class="header__btn header__btn-left">our services</a>
            </div>
-           <div class="col-3">
+           <div class="col-12 col-md-4">
              <a href="#" class="header__btn header__btn-right">here is now</a>
            </div>
          </div>
        </div>
      </div>
    </div>
+   <div class="header__arrow">
+     <a href="#about" class="header__arrow-btn"></a>
+   </div> <!-- End .header__arrow -->
  </header> <!-- End .header -->
+ <section class="about" id="about">
+   <div class="container">
+     <div class="row justify-content-center main__wrapper">
+       <div class="col-12 col-md-10 col-lg-8">
+         <h2 class="main__title">about us</h2>
+         <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-12 col-md-4 mb-4 mb-md-0">
+         <div class="about__card">
+           <div class="about__card-icon">
+             <i class="fas fa-globe"></i>
+           </div>
+           <h2 class="about__card-title">awesome icons</h2>
+           <p class="about__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+           </p>
+         </div> <!-- End .about__card -->
+       </div>
+       <div class="col-12 col-md-4 mb-4 mb-md-0">
+         <div class="about__card">
+           <div class="about__card-icon">
+             <i class="fas fa-certificate"></i>
+           </div>
+           <h2 class="about__card-title">one page</h2>
+           <p class="about__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor
+           </p>
+         </div> <!-- End .about__card -->
+       </div>
+       <div class="col-12 col-md-4">
+         <div class="about__card">
+           <div class="about__card-icon">
+             <i class="fab fa-audible"></i>
+           </div>
+           <h2 class="about__card-title">fully responsive</h2>
+           <p class="about__card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor
+           </p>
+         </div> <!-- End .about__card -->
+       </div>
+     </div>
+   </div>
+ </section>
+ <section class="services" id="services">
+   <div class="container">
+     <div class="row justify-content-center main__wrapper">
+       <div class="col-12 col-md-10 col-lg-8">
+         <h2 class="main__title">our services</h2>
+         <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-12 col-md-6 col-lg-4 mb-4">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">research</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+       <div class="col-12 col-md-6 col-lg-4 mb-4">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">portfolio</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+       <div class="col-12 col-md-6 col-lg-4 mb-4">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">support</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+             blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+       <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">support</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+             blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+       <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-0">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">support</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+             blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+       <div class="col-12 col-md-6 col-lg-4">
+         <div class="services__card">
+           <div class="services__card-icon">
+             <i class="fas fa-mobile-alt"></i>
+           </div>
+           <h3 class="services__card-title">support</h3>
+           <p class="services__card-text">At vero eos et accusamus et iusto odio dignissimos ducimus
+             qui
+             blanditiis
+             praesentium voluptatum iti atque corrupti quos.</p>
+           <a href="#" class="services__card-btn">read more</a>
+         </div><!-- End .services__card -->
+       </div>
+     </div>
+   </div>
+ </section>
+ <section class="portfolio" id="portfolio">
+   <div class="container">
+     <div class="row justify-content-center main__wrapper">
+       <div class="col-12 col-md-10 col-lg-8">
+         <h2 class="main__title">portfolio</h2>
+         <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+       </div>
+     </div>
+   </div>
+ </section>
 	<!-- jQuery 3.4.1 -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

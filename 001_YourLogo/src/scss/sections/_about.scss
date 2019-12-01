@@ -1,0 +1,37 @@
+.about {
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &-icon {
+      $size: 60px;
+      width: $size;
+      height: $size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include text-styling($s5, 400, $grey);
+      margin-bottom: 20px;
+    }
+
+    &-title {
+      @include text-styling($s2, 700, $grey);
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      @include text-styling($base-size, 400, $grey);
+      letter-spacing: 0.75px;
+    }
+  }
+}
