@@ -1,0 +1,69 @@
+.team {
+  padding: 50px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+
+  &__slider {
+    &-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-wrapperCard {
+      @include padding-hack(87%, cover);
+      margin-bottom: 20px;
+    }
+
+    &-cardTitle {
+      @include text-styling($s2, 400, $grey);
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    &-cardJob {
+      @include text-styling($base-size, 400, $grey);
+      letter-spacing: 0.75px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+
+    &-cardSocialNav {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+
+      @media screen and (min-width: 992px) {
+        padding: 0 20px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding: 0 40px;
+      }
+    }
+
+    &-cardSocialLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      $size: 50px;
+      width: $size;
+      height: $size;
+      @include text-styling($s3, 400, $green);
+      letter-spacing: 1.5px;
+      border-radius: 10px;
+      background: $pricing-bg;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+      }
+    }
+  }
+}
