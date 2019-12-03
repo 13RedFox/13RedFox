@@ -23,8 +23,18 @@
          <div class="col-6 col-md-2">
            <a href="#" class="header__logo">YourLogo</a>
          </div>
-         <div class=" col-6 col-md-8">
-           <ul class="header__nav">
+         <div class="col-6 col-md-9 col-lg-8 headerTopNav">
+ 
+           <div id="nav-icon2">
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+             <span></span>
+           </div>
+ 
+           <ul class="header__nav" id="headerNav">
              <li class="header__nav-item">
                <a href="#header" class="header__nav-link">home</a>
              </li>
@@ -42,11 +52,6 @@
              </li>
              <li class="header__nav-item">
                <a href="#contactUs" class="header__nav-link">contact us</a>
-             </li>
-             <li class="header__nav-item">
-               <a href="#" class="header__nav-link">
-                 <i class="fas fa-search"></i>
-               </a>
              </li>
            </ul> <!-- End .header__nav -->
          </div>
@@ -253,7 +258,7 @@
        </div>
        <div class="col-12 col-md-6 col-lg-4">
          <div class="portfolio__wrapper">
-           <img src="./img/tabs__005.jpg" alt="Pic" class="portfolio__wrapper-img">
+           <img src="./img/tabs__006.jpg" alt="Pic" class="portfolio__wrapper-img">
          </div>
        </div>
      </div>
@@ -534,17 +539,61 @@
    </div>
  </section>
  <section class="contacts" id="contactUs">
+   <div class="contacts__bg"></div>
    <div class="container">
-         <div class="row justify-content-center main__wrapper">
-           <div class="col-12 col-md-10 col-lg-8">
-             <h2 class="main__title">contact us</h2>
-             <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-               incididunt
-               ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-           </div>
+     <div class="row justify-content-center main__wrapper">
+       <div class="col-12 col-md-10 col-lg-8">
+         <h2 class="main__title">contact us</h2>
+         <p class="main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+           incididunt
+           ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+       </div>
+     </div>
+     <div class="row mb-5">
+       <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-4 mb-md-0">
+         <div class="contacts__icon">
+           <i class="fas fa-map-marker-alt"></i>
          </div>
+         <p class="contacts__info">Nobinagar savar, Dhaka</p>
+         <p class="contacts__info">Bangladesh</p>
+       </div>
+       <div class="col-12 col-md-4 d-flex flex-column align-items-center mb-4 mb-md-0">
+         <div class="contacts__icon">
+           <i class="fas fa-phone-alt"></i>
+         </div>
+         <p class="contacts__info">+8801743331996</p>
+         <p class="contacts__info">+8801928737807</p>
+       </div>
+       <div class="col-12 col-md-4 d-flex flex-column align-items-center">
+         <div class="contacts__icon">
+           <i class="far fa-envelope"></i>
+         </div>
+         <p class="contacts__info">quickmasud@gmail.com</p>
+         <p class="contacts__info">quickmasud@yahoo.com</p>
+       </div>
+     </div>
+     <div class="row">
+       <div class="col-12">
+         <form action="#" class="contacts__form">
+           <div class="contacts__form-wrapper">
+             <input type="text" class="contacts__form-input name mb-2 mb-md-0" placeholder="Your Name" required>
+             <input type="email" class="contacts__form-input email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               placeholder="Your Email" required>
+           </div>
+           <textarea class="contacts__form-textarea" placeholder="Write Massage" required></textarea>
+           <div class="contacts__form-wrapperBtn">
+             <button type="submit" class="contacts__form-btn">send</button>
+           </div>
+         </form> <!-- End .contacts__form -->
+       </div>
+     </div>
    </div>
  </section>
+ <footer class="footer">
+   <p class="footer__copy">
+     All rights Reserved © 2017
+   </p>
+ </footer> <!-- End .footer -->
 	<!-- jQuery 3.4.1 -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

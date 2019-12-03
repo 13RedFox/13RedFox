@@ -1,0 +1,11 @@
+.footer {
+  background: $white;
+  padding: 10px 0;
+
+  &__copy {
+    font-family: $second-font;
+    @include text-styling($s1,700,$grey);
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
