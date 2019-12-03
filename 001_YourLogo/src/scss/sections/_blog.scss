@@ -5,4 +5,82 @@
   @media screen and (min-width: 768px) {
     padding: 100px 0;
   }
+
+  &__wrapper {
+    @include padding-hack(70.3%, cover);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 20px;
+    }
+
+    @media screen and (min-width: 992px) {
+      padding-top: 50px;
+    }
+
+    &-linkTitle {
+      display: inline-flex;
+      @include text-styling($s3, 400, $grey);
+      letter-spacing: 1.25px;
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &-wrapperData {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &-data {
+      @include text-styling($base-size, 700, $grey);
+      letter-spacing: 0.85px;
+      text-transform: capitalize;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @media screen and (min-width: 576px) {
+        @include text-styling($s1, 700, $grey);
+        margin-right: 40px;
+      }
+    }
+
+    &-text {
+      @include text-styling($base-size, 400, $grey);
+      letter-spacing: 0.75px;
+
+      @media screen and (min-width: 992px) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $second-font;
+    @include text-styling($s2, 700, $white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: $green;
+    padding: 15px 0;
+
+    &:hover {
+      color: $white;
+    }
+  }
 }
