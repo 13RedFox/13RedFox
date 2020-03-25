@@ -34,5 +34,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  }
 }
